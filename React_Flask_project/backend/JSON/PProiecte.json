@@ -1,0 +1,57 @@
+{
+  "title": "",
+  "accordions":[
+       {
+        "title": "Lista contractorilor POR CBG SMIS 119832",
+      
+         "link": "https://daip.uvt.ro/wp-content/uploads/2024/04/Lista-contractorilor-POR-CBG-SMIS-119832-2-1.pdf"
+       },
+       {
+        "title": "Machetă Prezentare rezultate proiect",
+      
+         "link": "https://daip.uvt.ro/wp-content/uploads/2024/04/Macheta%CC%86-Prezentare-rezultate-proiect-2-2.pdf"
+       },
+       {
+        "title": "Lista contractori POR Paris 119831",
+      
+         "link": "https://daip.uvt.ro/wp-content/uploads/2024/05/Lista-contractori_POR_Paris_119831.pdf"
+       },
+       {
+        "title": "Machetă Prezentare rezultate proiect",
+      
+         "link": "https://daip.uvt.ro/wp-content/uploads/2024/05/Macheta%CC%86-Prezentare-rezultate-proiect_POR_Paris.pdf"
+       }
+  ],
+  "projects": [
+    {
+      "title": "Extindere spații de învățământ existente pentru facultatea de Arte si Design și Facultatea de Muzică și Teatru",
+      "description": null,
+      "image": "http://daip.uvt.ro/wp-content/uploads/2024/04/fad-300x208.png",
+      "link": "http://daip.uvt.ro/wp-content/uploads/2024/04/1.Macheta-descriere-proiect_Arte.pdf"
+    },
+    {
+      "title": "Reabilitarea acoperișului și fațadelor Facultății de Chimie, Biologie și Geografie",
+      "description": null,
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Reabilitarea acoperișului și fațadelor Facultății de Chimie, Biologie și Geografie",
+      "description": null,
+      "image": "http://daip.uvt.ro/wp-content/uploads/2024/04/cbg-768x422.png",
+      "link": "http://daip.uvt.ro/wp-content/uploads/2024/04/2.Macheta-descriere-proiect_CBG-1.pdf"
+    },
+    {
+      "title": "Reabilitarea și Extinderea spațiilor de învățământ în vederea creșterii relevanței învățământului universitar socio-economic",
+      "description": null,
+      "image": null,
+      "link": null
+    },
+    {
+      "title": "Reabilitarea și Extinderea spațiilor de învățământ în vederea creșterii relevanței învățământului universitar socio-economic",
+      "description": null,
+      "image": "http://daip.uvt.ro/wp-content/uploads/2024/04/paris-768x576.jpg",
+      "link": "http://daip.uvt.ro/wp-content/uploads/2024/04/3.Macheta-descriere-proiect_Paris.pdf"
+    }
+  ]
+}

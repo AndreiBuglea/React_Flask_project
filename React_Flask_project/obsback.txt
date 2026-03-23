@@ -1,0 +1,39 @@
+asa pornesc venv:
+cd ~/my_app/React_Flask_project/backend
+source venv/bin/activate
+
+-------------------------------
+
+Models.py:
+class WPPage(db.Model):
+    __tablename__ = "wp_testingposts"
+    ID = db.Column(db.Integer, primary_key=True)
+    post_title = db.Column(db.Text)
+    post_content = db.Column(db.Text)
+    post_type = db.Column(db.String(20))
+    post_status = db.Column(db.String(20))
+    post_name = db.Column(db.String(200))
+
+--------------------------------------
+
+main.py:
+
+@app.route("/api/page/home")
+def get_home():
+    page = WPPage.query.filter_by(
+        post_name="anunturi-selectie-echipe-proiecte",
+        post_type="page",
+        post_status="publish"
+    ).first()
+
+    if page:
+        return jsonify({
+            "title": page.post_title,
+            "content": page.post_content
+        })
+    else:
+        return jsonify({"error": "Home page not found"}), 404
+
+-------------------------------------------------------------
+
+inainte sa pornesc back tre sa bag parola bazei de date

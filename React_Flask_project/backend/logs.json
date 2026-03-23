@@ -1,0 +1,1135 @@
+[
+    {
+        "timestamp": "2026-03-20 08:46:09",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773996369.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773996369.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773996369.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-20 08:41:24",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 10:09:39",
+        "username": "admin3",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 10:09:10",
+        "username": "admin3",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:58:38",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:58:31",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/CV-_AIDA_MARC_1773914311.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/CV-_AIDA_MARC_1773914311.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/CV-_AIDA_MARC_1773914311.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:58:07",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:57:59",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914264.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:57:44",
+        "username": {
+            "fresh": false,
+            "iat": 1773914122,
+            "jti": "762bb2c9-3ec2-4189-bdbf-f32b566f166a",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773914122,
+            "csrf": "3f4d5138-397c-4fc8-8dcb-c89e8734b133",
+            "exp": 1773915022,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: q",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:57:08",
+        "username": "admin4",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: q (ID: 1773829605320)",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq\r\n",
+            "perioada": "q",
+            "anunt": "q",
+            "link_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf",
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773914218.pdf"
+            ],
+            "id": 1773829605320
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:58",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/26305T1340_1773914150.pdf",
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773914218.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773914218.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf",
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773914218.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:44",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:35",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:29",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:18",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:04",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:55:50",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:55:22",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:51:18",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:31:22",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:50:37",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:50:24",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:45:11",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:44:11",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:43:44",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:27:12",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/26305T1340_1773829632.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:26:45",
+        "username": {
+            "fresh": false,
+            "iat": 1773829444,
+            "jti": "846b9c6b-04a9-4685-912b-3d21d57bcefa",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773829444,
+            "csrf": "47567da1-de6d-41e6-a876-dbdbb548ddfc",
+            "exp": 1773830344,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: q",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:26:02",
+        "username": "admin4",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: UNITA Phase 2 (2023-2027) (ID: 1770982741928)",
+        "payload": {
+            "id": 1770982741928,
+            "id_proiect": "UNITA Phase 2 (2023-\n2027)",
+            "titlu": "UNITA Phase 2 (2023-2027)",
+            "program": "Erasmus+ European Universities",
+            "posturi": "1.Asistent proiect UNITA \u00een cadrul Universit\u0103\u021bii de Vest din Timi\u0219oara",
+            "perioada": "30.12.2024 \u2013 16.01.2025, la ora 12:00",
+            "link_pdf": "http://daip.uvt.ro/wp-content/uploads/2025/01/Anunt-completare-echipa-proiect-UNITA-EAC-dec-2024-asistent-de-proiect.pdf",
+            "anunt": "Anun\u021b selec\u021bie echip\u0103 proiect UNITA Phase 2 (2023-2027)"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:24:47",
+        "username": {
+            "fresh": false,
+            "iat": 1773829444,
+            "jti": "846b9c6b-04a9-4685-912b-3d21d57bcefa",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773829444,
+            "csrf": "47567da1-de6d-41e6-a876-dbdbb548ddfc",
+            "exp": 1773830344,
+            "role": "admin"
+        },
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul cu ID: 1773829245625",
+        "payload": {
+            "id_sters": 1773829245625
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:24:04",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:21:03",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829245625 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829245.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf",
+                "/static/uploads/Anexa_12_Anunt_rezultate_finale_Echipa_imp_-_cu_cod_PNRR_ID_18_20.11.2025_1773829263.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anexa_12_Anunt_rezultate_finale_Echipa_imp_-_cu_cod_PNRR_ID_18_20.11.2025_1773829263.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829245.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf",
+                "/static/uploads/Anexa_12_Anunt_rezultate_finale_Echipa_imp_-_cu_cod_PNRR_ID_18_20.11.2025_1773829263.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:20:54",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829245625 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829245.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829245.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:20:45",
+        "username": {
+            "fresh": false,
+            "iat": 1773829224,
+            "jti": "ab819b86-5aca-4421-9498-1fe966ecfed4",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773829224,
+            "csrf": "d44b5e7e-dde7-4cd8-975c-1990a5d1be28",
+            "exp": 1773830124,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: q",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:20:33",
+        "username": {
+            "fresh": false,
+            "iat": 1773829224,
+            "jti": "ab819b86-5aca-4421-9498-1fe966ecfed4",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773829224,
+            "csrf": "d44b5e7e-dde7-4cd8-975c-1990a5d1be28",
+            "exp": 1773830124,
+            "role": "admin"
+        },
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_sters": 1773827964723
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:20:24",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:18:04",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773828966.pdf",
+                "/static/uploads/Anunt_afisare_rezultate_selectie_echipa_de_proiect_-_coordonatori_locali_hub-uri_UNITA_martie_2026_1773828976.pdf",
+                "/static/uploads/Anexa_12_rezultate_intermediare_PRECISE-CARE_1773829021.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:17:01",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773828966.pdf",
+                "/static/uploads/Anunt_afisare_rezultate_selectie_echipa_de_proiect_-_coordonatori_locali_hub-uri_UNITA_martie_2026_1773828976.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:16:16",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773828966.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:16:06",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:15:55",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:09:24",
+        "username": {
+            "fresh": false,
+            "iat": 1773828557,
+            "jti": "44e704ee-c6f2-4c77-a31a-0fe268a00b8c",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773828557,
+            "csrf": "adf45625-c5ca-4bb6-b986-61c5d689a945",
+            "exp": 1773829457,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773827964.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:09:17",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:04:09",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773827964.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:59:38",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773827964.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:59:24",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: q",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:58:50",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_sters": 1772190894609
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:57:34",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:57:25",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:57:08",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq\r\n",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:56:54",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:53:15",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:51:59",
+        "username": {
+            "fresh": false,
+            "iat": 1773827295,
+            "jti": "a5e458df-1031-4cdb-ae55-27bdeb951361",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827295,
+            "csrf": "7aa005cc-ac51-4128-8260-4661c17eb41f",
+            "exp": 1773828195,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq\r\n",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:51:52",
+        "username": {
+            "fresh": false,
+            "iat": 1773827295,
+            "jti": "a5e458df-1031-4cdb-ae55-27bdeb951361",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827295,
+            "csrf": "7aa005cc-ac51-4128-8260-4661c17eb41f",
+            "exp": 1773828195,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq\r\n",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:48:15",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:27:10",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:26:05",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:22:32",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin4",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:14:46",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin4",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:13:17",
+        "username": "admin1",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: admin111",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:13:01",
+        "username": "admin1",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: admin111",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:12:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: a",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:12:27",
+        "username": "admin1",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: admin",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 08:45:06",
+        "username": "admin",
+        "action": "Login",
+        "details": "Autentificare reu\u0219it\u0103",
+        "ip": "10.66.7.1"
+    }
+]

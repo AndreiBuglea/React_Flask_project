@@ -1,0 +1,282 @@
+asa pornesc backend
+
+python main.py
+-----------------------
+asa pornesc frontendul
+npm run dev
+
+-------------------------
+asa pornesc mysql daca e blocat portul
+C:\Windows\System32>netstat -ano | findstr :3306
+  TCP    0.0.0.0:3306           0.0.0.0:0              LISTENING       6028
+  TCP    0.0.0.0:33060          0.0.0.0:0              LISTENING       6028
+  TCP    [::]:3306              [::]:0                 LISTENING       6028
+  TCP    [::]:33060             [::]:0                 LISTENING       6028
+
+C:\Windows\System32>tasklist | findstr 1234
+
+C:\Windows\System32>tasklist | findstr 6028
+mysqld.exe                    6028 Services                   0     63,388 K
+
+C:\Windows\System32>services.msc
+
+C:\Windows\System32>taskkill /PID 6028 /F
+SUCCESS: The process with PID 6028 has been terminated.
+
+
+-----------------------------------------------------------------------
+
+asa ma conectez la server:
+ssh -i C:/Users/A1/.ssh/id_ed25519_a1 ubuntu@10.66.7.1
+
+------------------------------------------------------------------------
+
+am instalat :
+
+Instalează MySQL dacă nu e deja
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl start mysql
+sudo systemctl enable mysql
+
+
+Intră în MySQL:
+
+sudo mysql
+
+----------------------------------------------------------------------
+5️⃣ Creează baza de date nouă
+
+În MySQL CLI:
+
+CREATE DATABASE my_app_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+EXIT;
+
+
+my_app_db → numele DB-ului tău
+
+utf8mb4 → ca să nu ai probleme cu diacritice sau emoji
+
+-------------------------------------------------------------------
+
+dau comanda asta sa import fisierul: mysql -u admin -p my_app_db < daip.azi.sql
+am pus parola
+
+verific daca e ok:mysql -u admin -p
+USE my_app_db;
+SHOW TABLES;
+SELECT * FROM wp_posts LIMIT 10;
+
+am dat:
+mysql> use my_app_db;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables
+    -> ;
+
+--------------------------------------------------------
+
+leg flask:
+În config.py sau unde ai SQLAlchemy:
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:PAROLA_TA@localhost/my_app_db'
+
+------------------------------------------------------------
+tabela care e buna:
+mysql> SELECT ID, post_title, post_name
+    -> FROM wp_testingposts
+    -> WHERE post_type = 'page';
+
+
+-----------------------------------------------
+
+asa vad postarile din tabela buna sa le aleg din backend:
+mysql> SELECT ID, post_title, post_name FROM wp_testingposts WHERE post_type = 'page';
+
+------------------------------------------------
+
+aici is cardurile din prezentare-proiecte:
+
+SELECT meta_value
+    -> FROM wp_testingpostmeta
+    -> WHERE post_id = 4077
+    -> AND meta_key = '_elementor_data';
+
+-------------------------------------------------
+
+asa modific linkul la ceva din db:
+
+dacă se schimbă linkul → modifici doar un UPDATE
+
+UPDATE proiecte_linkuri
+SET url = 'NOU_LINK.pdf'
+WHERE titlu = 'TITLUL EXACT';
+
+
+✔️ dacă mai adaugi proiect → un INSERT
+✔️ nu mai umbli în React
+✔️ nu mai umbli în Flask
+
+
+-----------------------------------------------
+
+asa gasesc tabele cu informatii multe care nu is in pagina princpala
+
+SELECT meta_key, meta_value
+FROM wp_testingpostmeta
+WHERE post_id = 5335;
+
+
+-------------------------------------------
+asa creez tabela noua:
+
+CREATE TABLE proiecte_linkuri (
+    titlu VARCHAR(255) NOT NULL,
+    url TEXT NOT NULL
+);
+ si asa inserez in ea:
+
+ INSERT INTO proiecte_linkuri (titlu, url) VALUES
+(
+  'Extindere spații de învățământ existente pentru facultatea de Arte si Design și Facultatea de Muzică și Teatru',
+  'https://daip.uvt.ro/wp-content/uploads/2024/04/1.Macheta-descriere-proiect_Arte.pdf'
+),
+(
+  'Reabilitarea acoperișului și fațadelor Facultății de Chimie, Biologie și Geografie',
+  'https://daip.uvt.ro/wp-content/uploads/2024/04/2.Macheta-descriere-proiect_CBG-1.pdf'
+),
+(
+  'Reabilitarea și Extinderea spațiilor de învățământ în vederea creșterii relevanței învățământului universitar socio-economic',
+  'https://daip.uvt.ro/wp-content/uploads/2024/04/3.Macheta-descriere-proiect_Paris.pdf'
+);
+
+------------------------------
+
+1) script.py in care am un fisier html cu tot continutul, si inca unul unul unde am toate fisierele.
+
+promt: Fa-mi un script prin care fac web scraping la o pagina html si imi salveaza intr-un sablon html tot continutul paginii fara meniu,
+o sa mi-l salveze 
+
+
+---------------------------------------------------
+1) 
+am adaugat in config.py:
+
+from flask_jwt_extended import (
+    JWTManager,
+    create_access_token,
+    jwt_required,
+    get_jwt
+)
+
+app.config["JWT_SECRET_KEY"] = "super-secret-key-123"
+jwt = JWTManager(app)
+
+
+2)
+am adaugat in main.py asta:
+
+@app.route("/api/admin/login", methods=["POST"])
+def admin_login():
+    data = request.json
+    username = data.get("username")
+    password = data.get("password")
+
+    if username == "admin" and password == "admin123":
+        token = create_access_token(
+            identity="admin",
+            additional_claims={"role": "admin"}
+        )
+        return jsonify(access_token=token)
+
+    return jsonify({"error": "Date incorecte"}), 401
+
+
+
+3)
+am adaugat:
+
+🛡 PAS 3 — Protejăm POST
+
+Modifică endpointul tău:
+
+@app.route("/api/anunturi", methods=["POST"])
+@jwt_required()
+def add_anunt():
+    claims = get_jwt()
+
+    if claims.get("role") != "admin":
+        return jsonify({"error": "Acces interzis"}), 403
+
+Restul codului tău rămâne EXACT la fel sub acest bloc.
+
+
+
+4)
+am adaugat:
+
+🛡 PAS 4 — Protejăm DELETE
+
+Modifică endpointul:
+
+@app.route("/api/anunturi/<int:anunt_id>", methods=["DELETE"])
+@jwt_required()
+def delete_anunt(anunt_id):
+
+    claims = get_jwt()
+    if claims.get("role") != "admin":
+        return jsonify({"error": "Acces interzis"}), 403
+
+Restul codului tău rămâne la fel.
+
+
+5)
+
+am creeat Admin.jsx
+
+am adaugat ruta in App.jsx
+
+
+6) 
+am adaugat asta in anunturiselectiescrape.jsx:
+
+🧠 PAS 6 — Modifică Home
+
+Sus în componentă adaugă:
+
+const token = localStorage.getItem("token");
+const isAdmin = !!token;
+
+tot in pagina aia am adaugat:
+
+🔐 Modifică handleSubmit
+
+Schimbă fetch-ul tău:
+
+const res = await fetch("/api/anunturi", {
+  method: "POST",
+  headers: {
+    Authorization: `Bearer ${token}`
+  },
+  body: formPayload,
+});
+🔐 Modifică handleDelete
+const res = await fetch(`/api/anunturi/${id}`, {
+  method: "DELETE",
+  headers: {
+    Authorization: `Bearer ${token}`
+  }
+});
+
+
+🧩 Ascunde formularul
+
+În JSX:
+
+{isAdmin && (
+  <div>
+    {/* TOT formularul tău exact cum e */}
+  </div>
+)}

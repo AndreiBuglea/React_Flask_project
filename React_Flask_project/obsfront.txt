@@ -1,0 +1,11 @@
+pentru routing:
+
+❌ NU folosi <a href="/home">
+✔️ Folosește Link sau NavLink
+
+-----------------------------------
+
+const [members, setMembers] = useState({ name: "", role: "", phone: "", email: "" });
+Inițial members nu este un array, ci un obiect.
+
+Apoi în JSX faci members.map(...), iar .map există doar pe array-uri, nu pe obiecte → de aici eroarea.

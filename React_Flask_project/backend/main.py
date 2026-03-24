@@ -1,5 +1,5 @@
 from sqlalchemy import text  # adaugă asta sus, lângă importuri
-from flask import request, jsonify
+from flask import request, jsonify, Response
 from bs4 import BeautifulSoup
 from config import app, db
 from models import Contact, WPPage, WPPost, WPTermRelationship, db, Anunt
@@ -23,6 +23,39 @@ from flask import request, jsonify
 from werkzeug.utils import secure_filename
 import time
 
+def force_https(content: str) -> str:
+    """
+    Transformă toate linkurile http://daip.uvt.ro în https://daip.uvt.ro
+    """
+    if not content:
+        return content
+    return content.replace("http://daip.uvt.ro", "https://daip.uvt.ro")
+
+def force_https_recursive(obj):
+    """
+    Aplică HTTPS pe orice string care conține linkuri http://daip.uvt.ro
+    Funcționează pe dict, list sau string
+    """
+    if isinstance(obj, str):
+        return force_https(obj)
+    elif isinstance(obj, list):
+        return [force_https_recursive(x) for x in obj]
+    elif isinstance(obj, dict):
+        return {k: force_https_recursive(v) for k, v in obj.items()}
+    return obj
+
+@app.after_request
+def apply_https_to_json(response: Response):
+    # Verificăm dacă răspunsul este JSON
+    if response.content_type == "application/json" and response.data:
+        try:
+            data = json.loads(response.data)
+            data = force_https_recursive(data)
+            response.data = json.dumps(data)
+        except Exception as e:
+            # Dacă ceva nu merge, lăsăm răspunsul original
+            pass
+    return response
 
 
 def remove_links_home(html):

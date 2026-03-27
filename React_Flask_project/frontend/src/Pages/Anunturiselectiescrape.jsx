@@ -203,13 +203,17 @@ export default function Home() {
 
   return (
     <Box
-      sx={{
-        background: "linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%)",
-        minHeight: "100vh",
-        py: 8,
-      }}
-    >
-      <Container maxWidth="lg">
+  sx={{
+    background: "linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%)",
+    minHeight: "100vh",
+    py: 8,
+    width: "100vw", // Forțează lățimea ecranului
+    overflowX: "hidden", // REZOLVARE: Nu lasă nimic să iasă din pagină în lateral
+    position: "relative"
+  }}
+>
+  <Container maxWidth="lg" sx={{ px: { xs: 1, sm: 2 } }}> 
+     {/* Restul codului tău (Titlu, Formular, Sortare) rămâne la fel */}
         <Box textAlign="center" mb={6}>
           <Typography
             variant="h3"
@@ -305,7 +309,7 @@ export default function Home() {
 
           {/* --- ZONA SELECT SORTARE --- */}
           <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 2 }}>
-            <FormControl size="small" sx={{ minWidth: 200 }}>
+            <FormControl size="medium" sx={{ minWidth: 200 }}>
               <InputLabel id="sort-select-label">Sortează după</InputLabel>
               <Select
                 labelId="sort-select-label"
@@ -323,150 +327,132 @@ export default function Home() {
           </Box>
 
           {loading ? (
-            <div>Se încarcă...</div>
+            <Box sx={{ textAlign: "center", py: 4 }}>Se încarcă...</Box>
           ) : error ? (
-            <div style={{ color: "red" }}>Eroare: {error}</div>
+            <Box sx={{ color: "red", textAlign: "center", py: 4 }}>Eroare: {error}</Box>
           ) : (
             <>
-              <table style={{ width: "110%", borderCollapse: "collapse", border: "1px solid #ccc", tableLayout: "fixed"  }}>
-                <thead style={{ background: "#eee" }}>
-                  <tr>
-                    <th style={thStyle}>Titlu</th>
-                    <th style={thStyle}>ID Proiect</th>
-                    <th style={thStyle}>Program</th>
-                    <th style={thStyle}>Posturi</th>
-                    <th style={thStyle}>Perioada</th>
-                    <th style={thStyle}>PDF</th>
-                    {isAdmin && <th style={thStyle}>Acțiuni</th>}
-                  </tr>
-                </thead>
-                <tbody>
-                  {currentItems.map((a, index) => {
-                    const allPdfs = getLinks(a);
-                    return (
-                      <tr key={a.id || index}>
-  {/* Titlu - 25% din tabel */}
-  <td style={{ ...tdStyle, width: "25%", wordWrap: "break-word", whiteSpace: "normal" }}>
-    {a.titlu}
-  </td>
+              {/* CARDUL CARE REZOLVĂ SCROLL-UL (Exact ca în Arhivă) */}
+              {/* CARDUL CARE REZOLVĂ SCROLL-UL */}
+<Card
+  sx={{
+    backgroundColor: "#ffffff",
+    borderRadius: 4,
+    boxShadow: "0px 10px 30px rgba(0,0,0,0.08)",
+    mx: { xs: -2, sm: 0 }, // Pe mobile trage cardul până în margini ca să câștigi spațiu
+    position: "relative",
+    overflow: "hidden", 
+  }}
+>
+  {/* Accent lateral */}
+  <Box
+    sx={{
+      position: "absolute",
+      left: 0,
+      top: 0,
+      bottom: 0,
+      width: "6px",
+      background: "linear-gradient(to bottom, #FFD700, #003366)",
+      zIndex: 2
+    }}
+  />
 
-  {/* ID Proiect - 10% */}
-  <td style={{ ...tdStyle, width: "10%" }}>
-    {a.id_proiect}
-  </td>
-
-  {/* Program - 15% */}
-  <td style={{ ...tdStyle, width: "15%", wordWrap: "break-word", whiteSpace: "normal" }}>
-    {a.program}
-  </td>
-
-  {/* Posturi - 20% */}
-  <td style={{ ...tdStyle, width: "20%", whiteSpace: "pre-line", wordWrap: "break-word" }}>
-    {a.posturi}
-  </td>
-
-  {/* Perioada - 15% */}
-  <td style={{ ...tdStyle, width: "15%" }}>
-    {a.perioada}
-  </td>
-
-  {/* PDF - 15% */}
-<td style={{ ...tdStyle, width: "15%", wordWrap: "break-word", whiteSpace: "normal", verticalAlign: "top" }}>
-  {allPdfs.length > 0 ? (
-    <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "5px 0" }}> 
-      {/* Folosim 'gap' pentru spațiu egal între elemente și padding pentru interior */}
-      {allPdfs.map((url, i) => (
-        <div key={i} style={{ 
-          borderBottom: i !== allPdfs.length - 1 ? "1px solid #eee" : "none", // Linie fină între link-uri, mai puțin sub ultimul
-          paddingBottom: i !== allPdfs.length - 1 ? "8px" : "0" 
-        }}>
-          <span style={{ 
-            color: "#cc3366", 
-            fontSize: "14.4px", 
-            fontWeight: "bold",
-            display: "block", // Forțează link-ul să stea pe rândul lui
-            lineHeight: "1.2" 
-          }}>
-            <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>
-              • {getFileName(url)} {/* Am adăugat un punct (bullet) pentru claritate */}
-            </a>
-          </span>
-        </div>
-      ))}
-    </div>
-  ) : (
-    "—"
-  )}
-</td>
-
-  {/* Acțiuni - Lățime fixă în pixeli dacă ești admin */}
-  {isAdmin && (
-    <td style={{ 
-    ...tdStyle, 
-    width: "190px", // Am mărit lățimea de la 120px la 190px
-    minWidth: "190px", // Previne browserul din a o comprima
-    verticalAlign: "middle" 
+  <CardContent sx={{ 
+    p: { xs: 1, md: 2 }, 
+    overflowX: "auto", // Scroll-ul rămâne DOAR aici
+    WebkitOverflowScrolling: "touch" 
   }}>
-    <div style={{ 
-      display: "flex", 
-      gap: "8px", // Spațiu puțin mai mare între butoane
-      justifyContent: "center", // Centrează butoanele în celulă
-      flexWrap: "nowrap" // Forțează butoanele să rămână pe același rând
-    }}>
-      <button onClick={() => startEdit(a)} style={{ ...editBtnStyle, whiteSpace: "nowrap" }}>
-        Editează
-      </button>
-      <button onClick={() => handleDelete(a.id)} style={{ ...deleteBtnStyle, whiteSpace: "nowrap" }}>
-        Șterge
-      </button>
-    </div>
-  </td>
-  )}
-</tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+    <Box sx={{ minWidth: { xs: "1100px", md: "100%" }, pr: 2 }}> {/* pr: 2 previne tăierea ultimei coloane la scroll maxim */}
+      <table style={{ 
+        width: "100%", 
+        borderCollapse: "collapse", 
+        fontFamily: "sans-serif",
+        tableLayout: "fixed" 
+      }}>
+        <thead>
+          <tr style={{ backgroundColor: "#f0f8ff" }}>
+            <th style={{ ...thStyle, border: "1px solid #003366", width: "25%" }}>Titlu</th>
+            <th style={{ ...thStyle, border: "1px solid #003366", width: "10%" }}>ID Proiect</th>
+            <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>Program</th>
+            <th style={{ ...thStyle, border: "1px solid #003366", width: "20%" }}>Posturi</th>
+            <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>Perioada</th>
+            <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>PDF</th>
+            {isAdmin && <th style={{ ...thStyle, border: "1px solid #003366", width: "180px" }}>Acțiuni</th>}
+          </tr>
+        </thead>
+        <tbody>
+          {currentItems.map((a, index) => {
+            const allPdfs = getLinks(a);
+            return (
+              <tr key={a.id || index}>
+                <td style={{ ...tdStyle, border: "1px solid #003366", wordWrap: "break-word", whiteSpace: "normal" }}>{a.titlu}</td>
+                <td style={{ ...tdStyle, border: "1px solid #003366" }}>{a.id_proiect}</td>
+                <td style={{ ...tdStyle, border: "1px solid #003366", wordWrap: "break-word", whiteSpace: "normal" }}>{a.program}</td>
+                <td style={{ ...tdStyle, border: "1px solid #003366", whiteSpace: "pre-line", wordWrap: "break-word" }}>{a.posturi}</td>
+                <td style={{ ...tdStyle, border: "1px solid #003366" }}>{a.perioada}</td>
+                
+                {/* CELULA PDF CORECTATĂ */}
+                <td style={{ 
+                  ...tdStyle, 
+                  border: "1px solid #003366", 
+                  verticalAlign: "top",
+                  wordBreak: "break-all", // FORȚEAZĂ textul să nu iasă din celulă
+                  overflowWrap: "anywhere" 
+                }}>
+                  {allPdfs.length > 0 ? (
+                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                      {allPdfs.map((url, i) => (
+                        <a key={i} href={url} target="_blank" rel="noopener noreferrer" 
+                           style={{ 
+                             color: "#FF0000", 
+                             textDecoration: "underline", 
+                             fontSize: "0.85rem", 
+                             fontWeight: 500,
+                             display: "block" 
+                           }}>
+                          • {getFileName(url)}
+                        </a>
+                      ))}
+                    </div>
+                  ) : "—"}
+                </td>
+
+                {isAdmin && (
+                  <td style={{ ...tdStyle, border: "1px solid #003366", textAlign: "center" }}>
+                    <div style={{ display: "flex", gap: "5px", justifyContent: "center" }}>
+                      <button onClick={() => startEdit(a)} style={editBtnStyle}>Editează</button>
+                      <button onClick={() => handleDelete(a.id)} style={deleteBtnStyle}>Șterge</button>
+                    </div>
+                  </td>
+                )}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </Box>
+  </CardContent>
+</Card>
 
               {/* BUTOANE PAGINARE */}
               {totalPages > 1 && (
                 <Box sx={{ display: "flex", justifyContent: "center", mt: 4, gap: 1 }}>
-                  <button 
-                    onClick={() => paginate(currentPage - 1)} 
-                    disabled={currentPage === 1}
-                    style={{ ...pageBtnStyle, opacity: currentPage === 1 ? 0.5 : 1 }}
-                  >
-                    Anterior
-                  </button>
+                  <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1} style={{ ...pageBtnStyle, opacity: currentPage === 1 ? 0.5 : 1 }}>Anterior</button>
                   {[...Array(totalPages)].map((_, i) => (
-                    <button
-                      key={i + 1}
-                      onClick={() => paginate(i + 1)}
-                      style={{
-                        ...pageBtnStyle,
-                        background: currentPage === i + 1 ? "#003366" : "#fff",
-                        color: currentPage === i + 1 ? "#fff" : "#003366",
-                      }}
-                    >
-                      {i + 1}
-                    </button>
+                    <button key={i + 1} onClick={() => paginate(i + 1)} style={{ ...pageBtnStyle, background: currentPage === i + 1 ? "#003366" : "#fff", color: currentPage === i + 1 ? "#fff" : "#003366" }}>{i + 1}</button>
                   ))}
-                  <button 
-                    onClick={() => paginate(currentPage + 1)} 
-                    disabled={currentPage === totalPages}
-                    style={{ ...pageBtnStyle, opacity: currentPage === totalPages ? 0.5 : 1 }}
-                  >
-                    Următor
-                  </button>
+                  <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === totalPages} style={{ ...pageBtnStyle, opacity: currentPage === totalPages ? 0.5 : 1 }}>Următor</button>
                 </Box>
               )}
             </>
           )}
+          
         </div>
       </Container>
     </Box>
   );
 }
+
 
 const inputStyle = { padding: "10px", border: "1px solid #ccc", borderRadius: "4px", width: "100%", boxSizing: "border-box" };
 const thStyle = { border: "1px solid #ccc", padding: "10px", textAlign: "left" };

@@ -85,53 +85,71 @@ export default function ProgrameComisiaEuropeana() {
             }}
           />
 
-          <CardContent sx={{ pl: { xs: 2, md: 4 } }}> {/* Am redus padding-ul stânga ca să fie simetric la centrare */}
-  <Box
-    sx={{
-      fontSize: "1.1rem",
-      lineHeight: 1.9,
-      color: "#003366",
-      "& p": { 
-        mb: 4, 
-        display: "flex", 
-        flexDirection: "column", 
-        alignItems: "center", // Centrare orizontală pentru elementele din coloană (link + poză)
-        textAlign: "center"   // Centrare text în interiorul paragrafului
-      },
-      "& img": {
-        maxWidth: "100%",
-        height: "auto",
-        borderRadius: "8px",
-        mb: 1.5, 
-        display: "block",
-        mx: "auto", // Asigură centrarea imaginii dacă are o lățime fixă mai mică decât containerul
-      },
-      "& h1, & h2, & h3": {
-        color: "#003366",
-        fontWeight: 600,
-        mt: 4,
-        mb: 2,
-        textAlign: "center", // Opțional: centrează și subtitlurile din conținut
-      },
-      "& ul": { 
-        display: "inline-block", // Face lista să se comporte ca un bloc centrat
-        textAlign: "left",       // Dar păstrează punctele aliniate la stânga în interiorul ei
-        pl: 3 
-      },
-      "& a": {
-        color: "#FF0000",
-        textDecoration: "underline",
-        fontWeight: 500,
-        display: "inline-block",
-        mt: 0.5,
-        "&:hover": {
-          color: "#cc0000",
-        }
-      },
-    }}
-    dangerouslySetInnerHTML={{ __html: page.content }}
-  />
-</CardContent>
+          <CardContent sx={{ pl: { xs: 2, md: 4 }, pr: { xs: 2, md: 4 } }}>
+            <Box
+              sx={{
+                fontSize: "1.1rem",
+                lineHeight: 1.7, // Ajustat pentru claritate
+                color: "#003366",
+                
+                // TEXTUL GENERAL (Paragrafele)
+                "& p": { 
+                  mb: 3,             // Spațiu decent între paragrafe
+                  display: "block",  // Resetăm flex-ul care cauza probleme de aliniere
+                  textAlign: "left", // Forțăm alinierea la stânga perfectă
+                  width: "100%",
+                },
+          
+                // IMAGINILE (Singurele care rămân pe mijloc)
+                "& img": {
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "12px",
+                  mt: 3, 
+                  mb: 2, 
+                  display: "block",
+                  mx: "auto", // Centrare orizontală imagine
+                },
+          
+                // LINK-URILE (Sub imagini, centrate)
+                "& a": {
+                  color: "#FF0000",
+                  textDecoration: "underline",
+                  fontWeight: 600,
+                  display: "block",    // Ocupă rândul lor
+                  textAlign: "center", // Textul link-ului pe mijloc
+                  width: "fit-content",
+                  mx: "auto",          // Centrare container link
+                  mt: 1,
+                  mb: 4,               // Spațiu mai mare după grup (imagine+link)
+                  "&:hover": {
+                    color: "#cc0000",
+                  }
+                },
+          
+                // TITLURILE
+                "& h1, & h2, & h3": {
+                  color: "#003366",
+                  fontWeight: 600,
+                  mt: 4,
+                  mb: 2,
+                  textAlign: "left", // Titlurile se aliniază cu textul la stânga
+                },
+          
+                // LISTELE
+                "& ul": { 
+                  display: "block",
+                  textAlign: "left",
+                  pl: 4,
+                  mb: 3
+                },
+                "& li": {
+                  mb: 1
+                }
+              }}
+              dangerouslySetInnerHTML={{ __html: page.content }}
+            />
+          </CardContent>
         </Card>
 
       </Container>

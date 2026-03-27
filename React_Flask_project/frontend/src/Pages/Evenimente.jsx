@@ -39,11 +39,10 @@ export default function Evenimente() {
       sx={{
         background: "linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%)",
         minHeight: "100vh",
-        py: 8,
+        py: { xs: 4, md: 8 }, // Padding redus pe mobil
       }}
     >
       <Container maxWidth="lg">
-
         {/* TITLU */}
         <Box textAlign="center" mb={6}>
           <Typography
@@ -53,6 +52,7 @@ export default function Evenimente() {
               color: "#003366",
               mb: 2,
               display: "inline-block",
+              fontSize: { xs: "2rem", md: "3rem" }, // Titlu scalabil
             }}
           >
             {page.title || "Evenimente"}
@@ -69,31 +69,35 @@ export default function Evenimente() {
           />
         </Box>
 
-        {/* Conținut pagina */}
+        {/* Conținut pagina (Editor HTML) */}
         {page.content && (
           <Card
             sx={{
               backgroundColor: "#ffffff",
               borderRadius: 4,
               boxShadow: "0px 10px 30px rgba(0,0,0,0.08)",
-              p: { xs: 2, md: 4 },
+              p: { xs: 1, md: 4 }, // Padding minim pe mobil pentru a nu irosi spațiu
               mb: 6,
+              overflow: "hidden", // Previne ieșirea conținutului din card
             }}
           >
             <CardContent>
               <Box
                 sx={{
-                  fontSize: "1.1rem",
-                  lineHeight: 1.9,
+                  fontSize: { xs: "0.95rem", md: "1.1rem" }, // Text ușor mai mic pe mobil
+                  lineHeight: 1.7,
                   color: "#003366",
                   "& p": { mb: 2 },
+                  "& img": { maxWidth: "100%", height: "auto" }, // Imagini din editor să nu depășească ecranul
+                  "& table": { display: "block", overflowX: "auto" }, // Tabelele devin scrollabile pe mobil
                   "& h1, & h2, & h3": {
                     color: "#003366",
                     fontWeight: 600,
                     mt: 3,
                     mb: 2,
+                    fontSize: { xs: "1.3rem", md: "1.8rem" },
                   },
-                  "& ul": { pl: 3 },
+                  "& ul": { pl: { xs: 2, md: 3 } },
                   "& a": {
                     color: "#FF0000",
                     textDecoration: "underline",
@@ -106,10 +110,9 @@ export default function Evenimente() {
           </Card>
         )}
 
-        {/* LISTA EVENIMENTE */}
+        {/* LISTA EVENIMENTE (Carduri de tip noutăți) */}
         <Box sx={{ maxWidth: "900px", mx: "auto" }}>
           <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
-
             {page.posts.length === 0 ? (
               <Typography variant="body1">Nu există evenimente.</Typography>
             ) : (
@@ -118,7 +121,7 @@ export default function Evenimente() {
                   key={post.link || index}
                   sx={{
                     display: "flex",
-                    flexDirection: "row",
+                    flexDirection: { xs: "column", sm: "row" }, // De la vertical la orizontal
                     background: "#fff",
                     border: "1px solid #ddd",
                     borderRadius: "8px",
@@ -132,8 +135,8 @@ export default function Evenimente() {
                       src={post.image}
                       alt={post.title}
                       sx={{
-                        width: 250,
-                        height: 180,
+                        width: { xs: "100%", sm: 250 },
+                        height: { xs: 200, sm: 180 },
                         objectFit: "cover",
                       }}
                     />
@@ -141,18 +144,19 @@ export default function Evenimente() {
 
                   <Box
                     sx={{
-                      p: 3,
+                      p: { xs: 2, md: 3 },
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "center",
+                      flex: 1,
                     }}
                   >
                     <Typography
                       sx={{
-                        fontSize: "18px",
+                        fontSize: { xs: "16px", md: "18px" },
                         fontWeight: 600,
                         color: "#333",
-                        mb: 2,
+                        mb: 1,
                       }}
                     >
                       {post.title || "Titlu nedefinit"}
@@ -172,7 +176,6 @@ export default function Evenimente() {
                       <Typography
                         component="a"
                         href={post.link}
-                        //target="_blank"
                         sx={{
                           alignSelf: "flex-start",
                           padding: "10px 15px",
@@ -181,6 +184,7 @@ export default function Evenimente() {
                           textDecoration: "none",
                           borderRadius: "5px",
                           fontSize: "14px",
+                          "&:hover": { background: "#002244" },
                         }}
                       >
                         Citește mai mult
@@ -190,10 +194,8 @@ export default function Evenimente() {
                 </Box>
               ))
             )}
-
           </Box>
         </Box>
-
       </Container>
     </Box>
   );

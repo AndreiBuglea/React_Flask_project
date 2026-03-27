@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* CTA BUTTON */}
       <div className="text-center mb-16">
-        <Link to="/contacts">
+        <Link to="/contact">
           <button className="bg-yellow-400 text-blue-900 font-semibold px-8 py-3 rounded-full shadow-md hover:bg-blue-900 hover:text-yellow-400 transition-all duration-300 hover:scale-105">
             Contact
           </button>

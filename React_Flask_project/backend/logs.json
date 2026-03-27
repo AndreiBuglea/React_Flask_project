@@ -1,5 +1,39 @@
 [
     {
+        "timestamp": "2026-03-26 10:28:02",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-26 10:27:46",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
         "timestamp": "2026-03-23 10:41:34",
         "username": "admin3",
         "action": "Login Success",

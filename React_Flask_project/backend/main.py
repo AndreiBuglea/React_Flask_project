@@ -1219,7 +1219,7 @@ def scraped_Anunturi_Selectie_Parteneri_Proiecte():
         "content": data.get("content_html", ""),
         "posts": [] # Îl lăsăm gol dacă tot conținutul e deja în content_html
     })
-
+###################
 if __name__=="__main__":
     with app.app_context():
         db.create_all()

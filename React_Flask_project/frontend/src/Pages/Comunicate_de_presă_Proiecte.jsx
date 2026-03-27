@@ -34,19 +34,31 @@ export default function Comunicate() {
       </Box>
     );
 
-  // Texte banner
   const banners = [
     "Proiecte finanțate prin POCU – Programul Operațional Capital Uman",
     "Proiecte finanțate prin POIM – Programul Operațional Infrastructură Mare",
     "Proiecte finanțate prin REGIO - Programul Operațional Regional 2014-2020",
   ];
 
+  // Stil comun pentru bannerele de separare, adaptat pt mobile
+  const bannerStyle = {
+    fontWeight: 700,
+    color: "#003366",
+    background: "#f0f4ff",
+    p: { xs: 1.5, md: 2 },
+    borderRadius: 2,
+    textAlign: "center",
+    fontSize: { xs: "0.9rem", md: "1rem" },
+    lineHeight: 1.4,
+    mt: 2
+  };
+
   return (
     <Box
       sx={{
         background: "linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%)",
         minHeight: "100vh",
-        py: 8,
+        py: { xs: 4, md: 8 },
       }}
     >
       <Container maxWidth="lg">
@@ -59,6 +71,7 @@ export default function Comunicate() {
               color: "#003366",
               mb: 2,
               display: "inline-block",
+              fontSize: { xs: "1.8rem", sm: "2.5rem", md: "3rem" },
             }}
           >
             {page.title || "Comunicate de presă"}
@@ -82,15 +95,15 @@ export default function Comunicate() {
               backgroundColor: "#ffffff",
               borderRadius: 4,
               boxShadow: "0px 10px 30px rgba(0,0,0,0.08)",
-              p: { xs: 2, md: 4 },
+              p: { xs: 1, md: 4 },
               mb: 6,
             }}
           >
             <CardContent>
               <Box
                 sx={{
-                  fontSize: "1.1rem",
-                  lineHeight: 1.9,
+                  fontSize: { xs: "0.95rem", md: "1.1rem" },
+                  lineHeight: 1.8,
                   color: "#003366",
                   "& p": { mb: 2 },
                   "& h1, & h2, & h3": {
@@ -98,13 +111,10 @@ export default function Comunicate() {
                     fontWeight: 600,
                     mt: 3,
                     mb: 2,
+                    fontSize: { xs: "1.2rem", md: "1.5rem" }
                   },
-                  "& ul": { pl: 3 },
-                  "& a": {
-                    color: "#FF0000",
-                    textDecoration: "underline",
-                    fontWeight: 500,
-                  },
+                  "& img": { maxWidth: "100%", height: "auto" },
+                  "& ul": { pl: 2 },
                 }}
                 dangerouslySetInnerHTML={{ __html: page.content }}
               />
@@ -120,55 +130,16 @@ export default function Comunicate() {
             ) : (
               page.posts.map((post, index) => (
                 <React.Fragment key={post.link || index}>
-                  {/* Injectare banneruri */}
-                  {index === 0 && (
-                    <Typography
-                      sx={{
-                        fontWeight: 700,
-                        color: "#003366",
-                        background: "#f0f4ff",
-                        p: 2,
-                        borderRadius: 2,
-                        textAlign: "center",
-                      }}
-                    >
-                      {banners[0]}
-                    </Typography>
-                  )}
-                  {index === 2 && (
-                    <Typography
-                      sx={{
-                        fontWeight: 700,
-                        color: "#003366",
-                        background: "#f0f4ff",
-                        p: 2,
-                        borderRadius: 2,
-                        textAlign: "center",
-                      }}
-                    >
-                      {banners[1]}
-                    </Typography>
-                  )}
-                  {index === 4 && (
-                    <Typography
-                      sx={{
-                        fontWeight: 700,
-                        color: "#003366",
-                        background: "#f0f4ff",
-                        p: 2,
-                        borderRadius: 2,
-                        textAlign: "center",
-                      }}
-                    >
-                      {banners[2]}
-                    </Typography>
-                  )}
+                  {/* Injectare banneruri cu stil adaptiv */}
+                  {index === 0 && <Typography sx={bannerStyle}>{banners[0]}</Typography>}
+                  {index === 2 && <Typography sx={bannerStyle}>{banners[1]}</Typography>}
+                  {index === 4 && <Typography sx={bannerStyle}>{banners[2]}</Typography>}
 
-                  {/* CARD */}
+                  {/* CARD RESPONSIVE */}
                   <Box
                     sx={{
                       display: "flex",
-                      flexDirection: "row",
+                      flexDirection: { xs: "column", sm: "row" },
                       background: "#fff",
                       border: "1px solid #ddd",
                       borderRadius: "8px",
@@ -182,8 +153,8 @@ export default function Comunicate() {
                         src={post.image}
                         alt={post.title}
                         sx={{
-                          width: 250,
-                          height: 180,
+                          width: { xs: "100%", sm: 250 },
+                          height: { xs: 200, sm: 180 },
                           objectFit: "cover",
                         }}
                       />
@@ -191,18 +162,19 @@ export default function Comunicate() {
 
                     <Box
                       sx={{
-                        p: 3,
+                        p: { xs: 2.5, md: 3 },
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
+                        flex: 1
                       }}
                     >
                       <Typography
                         sx={{
-                          fontSize: "18px",
+                          fontSize: { xs: "16px", md: "18px" },
                           fontWeight: 600,
                           color: "#333",
-                          mb: 2,
+                          mb: 1.5,
                         }}
                       >
                         {post.title || "Titlu nedefinit"}
@@ -222,15 +194,16 @@ export default function Comunicate() {
                         <Typography
                           component="a"
                           href={post.link}
-                          //target="_blank"
                           sx={{
                             alignSelf: "flex-start",
-                            padding: "10px 15px",
+                            padding: "10px 18px",
                             background: "#003366",
                             color: "#fff",
                             textDecoration: "none",
                             borderRadius: "5px",
-                            fontSize: "14px",
+                            fontSize: "13px",
+                            fontWeight: 500,
+                            "&:hover": { background: "#002244" }
                           }}
                         >
                           Citește mai mult

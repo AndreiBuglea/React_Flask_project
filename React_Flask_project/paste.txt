@@ -207,6 +207,7 @@ export default function Home() {
         background: "linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%)",
         minHeight: "100vh",
         py: 8,
+        
       }}
     >
       <Container maxWidth="lg">
@@ -328,48 +329,101 @@ export default function Home() {
             <div style={{ color: "red" }}>Eroare: {error}</div>
           ) : (
             <>
-              <table style={{ width: "100%", borderCollapse: "collapse", border: "1px solid #ccc" }}>
-                <thead style={{ background: "#eee" }}>
-                  <tr>
-                    <th style={thStyle}>Titlu</th>
-                    <th style={thStyle}>ID Proiect</th>
-                    <th style={thStyle}>Program</th>
-                    <th style={thStyle}>Posturi</th>
-                    <th style={thStyle}>Perioada</th>
-                    <th style={thStyle}>PDF</th>
-                    {isAdmin && <th style={thStyle}>Acțiuni</th>}
-                  </tr>
-                </thead>
-                <tbody>
-                  {currentItems.map((a, index) => {
-                    const allPdfs = getLinks(a);
-                    return (
-                      <tr key={a.id || index}>
-                        <td style={tdStyle}>{a.titlu}</td>
-                        <td style={tdStyle}>{a.id_proiect}</td>
-                        <td style={tdStyle}>{a.program}</td>
-                        <td style={{ ...tdStyle, whiteSpace: "pre-line" }}>{a.posturi}</td>
-                        <td style={tdStyle}>{a.perioada}</td>
-                        <td style={tdStyle}>
-                          {allPdfs.length > 0 ? allPdfs.map((url, i) => (
-                            <div key={i} style={{ marginBottom: "5px" }}>
-                              <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: "#003366", textDecoration: "underline", fontSize: "0.85rem" }}>
-                                {getFileName(url)}
-                              </a>
-                            </div>
-                          )) : "—"}
-                        </td>
-                        {isAdmin && <td style={tdStyle}>
-                          <div style={{ display: "flex", gap: "5px" }}>
-                            <button onClick={() => startEdit(a)} style={editBtnStyle}>Editează</button>
-                            <button onClick={() => handleDelete(a.id)} style={deleteBtnStyle}>Șterge</button>
-                          </div>
-                        </td>}
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+            
+              {/* Început zonă scroll - am adăugat acest Box care învelește tabelul */}
+<Box sx={{ width: "100%", overflowX: "auto", display: "block" }}>
+  <table style={{ 
+    width: "100%", 
+    minWidth: "1000px", // Aceasta linie forțează tabelul să NU se mai îngusteze pe mobil
+    borderCollapse: "collapse", 
+    border: "1px solid #ccc", 
+    tableLayout: "fixed" 
+  }}>
+    <thead style={{ background: "#eee" }}>
+      <tr>
+        <th style={thStyle}>Titlu</th>
+        <th style={thStyle}>ID Proiect</th>
+        <th style={thStyle}>Program</th>
+        <th style={thStyle}>Posturi</th>
+        <th style={thStyle}>Perioada</th>
+        <th style={thStyle}>PDF</th>
+        {isAdmin && <th style={thStyle}>Acțiuni</th>}
+      </tr>
+    </thead>
+    <tbody>
+      {currentItems.map((a, index) => {
+        const allPdfs = getLinks(a);
+        return (
+          <tr key={a.id || index}>
+            <td style={{ ...tdStyle, width: "25%", wordWrap: "break-word", whiteSpace: "normal" }}>
+              {a.titlu}
+            </td>
+            <td style={{ ...tdStyle, width: "10%" }}>
+              {a.id_proiect}
+            </td>
+            <td style={{ ...tdStyle, width: "15%", wordWrap: "break-word", whiteSpace: "normal" }}>
+              {a.program}
+            </td>
+            <td style={{ ...tdStyle, width: "20%", whiteSpace: "pre-line", wordWrap: "break-word" }}>
+              {a.posturi}
+            </td>
+            <td style={{ ...tdStyle, width: "15%" }}>
+              {a.perioada}
+            </td>
+            <td style={{ ...tdStyle, width: "15%", wordWrap: "break-word", whiteSpace: "normal", verticalAlign: "top" }}>
+              {allPdfs.length > 0 ? (
+                <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "5px 0" }}> 
+                  {allPdfs.map((url, i) => (
+                    <div key={i} style={{ 
+                      borderBottom: i !== allPdfs.length - 1 ? "1px solid #eee" : "none", 
+                      paddingBottom: i !== allPdfs.length - 1 ? "8px" : "0" 
+                    }}>
+                      <span style={{ 
+                        color: "#cc3366", 
+                        fontSize: "14.4px", 
+                        fontWeight: "bold",
+                        display: "block", 
+                        lineHeight: "1.2" 
+                      }}>
+                        <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>
+                          • {getFileName(url)}
+                        </a>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ) : "—"}
+            </td>
+            {isAdmin && (
+              <td style={{ 
+                ...tdStyle, 
+                width: "190px", 
+                minWidth: "190px", 
+                verticalAlign: "middle" 
+              }}>
+                <div style={{ 
+                  display: "flex", 
+                  gap: "8px", 
+                  justifyContent: "center", 
+                  flexWrap: "nowrap" 
+                }}>
+                  <button onClick={() => startEdit(a)} style={{ ...editBtnStyle, whiteSpace: "nowrap" }}>
+                    Editează
+                  </button>
+                  <button onClick={() => handleDelete(a.id)} style={{ ...deleteBtnStyle, whiteSpace: "nowrap" }}>
+                    Șterge
+                  </button>
+                </div>
+              </td>
+            )}
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</Box>
+{/* Sfârșit zonă scroll */}
+              
 
               {/* BUTOANE PAGINARE */}
               {totalPages > 1 && (
@@ -405,11 +459,13 @@ export default function Home() {
               )}
             </>
           )}
+          
         </div>
       </Container>
     </Box>
   );
 }
+
 
 const inputStyle = { padding: "10px", border: "1px solid #ccc", borderRadius: "4px", width: "100%", boxSizing: "border-box" };
 const thStyle = { border: "1px solid #ccc", padding: "10px", textAlign: "left" };

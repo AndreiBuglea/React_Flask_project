@@ -85,49 +85,68 @@ export default function AlteFinantari() {
             }}
           />
 
-          <CardContent sx={{ pl: { xs: 2, md: 4 } }}>
+          
+<CardContent sx={{ pl: { xs: 2, md: 4 }, pr: { xs: 2, md: 4 } }}>
   <Box
     sx={{
       fontSize: "1.1rem",
-      lineHeight: 1.9,
+      lineHeight: 1.7, // Ajustat pentru claritate
       color: "#003366",
+      
+      // TEXTUL GENERAL (Paragrafele)
       "& p": { 
-        mb: 6, // Am mărit spațiul dintre grupuri (paragrafe) de la 4 la 6
-        display: "flex", 
-        flexDirection: "column", 
-        alignItems: "center",
-        textAlign: "center"
+        mb: 3,             // Spațiu decent între paragrafe
+        display: "block",  // Resetăm flex-ul care cauza probleme de aliniere
+        textAlign: "left", // Forțăm alinierea la stânga perfectă
+        width: "100%",
       },
+
+      // IMAGINILE (Singurele care rămân pe mijloc)
       "& img": {
         maxWidth: "100%",
         height: "auto",
-        borderRadius: "12px", // Colțuri puțin mai rotunjite pentru un look modern
-        mb: 3,                // SPAȚIERE MAI MARE sub imagine (de la 1.5 la 3)
+        borderRadius: "12px",
+        mt: 3, 
+        mb: 2, 
         display: "block",
-        mx: "auto",
-        //boxShadow: "0px 4px 15px rgba(0,0,0,0.05)", // Opțional: o umbră fină pentru imagini
+        mx: "auto", // Centrare orizontală imagine
       },
-      "& h1, & h2, & h3": {
-        color: "#003366",
-        fontWeight: 600,
-        mt: 5,
-        mb: 3,
-        textAlign: "center",
-      },
-      "& ul": { 
-        display: "inline-block",
-        textAlign: "left",
-        pl: 3 
-      },
+
+      // LINK-URILE (Sub imagini, centrate)
       "& a": {
         color: "#FF0000",
         textDecoration: "underline",
-        fontWeight: 600,      // Am făcut link-ul puțin mai "bold" pentru vizibilitate
-        display: "inline-block",
-        mt: 1.5,              // SPAȚIERE MAI MARE deasupra link-ului (de la 0.5 la 1.5)
-        px: 2,                // Puțin padding lateral pentru link
-        
+        fontWeight: 600,
+        display: "block",    // Ocupă rândul lor
+        textAlign: "center", // Textul link-ului pe mijloc
+        width: "fit-content",
+        mx: "auto",          // Centrare container link
+        mt: 1,
+        mb: 4,               // Spațiu mai mare după grup (imagine+link)
+        "&:hover": {
+          color: "#cc0000",
+        }
       },
+
+      // TITLURILE
+      "& h1, & h2, & h3": {
+        color: "#003366",
+        fontWeight: 600,
+        mt: 4,
+        mb: 2,
+        textAlign: "left", // Titlurile se aliniază cu textul la stânga
+      },
+
+      // LISTELE
+      "& ul": { 
+        display: "block",
+        textAlign: "left",
+        pl: 4,
+        mb: 3
+      },
+      "& li": {
+        mb: 1
+      }
     }}
     dangerouslySetInnerHTML={{ __html: page.content }}
   />

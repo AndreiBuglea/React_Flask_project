@@ -12,7 +12,7 @@ export default function Home() {
   const links = [
     {
       text: "Rezultate_selectie-formatori_ProgramA_cu punctaje_Anonimizat",
-      url: "http://daip.uvt.ro/wp-content/uploads/2025/08/Rezultate_selectie-formatori_ProgramA_cu-punctaje_Anonimizat-1.pdf"
+      url: "uploads/2025/08/Rezultate_selectie-formatori_ProgramA_cu-punctaje_Anonimizat-1.pdf"
     }
   ];
 

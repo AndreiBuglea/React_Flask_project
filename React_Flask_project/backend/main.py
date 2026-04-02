@@ -22,6 +22,17 @@ import os
 from flask import request, jsonify
 from werkzeug.utils import secure_filename
 import time
+import re
+
+
+def fix_links(text):
+    if not text or not isinstance(text, str):
+        return text
+    
+    # Acum link-ul va fi pur și simplu /uploads/...
+    # Browserul îl va căuta pe același domeniu unde e site-ul
+    pattern = r"https?://daip\.uvt\.ro/wp-content/uploads"
+    return re.sub(pattern, "/uploads", text)
 
 def force_https(content: str) -> str:
     """
@@ -91,7 +102,7 @@ def get_home():
         clean_content = remove_links_home(page.post_content)
         return jsonify({
             "title": page.post_title,
-            "content": clean_content
+            "content": fix_links(clean_content)
         })
     else:
         return jsonify({"error": "Home page not found"}), 404
@@ -108,7 +119,7 @@ def get_contacts():
         
         return jsonify({
             "title": page.post_title,
-            "content": page.post_content
+            "content": fix_links(page.post_content)
         })
     else:
         return jsonify({"error": "Home page not found"}), 404
@@ -125,7 +136,7 @@ def get_misiunea():
         
         return jsonify({
             "title": page.post_title,
-            "content": page.post_content
+            "content": fix_links(page.post_content)
         })
     else:
         return jsonify({"error": "Home page not found"}), 404
@@ -162,9 +173,16 @@ def get_rapoarte():
     for h3 in soup.find_all("h3"):
         a = h3.find("a")
         if a and a.get("href"):
+            # REZOLVARE: Aplicăm fix_links direct pe URL-ul extras (care e string)
+            raw_url = a["href"]
+            clean_url = fix_links(raw_url) 
+
+            print(f"DEBUG: Original: {raw_url}") # Vezi aici dacă e http sau https
+            print(f"DEBUG: Curățat: {clean_url}")
+            
             rapoarte.append({
                 "title": a.get_text(strip=True),
-                "url": a["href"]
+                "url": clean_url
             })
 
     return jsonify({
@@ -1220,6 +1238,24 @@ def scraped_Anunturi_Selectie_Parteneri_Proiecte():
         "posts": [] # Îl lăsăm gol dacă tot conținutul e deja în content_html
     })
 ###################
+
+@app.route("/api/page/Arhiva-selectie-echipe-proiecte")
+def scraped_Arhiva_selectie_echipe_proiecte():
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(BASE_DIR, "JSON", "arhiva-selectie-echipe-proiecte.json")
+
+    if not os.path.exists(json_path):
+        return jsonify({"error": "Fisierul nu exista"}), 500
+
+    with open(json_path, encoding="utf-8") as f:
+        data = json.load(f)
+
+    return jsonify({
+        # Titlul paginii ar trebui să fie "ARHIVĂ - Anunțuri...", nu doar "2024"
+        "title": "ARHIVĂ - Anunțuri selecție echipe proiecte", 
+        "tabel": data.get("content_html", "") # Trimitem HTML-ul către cheia 'tabel'
+    })
+
 if __name__=="__main__":
     with app.app_context():
         db.create_all()

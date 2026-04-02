@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
+// frontend/src/ProgrameNationale.jsx
+import React from "react";
 import { Container, Typography, Card, CardContent, Box } from "@mui/material";
 
 export default function ProgrameNationale() {
-  const [page, setPage] = useState({ title: "", content: "" });
+  const staticTitle = "Programe Naționale";
 
-  useEffect(() => {
-    fetch("/api/page/programe-nationale")
-      .then((res) => res.json())
-      .then((data) => {
-              // Eliminăm doar cuvântul "Contact" din titlu dacă apare în content
-              const cleanedContent = data.content.replace(/<h[1-3]>.*?Programe Naționale.*?<\/h[1-3]>/gi, "");
-              setPage({ ...data, content: cleanedContent });
-            })
-      .catch((err) => console.error(err));
-  }, []);
+  const staticContent = `
+    <img width="332" height="369" src="/uploads/2021/12/Prog_Nat.png" alt="Programe Naționale" loading="lazy" style="display: block; margin: 0 auto 20px auto; max-width: 100%; height: auto;" />
+    
+    <p>Schemele naționale de finanțare sunt proiectate și aprobate la nivel național în strânsă corelare cu strategiile naționale și sunt finanțate exclusiv din fonduri naționale.</p>
+    
+    <p>Scopul acestor programe este implementarea diverselor politici și priorități naționale.</p>
+    
+    <p>Implementarea și gestionarea proiectelor are loc exclusiv în România, sub responsabilitatea ministerelor/agențiilor desemnate în acest scop.</p>
+  `;
 
   return (
     <Box
@@ -24,7 +24,6 @@ export default function ProgrameNationale() {
       }}
     >
       <Container maxWidth="lg">
-
         {/* TITLU PRINCIPAL */}
         <Box textAlign="center" mb={6}>
           <Typography
@@ -37,7 +36,7 @@ export default function ProgrameNationale() {
               display: "inline-block",
             }}
           >
-            {page.title}
+            {staticTitle}
           </Typography>
 
           <Box
@@ -74,41 +73,36 @@ export default function ProgrameNationale() {
 
           <CardContent sx={{ pl: 4 }}>
             <Box
-  sx={{
-    /* Setăm baza pentru tot containerul */
-    fontSize: "0.85rem", 
-    lineHeight: 1.5,
-    color: "#003366",
+              sx={{
+                fontSize: "1.1rem",
+                lineHeight: 1.8,
+                color: "#003366",
+                textAlign: "center", // Am păstrat alinierea centrată pentru a se potrivi cu restul paginilor de acest tip
 
-    /* Forțăm toate elementele de text să moștenească dimensiunea mică */
-    "& p, & span, & li, & div": { 
-      fontSize: "1.1rem !important", 
-      mb: 1,
-      lineHeight: 1.5 
-    },
+                /* Forțăm toate elementele de text să moștenească dimensiunea dorită, ignorând inline styles vechi */
+                "& p, & span, & li, & div": {
+                  fontSize: "1.1rem !important",
+                  mb: 3,
+                  lineHeight: 1.8,
+                },
 
-    /* Ascundem titlul duplicat */
-    "& h1": { display: "none" }, 
+                "& h2, & h3": {
+                  color: "#003366",
+                  fontWeight: 700,
+                  mt: 2,
+                  mb: 2,
+                  fontSize: "1.5rem",
+                },
 
-    /* Ajustăm subtitlurile să fie proporționale cu noul font mic */
-    "& h2, & h3": {
-      color: "#003366",
-      fontWeight: 700,
-      mt: 2,
-      mb: 1,
-      fontSize: "1.1rem !important", // Un pic mai mare decât restul textului
-    },
-
-    "& ul": { pl: 2, mb: 1.5 },
-    "& a": {
-      fontSize: "inherit", // Se asigură că link-urile nu rămân mari
-    }
-  }}
-  dangerouslySetInnerHTML={{ __html: page.content }}
-/>
+                "& img": {
+                    borderRadius: "8px",
+                    boxShadow: "0px 4px 15px rgba(0,0,0,0.05)"
+                }
+              }}
+              dangerouslySetInnerHTML={{ __html: staticContent }}
+            />
           </CardContent>
         </Card>
-
       </Container>
     </Box>
   );

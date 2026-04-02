@@ -1,29 +1,35 @@
-import React, { useEffect, useState } from "react";
+// frontend/src/ProgrameComisiaEuropeana.jsx
+import React from "react";
 import { Container, Typography, Card, CardContent, Box } from "@mui/material";
 
 export default function ProgrameComisiaEuropeana() {
-  const [page, setPage] = useState({ title: "", content: "" });
+  const staticTitle = "Programe gestionate de Comisia Europeană";
 
-  useEffect(() => {
-    fetch("/api/page/programe-gestionate-de-comisia-europeana")
-      .then((res) => res.json())
-      .then((data) => {
-              // Eliminăm doar cuvântul "Contact" din titlu dacă apare în content
-              const cleanedContent = data.content.replace(/<h[1-3]>.*?Programe gestionate de Comisia Europeană.*?<\/h[1-3]>/gi, "");
-              const parser = new DOMParser();
-        const doc = parser.parseFromString(cleanedContent, 'text/html');
-        const links = doc.querySelectorAll('a');
-        
-        links.forEach(link => {
-          link.setAttribute('target', '_blank');
-          link.setAttribute('rel', 'noopener noreferrer'); // Important pentru securitate
-        });
-
-        // 3. Salvăm conținutul modificat înapoi ca string
-        setPage({ ...data, content: doc.body.innerHTML });
-            })
-      .catch((err) => console.error(err));
-  }, []);
+  const staticContent = `
+    <img width="332" height="369" src="/uploads/2021/12/Com_Europeana.png" alt="Comisia Europeana" loading="lazy" />
+    
+    <p>Programele comunitare sunt programe finanțate și gestionate direct de către Comisia Europeană și au ca scop punerea în aplicare a politicilor UE.</p>
+    
+    <ul>
+      <li>Programele sunt transnaționale, ceea ce înseamnă că este necesară participarea partenerilor din mai multe state membre pentru depunerea și implementarea unui proiect.</li>
+      <li>Propunerile de proiecte sunt supuse spre aprobare direct Comisiei Europene, fără intervenția instituțiilor statului membru.</li>
+      <li>Propunerile de proiecte depuse concurează cu cele din toate statele membre, iar proiectele ce vor fi finanțate sunt selectate după o evaluare comparativă.</li>
+    </ul>
+    
+    <h5 style="color: #003366; margin-top: 30px; margin-bottom: 20px;">
+        <strong>La nivelul UVT sunt accesate proiecte finanțate prin intermediul următoarelor programe gestionate de Comisia Europeană:</strong>
+    </h5>
+    
+    <img width="649" height="232" src="/uploads/2021/12/Horizon_Europe.png" alt="Horizon Europe" loading="lazy" />
+    
+    <p style="text-align: center;">
+        <strong>
+            <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" target="_blank" rel="noopener noreferrer">
+                Horizon Europe
+            </a>
+        </strong>
+    </p>
+  `;
 
   return (
     <Box
@@ -34,7 +40,6 @@ export default function ProgrameComisiaEuropeana() {
       }}
     >
       <Container maxWidth="lg">
-
         {/* TITLU */}
         <Box textAlign="center" mb={6}>
           <Typography
@@ -47,10 +52,8 @@ export default function ProgrameComisiaEuropeana() {
               display: "inline-block",
             }}
           >
-            {page.title}
+            {staticTitle}
           </Typography>
-
-          {/* Linie decorativă */}
           <Box
             sx={{
               width: 80,
@@ -73,7 +76,6 @@ export default function ProgrameComisiaEuropeana() {
             overflow: "hidden",
           }}
         >
-          {/* Accent lateral */}
           <Box
             sx={{
               position: "absolute",
@@ -89,18 +91,15 @@ export default function ProgrameComisiaEuropeana() {
             <Box
               sx={{
                 fontSize: "1.1rem",
-                lineHeight: 1.7, // Ajustat pentru claritate
+                lineHeight: 1.7,
                 color: "#003366",
                 
-                // TEXTUL GENERAL (Paragrafele)
                 "& p": { 
-                  mb: 3,             // Spațiu decent între paragrafe
-                  display: "block",  // Resetăm flex-ul care cauza probleme de aliniere
-                  textAlign: "left", // Forțăm alinierea la stânga perfectă
+                  mb: 3, 
+                  textAlign: "left", 
                   width: "100%",
                 },
           
-                // IMAGINILE (Singurele care rămân pe mijloc)
                 "& img": {
                   maxWidth: "100%",
                   height: "auto",
@@ -108,35 +107,32 @@ export default function ProgrameComisiaEuropeana() {
                   mt: 3, 
                   mb: 2, 
                   display: "block",
-                  mx: "auto", // Centrare orizontală imagine
+                  mx: "auto",
                 },
           
-                // LINK-URILE (Sub imagini, centrate)
                 "& a": {
                   color: "#FF0000",
                   textDecoration: "underline",
                   fontWeight: 600,
-                  display: "block",    // Ocupă rândul lor
-                  textAlign: "center", // Textul link-ului pe mijloc
+                  display: "block",
+                  textAlign: "center",
                   width: "fit-content",
-                  mx: "auto",          // Centrare container link
+                  mx: "auto",
                   mt: 1,
-                  mb: 4,               // Spațiu mai mare după grup (imagine+link)
+                  mb: 4,
                   "&:hover": {
                     color: "#cc0000",
                   }
                 },
           
-                // TITLURILE
-                "& h1, & h2, & h3": {
+                "& h1, & h2, & h3, & h5": {
                   color: "#003366",
                   fontWeight: 600,
                   mt: 4,
                   mb: 2,
-                  textAlign: "left", // Titlurile se aliniază cu textul la stânga
+                  textAlign: "left",
                 },
           
-                // LISTELE
                 "& ul": { 
                   display: "block",
                   textAlign: "left",
@@ -147,11 +143,10 @@ export default function ProgrameComisiaEuropeana() {
                   mb: 1
                 }
               }}
-              dangerouslySetInnerHTML={{ __html: page.content }}
+              dangerouslySetInnerHTML={{ __html: staticContent }}
             />
           </CardContent>
         </Card>
-
       </Container>
     </Box>
   );

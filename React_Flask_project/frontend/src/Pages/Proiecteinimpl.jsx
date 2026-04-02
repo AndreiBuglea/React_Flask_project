@@ -45,17 +45,26 @@ export default function ProiecteImplementare() {
             }
 
             items.forEach((item) => {
-              // Luăm HTML-ul brut
-  let rawContent = item.querySelector(".elementor-tab-content")?.innerHTML || "";
+  // 1. Luăm HTML-ul brut
+  let content = item.querySelector(".elementor-tab-content")?.innerHTML || "";
 
-  // ELIMINĂM target="_blank" din toate link-urile
-  const cleanedContent = rawContent.replace(/target\s*=\s*["']_blank["']/gi, 'target="_self"');
+  // 2. REPARARE LINK-URI: Înlocuim domeniul vechi cu calea relativă locală
+  // Această linie caută "https://daip.uvt.ro/wp-content/uploads/" sau "https://daip.uvt.ro/uploads/"
+  // și le transformă în "/uploads/"
+  content = content.replace(/https:\/\/daip\.uvt\.ro\/(wp-content\/)?uploads\//gi, '/uploads/');
+
+  // 3. ELIMINĂM target="_blank" (pentru a rămâne pe site-ul actual)
+  content = content.replace(/target\s*=\s*["']_blank["']/gi, 'target="_self"');
+
+  // 4. OPȚIONAL: Dacă există link-uri care duc la pagini interne de tip "https://daip.uvt.ro/pagina-x"
+  // și vrei să le cureți și pe acelea să devină relative:
+  // content = content.replace(/https:\/\/daip\.uvt\.ro\//gi, '/');
 
   currentSection.accordions.push({
     title: item.querySelector(".elementor-accordion-title")?.textContent.trim() || "Detalii",
-    content: cleanedContent // Salvăm conținutul curățat
+    content: content 
   });
-            });
+});
           }
         });
 

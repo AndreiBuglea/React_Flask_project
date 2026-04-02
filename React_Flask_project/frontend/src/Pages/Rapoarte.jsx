@@ -1,49 +1,75 @@
-import React, { useEffect, useState } from "react";
+// frontend/src/Rapoarte.jsx
+import React from "react";
 import { Container, Typography, Card, CardContent, Grid, Button, Box } from "@mui/material";
 
 export default function Rapoarte() {
-  const [page, setPage] = useState({ title: "", rapoarte: [] });
-
-  useEffect(() => {
-    fetch("/api/page/rapoarte-daip")
-      .then(res => res.json())
-      .then(data => setPage(data))
-      .catch(err => console.error(err));
-  }, []);
+  // Datele hardcodate direct din JSON-ul tău
+  const pageData = {
+    "title": "Rapoarte DAIP",
+    "rapoarte": [
+      {
+        "title": "Raport DAIP 2020",
+        "url": "/uploads/2021/11/Raport-DAIP_2020.pdf"
+      },
+      {
+        "title": "Raport DAIP 2019",
+        "url": "/uploads/2021/11/Raport-DAIP_2019.pdf"
+      },
+      {
+        "title": "Raport DAIP 2018",
+        "url": "/uploads/2021/11/Raport-DAIP_2018-ok.doc.pdf"
+      },
+      {
+        "title": "Raport DAIP 2017",
+        "url": "/uploads/2021/11/Raport-DAIP-activitate-2017.docx.pdf"
+      },
+      {
+        "title": "Raport DAIP 2016",
+        "url": "/uploads/2021/11/Raport-DAIP-activitate-2016.doc.pdf"
+      },
+      {
+        "title": "Raport DAIP 2015",
+        "url": "/uploads/2021/11/Raport-DAIP-activitate-2015.pdf"
+      },
+      {
+        "title": "Raport DAIP 2014",
+        "url": "/uploads/2021/11/Raport-DAIP-activitate-2014.doc.pdf"
+      }
+    ]
+  };
 
   return (
     <Box sx={{ backgroundColor: "#e6f2ff", minHeight: "100vh", py: 8 }}>
       <Container maxWidth="lg">
         <Box textAlign="center" mb={6}>
-        
-              <Typography
-                  variant="h3"
-                  sx={{
-                    fontWeight: 700,
-                    color: "#003366",
-                    mb: 2,
-                    position: "relative",
-                    display: "inline-block",
-                  }}
-                >
-                  Rapoarte DAIP
-                </Typography>
-        
-                {/* Linie decorativă */}
-                        <Box
-                          sx={{
-                            width: 80,
-                            height: 4,
-                            backgroundColor: "#FFD700",
-                            mx: "auto",
-                            borderRadius: 2,
-                          }}
-                        />
-                        </Box>
+          <Typography
+            variant="h3"
+            sx={{
+              fontWeight: 700,
+              color: "#003366",
+              mb: 2,
+              position: "relative",
+              display: "inline-block",
+            }}
+          >
+            {pageData.title}
+          </Typography>
+
+          {/* Linie decorativă */}
+          <Box
+            sx={{
+              width: 80,
+              height: 4,
+              backgroundColor: "#FFD700",
+              mx: "auto",
+              borderRadius: 2,
+            }}
+          />
+        </Box>
 
         {/* Grid Carduri */}
         <Grid container spacing={4}>
-          {page.rapoarte.map((r, idx) => (
+          {pageData.rapoarte.map((r, idx) => (
             <Grid item xs={12} sm={6} md={4} key={idx}>
               <Card
                 sx={{
@@ -93,7 +119,8 @@ export default function Rapoarte() {
                       transition: "all 0.3s",
                     }}
                     href={r.url}
-                    //target="_blank"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Vezi raport
                   </Button>

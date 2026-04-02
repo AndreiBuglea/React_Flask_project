@@ -1,21 +1,35 @@
-import React, { useEffect, useState } from "react";
+// frontend/src/ProiecteFinalizate.jsx
+import React from "react";
 import { Container, Typography, Card, CardContent, Box } from "@mui/material";
 
 export default function ProiecteFinalizate() {
-  const [page, setPage] = useState({ title: "", content: "" });
+  const staticTitle = "Proiecte finalizate";
 
-  useEffect(() => {
-    fetch("/api/page/proiecte-finalizate")
-      .then((res) => res.json())
-      .then((data) => {
-              // Eliminăm doar cuvântul "Contact" din titlu dacă apare în content
-              const cleanedContent = data.content.replace(/<h[1-3]>.*?Proiecte finalizate.*?<\/h[1-3]>/gi, "");
-              const CleanedContent = cleanedContent.replace(/target\s*=\s*["']_blank["']/gi, "");
-
-      setPage({ ...data, content: CleanedContent });
-            })
-      .catch((err) => console.error(err));
-  }, []);
+  const staticContent = `
+    <p style="text-align: left;">
+      <a href="/uploads/2023/08/Portofoliu-proiecte-UVT-finalizate-2021-2022.pdf" target="_blank" rel="noopener noreferrer">
+        Portofoliu proiecte UVT finalizate 2021-2022
+      </a>
+    </p>
+    
+    <p style="text-align: left;">
+      <a href="/uploads/2023/08/Portofoliu-proiecte-UVT-finalizate-Exercitiu-financiar-2014-2020.pdf" target="_blank" rel="noopener noreferrer">
+        Portofoliu proiecte UVT, finalizate. Exercițiu financiar 2014-2020
+      </a>
+    </p>
+    
+    <p style="text-align: left;">
+      <a href="/uploads/2023/08/Portofoliu-proiecte-UVT-finalizate-Exercitiu-financiar-2007-2013.pdf" target="_blank" rel="noopener noreferrer">
+        Portofoliu proiecte UVT, finalizate. Exercițiu financiar 2007-2013
+      </a>
+    </p>
+    
+    <p style="text-align: left;">
+      <a href="/uploads/2023/08/Portofoliu-proiecte-nationale-finalizate-pana-in-2016.pdf" target="_blank" rel="noopener noreferrer">
+        Portofoliu proiecte naționale finalizate până în 2016
+      </a>
+    </p>
+  `;
 
   return (
     <Box
@@ -26,7 +40,6 @@ export default function ProiecteFinalizate() {
       }}
     >
       <Container maxWidth="lg">
-
         {/* TITLU */}
         <Box textAlign="center" mb={6}>
           <Typography
@@ -39,10 +52,9 @@ export default function ProiecteFinalizate() {
               display: "inline-block",
             }}
           >
-            {page.title}
+            {staticTitle}
           </Typography>
 
-          {/* Linie decorativă */}
           <Box
             sx={{
               width: 80,
@@ -65,7 +77,6 @@ export default function ProiecteFinalizate() {
             overflow: "hidden",
           }}
         >
-          {/* Accent lateral */}
           <Box
             sx={{
               position: "absolute",
@@ -83,25 +94,33 @@ export default function ProiecteFinalizate() {
                 fontSize: "1.1rem",
                 lineHeight: 1.9,
                 color: "#003366",
-                "& p": { mb: 2 },
-                "& h1, & h2, & h3": {
-                  color: "#003366",
-                  fontWeight: 600,
-                  mt: 3,
-                  mb: 2,
+                "& p": { 
+                  mb: 3,
+                  display: "flex",
+                  alignItems: "center",
+                  "&::before": {
+                    content: '"•"',
+                    color: "#FFD700",
+                    fontWeight: "bold",
+                    fontSize: "1.5rem",
+                    marginRight: "15px"
+                  }
                 },
-                "& ul": { pl: 3 },
                 "& a": {
-                  color: "#FF0000",       // link-uri roșii
+                  color: "#FF0000",
                   textDecoration: "underline",
                   fontWeight: 500,
+                  transition: "0.2s",
+                  "&:hover": {
+                    color: "#cc0000",
+                    textDecoration: "none"
+                  },
                 },
               }}
-              dangerouslySetInnerHTML={{ __html: page.content }}
+              dangerouslySetInnerHTML={{ __html: staticContent }}
             />
           </CardContent>
         </Card>
-
       </Container>
     </Box>
   );

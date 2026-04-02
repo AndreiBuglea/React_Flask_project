@@ -1,5 +1,3125 @@
 [
     {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: julian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: metallica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: welcome",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sergio",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mybaby",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: aaaaaa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hiphop",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 333333",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brooke",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: gangsta",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 131313",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: benjamin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: abcdef",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: fucker",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lovelove",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: johncena",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pookie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: aaliyah",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: nirvana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brianna",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mexico",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: icecream",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rafael",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: abigail",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: charmed",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: katherine",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mercedes",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: andreea",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lorena",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jordan23",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: scorpio",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: apples",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: christine",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: vincent",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: midnight",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: monique",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: charles",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ihateyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: harrypotter",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: superstar",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: qwertyuiop",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: camila",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cancer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: olivia",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lollipop",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: asdfgh",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 696969",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: love123",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: benfica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cassie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: francis",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: panget",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: dennis",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: garfield",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: strawberry",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sweet",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: internet",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: silver",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: smokey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 101010",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chester",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chrisbrown",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bianca",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tintin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cristian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: flowers",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: nicholas",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alicia",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: fuckoff",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: january",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rockstar",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jasper",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: volleyball",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tigers",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: denise",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: marvin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 777777",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: laura",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: portugal",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bowwow",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sarah",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123654",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 789456123",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: javier",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cuteako",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: natalie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: isabel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mustang",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: karen",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kitten",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: adidas",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brenda",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: casper",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: babyboy",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: maganda",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bitch",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kevin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bonita",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 50cent",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: monkey1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cutiepie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: slipknot",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cameron",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: samuel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: orlando",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: august",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: barcelona",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: school",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 0123456789",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hotmail",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: johnny",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: karina",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: christopher",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: spiderman",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jackie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rebecca",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sebastian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 456789",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: carmen",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: scooby",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: master",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kenneth",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angelo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: freedom",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: samsung",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: diana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: oliver",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: edward",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: zxcvbnm",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: celtic",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: crystal",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jesus1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: friend",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: prince",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: banana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: james",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cutie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: adriana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 888888",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chris",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: veronica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: peaches",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: inuyasha",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: october",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: precious",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveyou1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ronaldo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: harley",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kissme",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: booboo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: courtney",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: andres",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: eduardo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mariana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tiffany",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: horses",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: victor",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mahalko",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: austin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angelica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: babygirl1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: claudia",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hellokitty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jessie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sophie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: asshole",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pictures",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: shannon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: gemini",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kimberly",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pamela",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jeremy",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bailey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveyou2",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: gabriela",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: maria",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mariposa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: morgan",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: december",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: september",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: batman",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mahalkita",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123abc",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123321",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mother",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: madison",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alyssa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: november",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: greenday",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: martin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: baseball",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 55555",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: heaven",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: babygurl",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ricardo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angel1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rebelde",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: myspace",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: manuel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kisses",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rainbow",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cristina",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pepper",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chicken",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: corazon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: maggie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pokemon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: fernando",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 00000",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: honey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: victoria",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 987654",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: beauty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 222222",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sweetie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: blink182",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: peanut",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: stephanie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ginger",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: david",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: heather",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: antonio",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: dolphin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: arsenal",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 159753",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cheese",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 7777777",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tequiero",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rachel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: patricia",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alejandra",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brittany",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: george",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: buster",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alejandro",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sandra",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: killer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cherry",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hunter",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: gabriel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: snoopy",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: nathan",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 11111",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: shorty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 999999",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 789456",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: orange",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: louise",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rangers",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: steven",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: carolina",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: diamond",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 555555",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: princess1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 112233",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: richard",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: monica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: dancer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: america",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sayang",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 121212",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: christian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: destiny",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alexander",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: adrian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sakura",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveme",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: patrick",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: poohbear",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angela",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mylove",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: beautiful",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: thomas",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: william",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: miguel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: estrella",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jesus",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alexis",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alexandra",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: princesa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mickey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lauren",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: daniela",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: yellow",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: taylor",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: softball",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: junior",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: joseph",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: spongebob",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sweety",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: summer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: naruto",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cookie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: vanessa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: dragon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: whatever",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: computer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 987654321",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jonathan",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: family",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: forever",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: danielle",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: robert",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: matthew",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: eminem",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: melissa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: shadow",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 666666",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brandon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jasmine",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: teamo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lovers",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chelsea",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: barbie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: samantha",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: charlie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tinkerbell",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hottie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: elizabeth",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hello",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: playboy",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: flower",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tweety",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angels",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: andrew",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: basketball",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pretty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: loveyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: amanda",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hannah",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: superman",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 1234567890",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bubbles",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: joshua",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jennifer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: carlos",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: andrea",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: secret",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: football",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123123",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: fuckyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: loveme",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: justin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: liverpool",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jordan",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: purple",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: butterfly",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: friends",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: anthony",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: soccer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: password1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chocolate",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sunshine",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tigger",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: michelle",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 000000",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveu",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 111111",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: qwerty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ashley",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: michael",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 654321",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jessica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lovely",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: monkey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: babygirl",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: daniel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: nicole",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: abc123",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 12345678",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rockyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 1234567",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: princess",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: password",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456789",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 12345",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:12:30",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: testpassword",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:09:16",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:07:21",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:06:59",
+        "username": "\" or \"\"=\"",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:06:25",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:06:21",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456789",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:06:16",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:05:49",
+        "username": "\" or \"\"=\"",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:05:46",
+        "username": "\" or \"\"=\"",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:04:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:04:48",
+        "username": "adwadwa",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: awdawdad",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
         "timestamp": "2026-03-26 10:28:02",
         "username": "admin4",
         "action": "Editare Anun\u021b",

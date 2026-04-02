@@ -1,19 +1,64 @@
-import React, { useEffect, useState } from "react";
+// frontend/src/MonitorizareSiRecuperare.jsx
+import React from "react";
 import { Container, Typography, Card, CardContent, Box } from "@mui/material";
 
 export default function MonitorizareSiRecuperare() {
-  const [page, setPage] = useState({ title: "", content: "" });
+  const staticTitle = "Monitorizare și recuperare cheltuieli neeligibile";
 
-  useEffect(() => {
-    fetch("/api/page/monitorizare-si-recuperare-cheltuieli-neeligibile")
-      .then((res) => res.json())
-      .then((data) => {
-              // Eliminăm doar cuvântul "Contact" din titlu dacă apare în content
-              const cleanedContent = data.content.replace(/<h[1-3]>.*?Monitorizare și recuperare cheltuieli neeligibile.*?<\/h[1-3]>/gi, "");
-              setPage({ ...data, content: cleanedContent });
-            })
-      .catch((err) => console.error(err));
-  }, []);
+  const staticContent = `
+    <div style="margin-top: 20px;">
+      <h5 style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <span style="margin-right: 15px; font-size: 1.5rem;">📄</span>
+        <a href="/uploads/2021/11/PO-06-Procedura-de-cheltuieli-neeligibile.pdf" target="_blank" rel="noopener noreferrer">
+          Procedura operațională privind activitatea de monitorizare și recuperare a cheltuielilor neeligibile în cadrul proiectelor cu finanțare nerambursabilă declarate ca fiind neeligibile de către autoritatea finanțatoare
+        </a>
+      </h5>
+      
+      <div style="padding-left: 40px;">
+        <h5 style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+          <span style="margin-right: 15px; font-size: 1.1rem;">📁</span>
+          <a href="/uploads/2021/11/Anexa-1_Fisa-cheltuielilor-neeligibile-aferente-proiectului.doc" target="_blank" rel="noopener noreferrer">
+            Anexa 1 - Fișa cheltuielilor neeligibile aferente proiectului
+          </a>
+        </h5>
+        
+        <h5 style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+          <span style="margin-right: 15px; font-size: 1.1rem;">📁</span>
+          <a href="/uploads/2021/11/Anexa-2_Fisa-executie-buget-aferenta-proiectului.doc" target="_blank" rel="noopener noreferrer">
+            Anexa 2 - Fișă execuție buget aferentă proiectului
+          </a>
+        </h5>
+        
+        <h5 style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+          <span style="margin-right: 15px; font-size: 1.1rem;">📁</span>
+          <a href="/uploads/2021/11/Anexa-3_Decizie-privind-numirea-comisiei-de-analiza-a-cheltuielilor-neeligibile.doc" target="_blank" rel="noopener noreferrer">
+            Anexa 3 - Decizie privind numirea comisiei de analiză a cheltuielilor neeligibile
+          </a>
+        </h5>
+
+        <h5 style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+          <span style="margin-right: 15px; font-size: 1.1rem;">📁</span>
+          <a href="/uploads/2021/11/Anexa-4_Fisa-analiza-cheltuieli-neeligibile-aferente-proiectului.doc" target="_blank" rel="noopener noreferrer">
+            Anexa 4 - Fișă analiză cheltuieli neeligibile aferente proiectului
+          </a>
+        </h5>
+
+        <h5 style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+          <span style="margin-right: 15px; font-size: 1.1rem;">📁</span>
+          <a href="/uploads/2021/11/Anexa-5_Raport-analiza-a-cheltuielilor-neeligibile-pentru-proiect.doc" target="_blank" rel="noopener noreferrer">
+            Anexa 5 - Raport analiză a cheltuielilor neeligibile pentru proiect
+          </a>
+        </h5>
+
+        <h5 style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+          <span style="margin-right: 15px; font-size: 1.1rem;">📁</span>
+          <a href="/uploads/2021/11/Anexa-6_Adresa-de-recuperare-a-cheltuielilor-neeligibile.doc" target="_blank" rel="noopener noreferrer">
+            Anexa 6 - Adresa de recuperare a cheltuielilor neeligibile
+          </a>
+        </h5>
+      </div>
+    </div>
+  `;
 
   return (
     <Box
@@ -24,7 +69,6 @@ export default function MonitorizareSiRecuperare() {
       }}
     >
       <Container maxWidth="lg">
-
         {/* TITLU */}
         <Box textAlign="center" mb={6}>
           <Typography
@@ -37,10 +81,9 @@ export default function MonitorizareSiRecuperare() {
               display: "inline-block",
             }}
           >
-            {page.title}
+            {staticTitle}
           </Typography>
 
-          {/* Linie decorativă */}
           <Box
             sx={{
               width: 80,
@@ -63,7 +106,6 @@ export default function MonitorizareSiRecuperare() {
             overflow: "hidden",
           }}
         >
-          {/* Accent lateral */}
           <Box
             sx={{
               position: "absolute",
@@ -75,31 +117,32 @@ export default function MonitorizareSiRecuperare() {
             }}
           />
 
-          <CardContent sx={{ pl: 4 }}>
+          <CardContent sx={{ pl: { xs: 2, md: 4 } }}>
             <Box
               sx={{
                 fontSize: "1.1rem",
                 lineHeight: 1.9,
                 color: "#003366",
-                "& p": { mb: 2 },
-                "& h1, & h2, & h3": {
-                  color: "#003366",
+                "& h5": {
+                  fontSize: "1.1rem",
                   fontWeight: 600,
-                  mt: 3,
-                  mb: 2,
+                  mb: 1.5,
                 },
-                "& ul": { pl: 3 },
                 "& a": {
-                  color: "#FF0000",       // link-uri roșii
+                  color: "#FF0000",
                   textDecoration: "underline",
                   fontWeight: 500,
+                  transition: "color 0.2s",
+                  "&:hover": {
+                    color: "#cc0000",
+                    textDecoration: "none",
+                  },
                 },
               }}
-              dangerouslySetInnerHTML={{ __html: page.content }}
+              dangerouslySetInnerHTML={{ __html: staticContent }}
             />
           </CardContent>
         </Card>
-
       </Container>
     </Box>
   );

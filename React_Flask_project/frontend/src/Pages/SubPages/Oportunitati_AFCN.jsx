@@ -19,7 +19,7 @@ export default function Home() {
     },
     {
       text: "Fisa tehnica AFCN II 2022_editoriale.",
-      url: "http://daip.uvt.ro/wp-content/uploads/2022/05/Fisa-tehnica-AFCN-II-2022_editoriale.pdf"
+      url: "uploads/2022/05/Fisa-tehnica-AFCN-II-2022_editoriale.pdf"
     },
     
     // Dacă ai un URL direct pentru fișa tehnică internă UVT sau alt document, poți adăuga aici

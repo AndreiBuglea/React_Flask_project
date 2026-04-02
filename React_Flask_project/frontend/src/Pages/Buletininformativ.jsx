@@ -1,19 +1,48 @@
-import React, { useEffect, useState } from "react";
+// frontend/src/BuletinInformativ.jsx
+import React from "react";
 import { Container, Typography, Card, CardContent, Box } from "@mui/material";
 
-export default function Home() {
-  const [page, setPage] = useState({ title: "", content: "" });
+export default function BuletinInformativ() {
+  const staticTitle = "Buletin informativ";
 
-  useEffect(() => {
-    fetch("/api/page/buletin-informativ")
-      .then((res) => res.json())
-      .then((data) => {
-              // Eliminăm doar cuvântul "Contact" din titlu dacă apare în content
-              const cleanedContent = data.content.replace(/<h[1-3]>.*?Buletin informativ.*?<\/h[1-3]>/gi, "");
-              setPage({ ...data, content: cleanedContent });
-            })
-      .catch((err) => console.error(err));
-  }, []);
+  const staticContent = `
+    <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: center;">
+      <Box style="
+        background-color: #f8faff; 
+        border: 1px dashed #003366; 
+        border-radius: 12px; 
+        padding: 30px; 
+        width: 100%; 
+        max-width: 600px; 
+        text-align: center;
+      ">
+        <span style="font-size: 3rem; display: block; margin-bottom: 15px;">📰</span>
+        <h5 style="margin-bottom: 20px; font-weight: 600;">Ediția Curentă - DAIP</h5>
+        <a 
+          href="/uploads/2024/04/Buletin-informativ_DAIP_aprilie-2024-1.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style="
+            display: inline-block;
+            background-color: #FF0000;
+            color: #ffffff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            transition: transform 0.2s, background-color 0.2s;
+          "
+          onMouseOver="this.style.backgroundColor='#cc0000'; this.style.transform='scale(1.05)';"
+          onMouseOut="this.style.backgroundColor='#FF0000'; this.style.transform='scale(1)';"
+        >
+          DESCHIDE BULETINUL INFORMATIV (PDF)
+        </a>
+        <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">
+          Publicat în: Aprilie 2024
+        </p>
+      </Box>
+    </div>
+  `;
 
   return (
     <Box
@@ -24,7 +53,6 @@ export default function Home() {
       }}
     >
       <Container maxWidth="lg">
-
         {/* TITLU */}
         <Box textAlign="center" mb={6}>
           <Typography
@@ -37,10 +65,9 @@ export default function Home() {
               display: "inline-block",
             }}
           >
-            {page.title}
+            {staticTitle}
           </Typography>
 
-          {/* Linie decorativă */}
           <Box
             sx={{
               width: 80,
@@ -63,7 +90,6 @@ export default function Home() {
             overflow: "hidden",
           }}
         >
-          {/* Accent lateral */}
           <Box
             sx={{
               position: "absolute",
@@ -75,31 +101,18 @@ export default function Home() {
             }}
           />
 
-          <CardContent sx={{ pl: 4 }}>
+          <CardContent sx={{ pl: { xs: 2, md: 4 } }}>
             <Box
               sx={{
                 fontSize: "1.1rem",
                 lineHeight: 1.9,
                 color: "#003366",
                 "& p": { mb: 2 },
-                "& h1, & h2, & h3": {
-                  color: "#003366",
-                  fontWeight: 600,
-                  mt: 3,
-                  mb: 2,
-                },
-                "& ul": { pl: 3 },
-                "& a": {
-                  color: "#FF0000", // link-uri roșii
-                  textDecoration: "underline",
-                  fontWeight: 500,
-                },
               }}
-              dangerouslySetInnerHTML={{ __html: page.content }}
+              dangerouslySetInnerHTML={{ __html: staticContent }}
             />
           </CardContent>
         </Card>
-
       </Container>
     </Box>
   );

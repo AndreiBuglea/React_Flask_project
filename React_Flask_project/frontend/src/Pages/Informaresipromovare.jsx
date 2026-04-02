@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from "react";
+// frontend/src/InformareSiPromovare.jsx
+import React from "react";
 import { Container, Typography, Card, CardContent, Box } from "@mui/material";
 
 export default function InformareSiPromovare() {
-  const [page, setPage] = useState({ title: "", content: "" });
+  const staticTitle = "Informare și promovare";
 
-  useEffect(() => {
-    fetch("/api/page/informare-si-promovare")
-      .then((res) => res.json())
-      .then((data) => {
-              // Eliminăm doar cuvântul "Contact" din titlu dacă apare în content
-              const cleanedContent = data.content.replace(/<h[1-3]>.*?Informare și promovare.*?<\/h[1-3]>/gi, "");
-              setPage({ ...data, content: cleanedContent });
-            })
-      .catch((err) => console.error(err));
-  }, []);
+  const staticContent = `
+    <div style="margin-top: 20px;">
+      <h5 style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+        <span style="margin-right: 15px; font-size: 1.5rem;">📄</span>
+        <a href="/uploads/2021/11/PO-04-Procedura-operationala-informare-si-promovare.pdf" target="_blank" rel="noopener noreferrer">
+          Procedura operațională privind activitatea de informare și promovare a apelurilor de proiecte cu finanțare nerambursabilă de dezvoltare instituțională
+        </a>
+      </h5>
+    </div>
+  `;
 
   return (
     <Box
@@ -24,7 +25,6 @@ export default function InformareSiPromovare() {
       }}
     >
       <Container maxWidth="lg">
-
         {/* TITLU */}
         <Box textAlign="center" mb={6}>
           <Typography
@@ -37,10 +37,9 @@ export default function InformareSiPromovare() {
               display: "inline-block",
             }}
           >
-            {page.title}
+            {staticTitle}
           </Typography>
 
-          {/* Linie decorativă */}
           <Box
             sx={{
               width: 80,
@@ -63,7 +62,6 @@ export default function InformareSiPromovare() {
             overflow: "hidden",
           }}
         >
-          {/* Accent lateral */}
           <Box
             sx={{
               position: "absolute",
@@ -75,31 +73,32 @@ export default function InformareSiPromovare() {
             }}
           />
 
-          <CardContent sx={{ pl: 4 }}>
+          <CardContent sx={{ pl: { xs: 2, md: 4 } }}>
             <Box
               sx={{
                 fontSize: "1.1rem",
                 lineHeight: 1.9,
                 color: "#003366",
-                "& p": { mb: 2 },
-                "& h1, & h2, & h3": {
-                  color: "#003366",
+                "& h5": {
+                  fontSize: "1.2rem",
                   fontWeight: 600,
-                  mt: 3,
-                  mb: 2,
+                  mb: 3,
                 },
-                "& ul": { pl: 3 },
                 "& a": {
-                  color: "#FF0000",       // link-uri roșii
+                  color: "#FF0000",
                   textDecoration: "underline",
                   fontWeight: 500,
+                  transition: "color 0.2s",
+                  "&:hover": {
+                    color: "#cc0000",
+                    textDecoration: "none",
+                  },
                 },
               }}
-              dangerouslySetInnerHTML={{ __html: page.content }}
+              dangerouslySetInnerHTML={{ __html: staticContent }}
             />
           </CardContent>
         </Card>
-
       </Container>
     </Box>
   );

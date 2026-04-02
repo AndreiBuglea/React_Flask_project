@@ -12,10 +12,10 @@ export default function Home() {
   ];
 
   const annexes = [
-    { text: "Anexa 1. Cerere înscriere în grupul țintă", url: "http://daip.uvt.ro/wp-content/uploads/2024/11/Anexa-1_A-Cerere-inscriere-in-grupul-tinta.docx" }, // înlocuiește cu URL real, ex: https://daip.uvt.ro/wp-content/uploads/2024/11/Anexa-1_A-Cerere-inscriere-in-grupul-tinta.docx
-    { text: "Anexa 2. Declarație de consimțământ", url: "http://daip.uvt.ro/wp-content/uploads/2024/11/Anexa-2-Declaratie-de-consimtamant.docx" },
-    { text: "Anexa 3. Declarație angajament", url: "http://daip.uvt.ro/wp-content/uploads/2024/11/Anexa-3-Declaratie-angajament.docx" },
-    { text: "Anexa 8. Formular de înregistrare individuală a participanților", url: "http://daip.uvt.ro/wp-content/uploads/2024/11/Anexa-8-Formular-de-inregistrare-individuala-a-participantilor.xlsx" }
+    { text: "Anexa 1. Cerere înscriere în grupul țintă", url: "uploads/2024/11/Anexa-1_A-Cerere-inscriere-in-grupul-tinta.docx" }, // înlocuiește cu URL real, ex: https://daip.uvt.ro/wp-content/uploads/2024/11/Anexa-1_A-Cerere-inscriere-in-grupul-tinta.docx
+    { text: "Anexa 2. Declarație de consimțământ", url: "uploads/2024/11/Anexa-2-Declaratie-de-consimtamant.docx" },
+    { text: "Anexa 3. Declarație angajament", url: "uploads/2024/11/Anexa-3-Declaratie-angajament.docx" },
+    { text: "Anexa 8. Formular de înregistrare individuală a participanților", url: "uploads/2024/11/Anexa-8-Formular-de-inregistrare-individuala-a-participantilor.xlsx" }
   ];
 
   const countiesData = [

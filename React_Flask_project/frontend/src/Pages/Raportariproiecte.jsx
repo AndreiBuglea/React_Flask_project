@@ -9,24 +9,21 @@ export default function RaportariProiecte() {
   const [sections, setSections] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+useEffect(() => {
     fetch("/api/page/Raportari-proiecte")
       .then((res) => res.json())
       .then((json) => {
         const htmlContent = json.posts?.content_html || "";
         const cleanedHtml = htmlContent.replace(/(<p>&nbsp;<\/p>|<p><\/p>|<br\s*\/?>)+$/gi, "");
         const parser = new DOMParser();
-        const doc = parser.parseFromString(cleanedHtml, "text/html"); // Folosim conținutul curățat
+        const doc = parser.parseFromString(cleanedHtml, "text/html");
 
-        // Identificăm toate secțiunile Elementor care conțin date
-        const container = doc.querySelector('.elementor-widget-wrap');
         const elements = Array.from(doc.querySelectorAll('.elementor-widget-heading, .elementor-widget-accordion'));
 
         let structuredData = [];
         let currentSection = null;
 
         elements.forEach((el) => {
-          // Dacă găsim un titlu (H2) - acesta este numele Fondului (FDI sau FSS)
           if (el.classList.contains('elementor-widget-heading')) {
             const titleText = el.innerText.trim();
             if (titleText && titleText !== "Raportări proiecte") {
@@ -37,13 +34,29 @@ export default function RaportariProiecte() {
               structuredData.push(currentSection);
             }
           } 
-          // Dacă găsim un acordeon, îl adăugăm la secțiunea curentă (fondul curent)
           else if (el.classList.contains('elementor-widget-accordion') && currentSection) {
             const items = el.querySelectorAll(".elementor-accordion-item");
+            
             items.forEach((item) => {
+              // 1. Extragem HTML-ul brut al conținutului
+              let rawContent = item.querySelector(".elementor-tab-content")?.innerHTML || "";
+
+              // 2. REPARARE LINK-URI: Înlocuim domeniul vechi cu calea locală /uploads/
+              // Acoperă variantele cu wp-content/uploads sau direct /uploads
+              let processedContent = rawContent.replace(
+                /https:\/\/daip\.uvt\.ro\/(wp-content\/)?uploads\//gi, 
+                '/uploads/'
+              );
+
+              // 3. ELIMINĂM target="_blank" pentru a rămâne pe site la deschiderea PDF-urilor
+              processedContent = processedContent.replace(
+                /target\s*=\s*["']_blank["']/gi, 
+                'target="_self"'
+              );
+
               currentSection.accordions.push({
                 year: item.querySelector(".elementor-accordion-title")?.textContent.trim() || "An",
-                content: item.querySelector(".elementor-tab-content")?.innerHTML || ""
+                content: processedContent // Salvăm conținutul procesat
               });
             });
           }

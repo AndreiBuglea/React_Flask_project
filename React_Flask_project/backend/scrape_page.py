@@ -39,12 +39,12 @@ def scrape_full_elementor_content(url):
 
 
 if __name__ == "__main__":
-    target_url = "https://daip.uvt.ro/anunturi-selectie-parteneri-proiecte/"
+    target_url = "https://daip.uvt.ro/arhiva-selectie-echipe-proiecte/"
 
     result = scrape_full_elementor_content(target_url)
 
     if result:
-        with open("selectie-parteneri-proiecte.json", "w", encoding="utf-8") as f:
+        with open("arhiva-selectie-echipe-proiecte.json", "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
 
         print("✔ Conținut complet salvat cu structură intactă.")

@@ -5,16 +5,33 @@ export default function AnunturiSelectieParteneri() {
   const [page, setPage] = useState({ title: "", content: "" });
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+useEffect(() => {
     fetch("/api/page/Anunturi-Selectie-Parteneri-Proiecte")
       .then((res) => res.json())
       .then((data) => {
-        // Curățăm titlurile redundante dacă apar în HTML-ul extras
-        const cleanedContent = data.content ? data.content.replace(/<h[1-2]>.*?Anunțuri selecție parteneri proiecte.*?<\/h[1-2]>/gi, "") : "";
-        
+        let rawHtml = data.content || "";
+
+        // 1. REPARARE LINK-URI: Schimbăm domeniul vechi cu calea locală /uploads/
+        let processedHtml = rawHtml.replace(
+          /https:\/\/daip\.uvt\.ro\/(wp-content\/)?uploads\//gi, 
+          '/uploads/'
+        );
+
+        // 2. ELIMINARE TARGET BLANK: Forțăm deschiderea în aceeași fereastră (cale relativă)
+        processedHtml = processedHtml.replace(
+          /target\s*=\s*["']_blank["']/gi, 
+          'target="_self"'
+        );
+
+        // 3. CURĂȚARE TITLURI: Eliminăm titlurile redundante extrase din WordPress
+        processedHtml = processedHtml.replace(
+          /<h[1-2]>.*?Anunțuri selecție parteneri proiecte.*?<\/h[1-2]>/gi, 
+          ""
+        );
+
         setPage({
-          title: data.title,
-          content: cleanedContent
+          title: data.title || "Anunțuri selecție parteneri proiecte",
+          content: processedHtml
         });
         setLoading(false);
       })

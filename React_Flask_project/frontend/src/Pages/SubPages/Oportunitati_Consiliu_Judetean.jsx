@@ -19,7 +19,7 @@ export default function Home() {
     },
     {
       text: "Fișă tehnică apel finanțat prin CJT_Call TimCultura 2022",
-      url: "http://daip.uvt.ro/wp-content/uploads/2022/05/Fisa-tehnica-apel-finantat-prin-CJT_Call-TimCultura-2022.pdf"
+      url: "uploads/2022/05/Fisa-tehnica-apel-finantat-prin-CJT_Call-TimCultura-2022.pdf"
     }
     // Dacă ai URL-ul exact pentru „Fișă tehnică apel finanțat prin ME_Acces 2022”, adaugă-l aici
     // Exemplu: { text: "Fișă tehnică apel ACCES 2022", url: "URL_AICI" }

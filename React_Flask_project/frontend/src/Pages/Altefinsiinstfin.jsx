@@ -1,29 +1,47 @@
-import React, { useEffect, useState } from "react";
+// frontend/src/AlteFinantari.jsx
+import React from "react";
 import { Container, Typography, Card, CardContent, Box } from "@mui/material";
 
 export default function AlteFinantari() {
-  const [page, setPage] = useState({ title: "", content: "" });
+  const staticTitle = "Alte finanțări și instrumente financiare";
 
-  useEffect(() => {
-    fetch("/api/page/alte-finantari-si-instrumente-financiare")
-      .then((res) => res.json())
-      .then((data) => {
-              // Eliminăm doar cuvântul "Contact" din titlu dacă apare în content
-              const cleanedContent = data.content.replace(/<h[1-3]>.*?Alte finanțări și instrumente financiare.*?<\/h[1-3]>/gi, "");
-              const parser = new DOMParser();
-        const doc = parser.parseFromString(cleanedContent, 'text/html');
-        const links = doc.querySelectorAll('a');
-        
-        links.forEach(link => {
-          link.setAttribute('target', '_blank');
-          link.setAttribute('rel', 'noopener noreferrer'); // Important pentru securitate
-        });
-
-        // 3. Salvăm conținutul modificat înapoi ca string
-        setPage({ ...data, content: doc.body.innerHTML });
-            })
-      .catch((err) => console.error(err));
-  }, []);
+  const staticContent = `
+    <img width="332" height="369" src="/uploads/2021/12/Alte_Finantari_Si_Instrumente_Financiare.png" alt="Alte Finantari" loading="lazy" />
+    
+    <p>În cadrul acestei secțiuni se regăsesc alte tipuri de finanțări, respectiv: subvenții naționale, instrumente financiare, granturi SEE și norvegiene, programe de cooperare transfrontalieră etc.</p>
+    
+    <p>Noutatea în acest domeniu este Planul Național de Redresare și Reziliență (PNRR), un instrument ce vine să sprijine statul român în depășirea situațiilor generate și amplificate de pandemia COVID. După aprobarea oficială de către Comisia Europeană a Planului Național de Redresare și Reziliență, documentul va fi prezentat în această secțiune a site-ului.</p>
+    
+    <p>Vor fi promovate coordonarea, complementaritatea și coerența dintre fonduri și alte instrumente și fonduri ale Uniunii, cu optimizarea mecanismelor de coordonare între entitățile competente, pentru a se evita duplicarea pe parcursul planificării și al implementării.</p>
+    
+    <h5 style="color: #003366; margin-top: 40px; margin-bottom: 20px;">
+        <strong>La nivelul UVT sunt accesate și implementate proiecte finanțate prin intermediul următoarelor programe:</strong>
+    </h5>
+    
+    <img width="344" height="183" src="/uploads/2021/12/Centrul_de_Proiecte.png" alt="Centrul de Proiecte" loading="lazy" />
+    <p style="text-align: center;"><strong><a href="https://beta.primariatm.ro/centrul-de-proiecte/" target="_blank" rel="noopener noreferrer">Primăria Timișoara</a></strong></p>
+    
+    <img width="316" height="173" src="/uploads/2021/12/Consiliul_Jud_Timis.png" alt="CJT" loading="lazy" />
+    <p style="text-align: center;"><strong><a href="https://www.cjtimis.ro/activitate/finantari-nerambursabile/" target="_blank" rel="noopener noreferrer">Consiliul Județean Timiș - CJT</a></strong></p>
+    
+    <img width="393" height="137" src="/uploads/2021/12/Granturi_SEE_si_Norvegiene.png" alt="Granturi SEE" loading="lazy" />
+    <p style="text-align: center;"><a href="https://www.eeagrants.ro/" target="_blank" rel="noopener noreferrer"><strong>Granturi SEE și Norvegiene</strong></a></p>
+    
+    <img width="354" height="119" src="/uploads/2021/12/Fonduri_Dezv_Institutionala.png" alt="FDI" loading="lazy" />
+    <p style="text-align: center;"><strong><a href="https://uefiscdi.gov.ro/fondul-de-dezvoltare-institutionala-fdi" target="_blank" rel="noopener noreferrer">Fonduri de Dezvoltare Instituțională - FDI</a></strong></p>
+    
+    <img width="438" height="111" src="/uploads/2021/12/Ministerul_Educatiei.png" alt="Ministerul Educatiei" loading="lazy" />
+    <p style="text-align: center;"><strong><a href="https://www.edu.ro/finantare-universitar" target="_blank" rel="noopener noreferrer">Fonduri pentru finanțarea situațiilor speciale - FSS</a></strong></p>
+    
+    <img width="650" height="138" src="/uploads/2021/12/Rose.png" alt="ROSE" loading="lazy" />
+    <p style="text-align: center;"><a href="http://proiecte.pmu.ro/web/guest/rose" target="_blank" rel="noopener noreferrer"><strong>ROSE - Romanian SECONDARY EDUCATION</strong></a></p>
+    
+    <img width="564" height="125" src="/uploads/2021/12/Interreg.png" alt="Interreg" loading="lazy" />
+    <p style="text-align: center;"><strong><a href="https://www.romania-serbia.net/" target="_blank" rel="noopener noreferrer">Interreg - IPA CBC România Serbia</a></strong></p>
+    
+    <img width="443" height="103" src="/uploads/2021/12/Interreg_Romania_Ungaria.png" alt="Interreg RO-HU" loading="lazy" />
+    <p style="text-align: center;"><strong><a href="https://interreg-rohu.eu/en/home-en/" target="_blank" rel="noopener noreferrer">Interreg - România - Hungary</a></strong></p>
+  `;
 
   return (
     <Box
@@ -34,7 +52,6 @@ export default function AlteFinantari() {
       }}
     >
       <Container maxWidth="lg">
-
         {/* TITLU */}
         <Box textAlign="center" mb={6}>
           <Typography
@@ -47,10 +64,8 @@ export default function AlteFinantari() {
               display: "inline-block",
             }}
           >
-            {page.title}
+            {staticTitle}
           </Typography>
-
-          {/* Linie decorativă */}
           <Box
             sx={{
               width: 80,
@@ -73,7 +88,6 @@ export default function AlteFinantari() {
             overflow: "hidden",
           }}
         >
-          {/* Accent lateral */}
           <Box
             sx={{
               position: "absolute",
@@ -85,74 +99,57 @@ export default function AlteFinantari() {
             }}
           />
 
+          <CardContent sx={{ pl: { xs: 2, md: 4 }, pr: { xs: 2, md: 4 } }}>
+            <Box
+              sx={{
+                fontSize: "1.1rem",
+                lineHeight: 1.7,
+                color: "#003366",
+                
+                "& p": { 
+                  mb: 3, 
+                  textAlign: "left", 
+                  width: "100%",
+                },
           
-<CardContent sx={{ pl: { xs: 2, md: 4 }, pr: { xs: 2, md: 4 } }}>
-  <Box
-    sx={{
-      fontSize: "1.1rem",
-      lineHeight: 1.7, // Ajustat pentru claritate
-      color: "#003366",
-      
-      // TEXTUL GENERAL (Paragrafele)
-      "& p": { 
-        mb: 3,             // Spațiu decent între paragrafe
-        display: "block",  // Resetăm flex-ul care cauza probleme de aliniere
-        textAlign: "left", // Forțăm alinierea la stânga perfectă
-        width: "100%",
-      },
-
-      // IMAGINILE (Singurele care rămân pe mijloc)
-      "& img": {
-        maxWidth: "100%",
-        height: "auto",
-        borderRadius: "12px",
-        mt: 3, 
-        mb: 2, 
-        display: "block",
-        mx: "auto", // Centrare orizontală imagine
-      },
-
-      // LINK-URILE (Sub imagini, centrate)
-      "& a": {
-        color: "#FF0000",
-        textDecoration: "underline",
-        fontWeight: 600,
-        display: "block",    // Ocupă rândul lor
-        textAlign: "center", // Textul link-ului pe mijloc
-        width: "fit-content",
-        mx: "auto",          // Centrare container link
-        mt: 1,
-        mb: 4,               // Spațiu mai mare după grup (imagine+link)
-        "&:hover": {
-          color: "#cc0000",
-        }
-      },
-
-      // TITLURILE
-      "& h1, & h2, & h3": {
-        color: "#003366",
-        fontWeight: 600,
-        mt: 4,
-        mb: 2,
-        textAlign: "left", // Titlurile se aliniază cu textul la stânga
-      },
-
-      // LISTELE
-      "& ul": { 
-        display: "block",
-        textAlign: "left",
-        pl: 4,
-        mb: 3
-      },
-      "& li": {
-        mb: 1
-      }
-    }}
-    dangerouslySetInnerHTML={{ __html: page.content }}
-  />
-</CardContent>
+                "& img": {
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "12px",
+                  mt: 3, 
+                  mb: 2, 
+                  display: "block",
+                  mx: "auto",
+                },
+          
+                "& a": {
+                  color: "#FF0000",
+                  textDecoration: "underline",
+                  fontWeight: 600,
+                  display: "block",
+                  textAlign: "center",
+                  width: "fit-content",
+                  mx: "auto",
+                  mt: 1,
+                  mb: 4,
+                  transition: "color 0.2s",
+                  "&:hover": {
+                    color: "#cc0000",
+                  }
+                },
+          
+                "& h5": {
+                  color: "#003366",
+                  fontWeight: 700,
+                  fontSize: "1.2rem",
+                  textAlign: "left",
+                  mt: 4,
+                }
+              }}
+              dangerouslySetInnerHTML={{ __html: staticContent }}
+            />
+          </CardContent>
         </Card>
-
       </Container>
     </Box>
   );

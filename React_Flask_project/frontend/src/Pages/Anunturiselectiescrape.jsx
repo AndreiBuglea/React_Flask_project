@@ -57,6 +57,11 @@ export default function Home() {
     window.scrollTo({ top: 400, behavior: 'smooth' });
   };
 
+  const fixUrl = (url) => {
+    if (!url || typeof url !== 'string') return url;
+    return url.replace(/https:\/\/daip\.uvt\.ro\/(wp-content\/)?uploads\//gi, '/uploads/');
+  };
+
   const getLinks = (a) => {
     let links = [];
     if (a.link_pdf) {
@@ -67,7 +72,7 @@ export default function Home() {
       if (Array.isArray(a.pdf_uri)) links = [...links, ...a.pdf_uri];
       else links.push(a.pdf_uri);
     }
-    return links;
+return links.map(url => fixUrl(url)); // Forțăm căi relative
   };
 
   const getFileName = (url) => {

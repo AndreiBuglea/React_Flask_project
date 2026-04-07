@@ -60,13 +60,15 @@ import Admin from "./Pages/Admin";
 
 import Istoric from "./Pages/Istoric";
 
+import keycloak from "./keycloak";
+
 
 
 
 
 import "./App.css";
 
-function App() {
+function App({ keycloak }) {
   
 
   return (
@@ -103,7 +105,20 @@ function App() {
         <Route path="/buletin-informativ" element={<Buletininformativ />} />
         <Route path="/arhiva-selectie-echipe-proiecte" element={<Arhivaselectieecproj />} />
         <Route path="/noutati" element={<Noutati />} />
-        <Route path="/anunturi-selectie-echipe-proiecte-scrape" element={<Anunturiselectiescrape />} />
+
+
+
+
+
+
+
+        <Route path="/anunturi-selectie-echipe-proiecte-scrape" element={<Anunturiselectiescrape keycloak={keycloak} />} />
+
+
+
+
+
+
         <Route path="/evenimente" element={<Evenimente />} />
         
         <Route path="/comunicate-de-presa-proiecte" element={<Comunicate_de_presă_Proiecte />} />
@@ -127,7 +142,17 @@ function App() {
         
         <Route path="/Gandire_antreprenoriala" element={<Gandire_antreprenoriala />} />
         <Route path="/Formator_antreprenoriat" element={<Formator_antreprenoriat />} />
-        <Route path="/admin" element={<Admin />} />
+
+
+        {/* Pagina protejată */}
+     {  /* <Route path="/admin" 
+        element={
+          <ProtectedRoute keycloak={keycloak}>
+            <Admin keycloak={keycloak}/>
+          </ProtectedRoute>
+          
+          } />
+       */ }
 
         <Route path="/istoric" element={<Istoric />} />
 
@@ -141,5 +166,14 @@ function App() {
     </BrowserRouter>
   );
 }
+
+// Componentă Helper pentru protecție
+const ProtectedRoute = ({ keycloak, children }) => {
+  if (!keycloak.authenticated) {
+    keycloak.login();
+    return <div>Redirecting to login...</div>;
+  }
+  return children;
+};
 
 export default App;

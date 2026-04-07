@@ -17,23 +17,34 @@ import {
 } from "@mui/material";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+// IMPORTĂ obiectul tău keycloak aici dacă nu folosești un Provider
+import keycloak from "../keycloak"; 
 
-// Componentă pentru rândurile tabelului
 function Row({ log }) {
   const [open, setOpen] = useState(false);
 
-  // Funcție pentru a extrage numele utilizatorului dacă backend-ul a trimis un obiect claims
+  // Adaptat pentru noul format din log_action (Python)
   const renderUsername = (userField) => {
-    if (typeof userField === 'object' && userField !== null) {
-      // Încearcă să ia 'sub' (identity) sau 'role', altfel face string din obiect
-      return userField.sub || userField.role || JSON.stringify(userField);
-    }
-    return userField || "Sistem";
-  };
+  if (!userField) return "Sistem";
+
+  // Cazul A: userField este deja obiectul JSON (claims) pe care l-ai văzut tu
+  if (typeof userField === 'object') {
+    return userField.email || userField.preferred_username || userField.name || "Utilizator necunoscut";
+  }
+
+  // Cazul B: userField este un string de forma "Nume (email@uvt.ro)" 
+  // (Formatul pe care l-am pus anterior în log_action din Python)
+  if (typeof userField === 'string' && userField.includes(" (")) {
+    const match = userField.match(/\(([^)]+)\)/); // Extrage ce e între paranteze
+    return match ? match[1] : userField;
+  }
+
+  return userField;
+};
 
   const getActionStyle = (action) => {
     const act = String(action || "").toLowerCase();
-    const isError = act.includes("failed") || act.includes("error") || act.includes("forbidden");
+    const isError = act.includes("failed") || act.includes("error") || act.includes("forbidden") || act.includes("unauthorized");
     return {
       padding: "4px 10px",
       borderRadius: "12px",
@@ -62,7 +73,8 @@ function Row({ log }) {
         </TableCell>
         <TableCell sx={{ fontSize: "0.85rem" }}>{log.timestamp}</TableCell>
         <TableCell sx={{ fontWeight: "bold", color: "#1a237e" }}>
-          {renderUsername(log.username)}
+          {/* Am schimbat din log.username în log.user conform noii funcții Python */}
+          {renderUsername(log.user || log.username)}
         </TableCell>
         <TableCell>
           <span style={getActionStyle(log.action)}>
@@ -111,15 +123,34 @@ export default function Istoric() {
 
   useEffect(() => {
     const fetchLogs = async () => {
-      const token = localStorage.getItem("token");
+      // MODIFICARE CHEIE: Luăm token-ul din obiectul Keycloak, nu din localStorage
+      const token = keycloak.token;
+
+      if (!token) {
+        // Dacă nu avem token, mai așteptăm puțin (Keycloak se poate inițializa asincron)
+        if (keycloak.authenticated) {
+            // Dacă e autentificat dar token-ul nu e gata, încercăm din nou peste 500ms
+            setTimeout(fetchLogs, 500);
+        } else {
+            setError("Trebuie să fii autentificat pentru a vedea log-urile.");
+            setLoading(false);
+        }
+        return;
+      }
+
       try {
-        const res = await fetch("/api/logs", {
-          headers: { "Authorization": `Bearer ${token}` }
+        const res = await fetch("https://daiptest.e-uvt.ro/api/logs", {
+          headers: { 
+            "Authorization": `Bearer ${token}`,
+            "Content-Type": "application/json"
+          }
         });
         
         if (!res.ok) {
-          if(res.status === 401) throw new Error("Sesiune expirată. Te rugăm să te reautentifici.");
-          throw new Error("Nu ai permisiunea de a vedea log-urile.");
+          if(res.status === 401) throw new Error("Sesiune expirată sau token invalid.");
+          if(res.status === 403) throw new Error("Acces interzis: Doar administratorii pot vedea aceste date.");
+          if(res.status === 422) throw new Error("Eroare de validare a identității (422).");
+          throw new Error("Eroare la preluarea log-urilor.");
         }
         
         const data = await res.json();
@@ -131,16 +162,17 @@ export default function Istoric() {
       }
     };
 
-    fetchLogs();
+    if (keycloak.authenticated) {
+        fetchLogs();
+    } else {
+        // Dacă nu e logat, forțăm oprirea loading-ului
+        setLoading(false);
+        setError("Autentificare necesară.");
+    }
   }, []);
 
   return (
-    <Box sx={{ 
-      backgroundColor: "#f0f2f5", 
-      minHeight: "100vh", 
-      py: 4,
-      px: 2
-    }}>
+    <Box sx={{ backgroundColor: "#f0f2f5", minHeight: "100vh", py: 4, px: 2 }}>
       <Container maxWidth="lg">
         <Paper sx={{ p: 3, mb: 3, borderRadius: 2, textAlign: 'center', backgroundColor: '#003366', color: 'white' }}>
           <Typography variant="h4" sx={{ fontWeight: "bold" }}>Istoric Activitate</Typography>

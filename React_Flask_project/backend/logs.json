@@ -1,5 +1,385 @@
 [
     {
+        "timestamp": "2026-04-07 08:47:46",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:47:31",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775550024881)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf",
+                "/uploads/Anunt_afisare_rezultate_Trai_1775551645.pdf"
+            ],
+            "id": 1775550024881
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:47:25",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775550024881 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf",
+                "/uploads/Anunt_afisare_rezultate_Trai_1775551645.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_afisare_rezultate_Trai_1775551645.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf",
+                "/uploads/Anunt_afisare_rezultate_Trai_1775551645.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:20:35",
+        "username": {
+            "exp": 1775550308,
+            "iat": 1775550008,
+            "auth_time": 1775548599,
+            "jti": "eacc3d9d-1829-4c5e-b413-25ed8dce91ef",
+            "iss": "https://aai.e-uvt.ro/realms/euvt",
+            "aud": "account",
+            "sub": "1a78bd11-a1e7-4852-8587-635925405721",
+            "typ": "Bearer",
+            "azp": "DAIP-test",
+            "sid": "7c5eb78f-69a4-4ddb-88dc-b7e0e68fdb90",
+            "realm_access": {
+                "roles": [
+                    "offline_access",
+                    "uma_authorization",
+                    "default-roles-euvt"
+                ]
+            },
+            "resource_access": {
+                "account": {
+                    "roles": [
+                        "manage-account",
+                        "manage-account-links",
+                        "view-profile"
+                    ]
+                }
+            },
+            "scope": "openid profile email",
+            "email_verified": true,
+            "name": "Andrei Buglea",
+            "preferred_username": "andrei.buglea02@e-uvt.ro",
+            "given_name": "Andrei",
+            "locale": "ro",
+            "family_name": "Buglea",
+            "email": "andrei.buglea02@e-uvt.ro",
+            "type": "access",
+            "fresh": false
+        },
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775550024881 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:20:24",
+        "username": {
+            "exp": 1775550308,
+            "iat": 1775550008,
+            "auth_time": 1775548599,
+            "jti": "eacc3d9d-1829-4c5e-b413-25ed8dce91ef",
+            "iss": "https://aai.e-uvt.ro/realms/euvt",
+            "aud": "account",
+            "sub": "1a78bd11-a1e7-4852-8587-635925405721",
+            "typ": "Bearer",
+            "azp": "DAIP-test",
+            "sid": "7c5eb78f-69a4-4ddb-88dc-b7e0e68fdb90",
+            "realm_access": {
+                "roles": [
+                    "offline_access",
+                    "uma_authorization",
+                    "default-roles-euvt"
+                ]
+            },
+            "resource_access": {
+                "account": {
+                    "roles": [
+                        "manage-account",
+                        "manage-account-links",
+                        "view-profile"
+                    ]
+                }
+            },
+            "scope": "openid profile email",
+            "email_verified": true,
+            "name": "Andrei Buglea",
+            "preferred_username": "andrei.buglea02@e-uvt.ro",
+            "given_name": "Andrei",
+            "locale": "ro",
+            "family_name": "Buglea",
+            "email": "andrei.buglea02@e-uvt.ro",
+            "type": "access",
+            "fresh": false
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:20:13",
+        "username": {
+            "exp": 1775550308,
+            "iat": 1775550008,
+            "auth_time": 1775548599,
+            "jti": "eacc3d9d-1829-4c5e-b413-25ed8dce91ef",
+            "iss": "https://aai.e-uvt.ro/realms/euvt",
+            "aud": "account",
+            "sub": "1a78bd11-a1e7-4852-8587-635925405721",
+            "typ": "Bearer",
+            "azp": "DAIP-test",
+            "sid": "7c5eb78f-69a4-4ddb-88dc-b7e0e68fdb90",
+            "realm_access": {
+                "roles": [
+                    "offline_access",
+                    "uma_authorization",
+                    "default-roles-euvt"
+                ]
+            },
+            "resource_access": {
+                "account": {
+                    "roles": [
+                        "manage-account",
+                        "manage-account-links",
+                        "view-profile"
+                    ]
+                }
+            },
+            "scope": "openid profile email",
+            "email_verified": true,
+            "name": "Andrei Buglea",
+            "preferred_username": "andrei.buglea02@e-uvt.ro",
+            "given_name": "Andrei",
+            "locale": "ro",
+            "family_name": "Buglea",
+            "email": "andrei.buglea02@e-uvt.ro",
+            "type": "access",
+            "fresh": false
+        },
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775549859683)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775549859.pdf"
+            ],
+            "id": 1775549859683
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:17:39",
+        "username": {
+            "exp": 1775550149,
+            "iat": 1775549849,
+            "auth_time": 1775548599,
+            "jti": "83e7eeab-87fa-467a-a63c-6fb107bc6dd4",
+            "iss": "https://aai.e-uvt.ro/realms/euvt",
+            "aud": "account",
+            "sub": "1a78bd11-a1e7-4852-8587-635925405721",
+            "typ": "Bearer",
+            "azp": "DAIP-test",
+            "sid": "7c5eb78f-69a4-4ddb-88dc-b7e0e68fdb90",
+            "realm_access": {
+                "roles": [
+                    "offline_access",
+                    "uma_authorization",
+                    "default-roles-euvt"
+                ]
+            },
+            "resource_access": {
+                "account": {
+                    "roles": [
+                        "manage-account",
+                        "manage-account-links",
+                        "view-profile"
+                    ]
+                }
+            },
+            "scope": "openid profile email",
+            "email_verified": true,
+            "name": "Andrei Buglea",
+            "preferred_username": "andrei.buglea02@e-uvt.ro",
+            "given_name": "Andrei",
+            "locale": "ro",
+            "family_name": "Buglea",
+            "email": "andrei.buglea02@e-uvt.ro",
+            "type": "access",
+            "fresh": false
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 07:21:20",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-06 08:16:47",
+        "username": "admin4",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775463366140)",
+        "payload": {
+            "id_proiect": "ww",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w w w\r\nw\r\nw\r\n",
+            "perioada": "w",
+            "anunt": "wwww",
+            "link_pdf": [
+                "/static/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775463366.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_intermediare_selectie_selectie_echipa_de_proiect_1775463381.pdf"
+            ],
+            "id": 1775463366140
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-06 08:16:21",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775463366140 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "ww",
+                "program": "w",
+                "posturi": "w w w\r\nw\r\nw\r\n",
+                "perioada": "w",
+                "anunt": "wwww"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775463366.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_intermediare_selectie_selectie_echipa_de_proiect_1775463381.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_intermediare_selectie_selectie_echipa_de_proiect_1775463381.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775463366.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_intermediare_selectie_selectie_echipa_de_proiect_1775463381.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-06 08:16:06",
+        "username": {
+            "fresh": false,
+            "iat": 1775463309,
+            "jti": "ac47825e-60d9-4594-b40c-ffeb0012983c",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1775463309,
+            "csrf": "bd3f10b0-d830-4609-98d2-6fa7ed170cba",
+            "exp": 1775464209,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "ww",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w w w\r\nw\r\nw\r\n",
+            "perioada": "w",
+            "anunt": "wwww"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-06 08:15:09",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 08:51:51",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
         "timestamp": "2026-04-02 07:23:59",
         "username": "admin",
         "action": "Login Failed",

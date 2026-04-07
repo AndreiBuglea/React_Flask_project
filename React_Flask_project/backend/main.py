@@ -24,6 +24,8 @@ from werkzeug.utils import secure_filename
 import time
 import re
 
+ALLOWED_ADMINS = ["andrei.buglea02@e-uvt.ro"]
+
 
 def fix_links(text):
     if not text or not isinstance(text, str):
@@ -919,13 +921,15 @@ def get_anunturi():
 @jwt_required()
 def add_anunt():
     claims = get_jwt()
-
-    data_received = request.form.to_dict() if request.form else request.json
-
-    if claims.get("role") != "admin":
+    if claims.get("email") not in ALLOWED_ADMINS:
         return jsonify({"error": "Acces interzis"}), 403
 
+    # --- AM ELIMINAT VERIFICAREA DE ROL 'admin' DE AICI ---
 
+    # 2. Preluăm datele (FormData pentru fișiere)
+    data_received = request.form.to_dict() if request.form else request.json
+
+    # 3. Verificăm fișierul PDF
     if 'pdf' not in request.files:
         return jsonify({"error": "Niciun fișier PDF trimis"}), 400
 
@@ -934,16 +938,19 @@ def add_anunt():
         return jsonify({"error": "Niciun fișier selectat"}), 400
 
     if file and file.filename.lower().endswith('.pdf'):
+        # Generăm un nume unic pentru fișier
         filename = secure_filename(file.filename)
         base, ext = os.path.splitext(filename)
         filename = f"{base}_{int(time.time())}{ext}"
 
-        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        # Asigură-te că UPLOAD_FOLDER este definit în config.py
+        file_path = os.path.join(app.config.get('UPLOAD_FOLDER', 'uploads'), filename)
         file.save(file_path)
 
-        pdf_url = f"/static/uploads/{filename}"
+        # URL-ul la care va fi accesibil fișierul
+        pdf_url = f"/uploads/{filename}"
 
-        # Datele din formular
+        # 4. Construim obiectul pentru JSON
         new_anunt = {
             "id_proiect": request.form.get("id_proiect", ""),
             "program": request.form.get("program", ""),
@@ -955,19 +962,24 @@ def add_anunt():
             "id": int(round(time.time() * 1000))
         }
 
+        # Validare câmpuri obligatorii
         if not new_anunt["id_proiect"] or not new_anunt["titlu"] or not new_anunt["anunt"]:
             return jsonify({"error": "Lipsesc câmpuri obligatorii"}), 400
 
-        data = read_json()
-        data.insert(0, new_anunt)
-        write_json(data)
-
-        log_action(claims, "Adăugare Anunț", f"Titlu: {data_received.get('titlu')}", payload=data_received)
-
-        return jsonify(new_anunt), 201
+        # 5. Salvăm în fișierul JSON
+        try:
+            data = read_json()
+            data.insert(0, new_anunt)
+            write_json(data)
+            
+            # Logăm acțiunea
+            log_action(claims, "Adăugare Anunț", f"Titlu: {new_anunt['titlu']}", payload=data_received)
+            
+            return jsonify(new_anunt), 201
+        except Exception as e:
+            return jsonify({"error": f"Eroare la salvarea datelor: {str(e)}"}), 500
 
     return jsonify({"error": "Doar fișiere PDF sunt acceptate"}), 400
-
 
 
 
@@ -976,46 +988,51 @@ def add_anunt():
 @jwt_required()
 def delete_anunt(anunt_id):
     claims = get_jwt()
-    username = claims.get("sub", "admin") # Extragem string-ul pentru a evita eroarea de React
-
-    if claims.get("role") != "admin":
+    if claims.get("email") not in ALLOWED_ADMINS:
         return jsonify({"error": "Acces interzis"}), 403
 
+    # --- AM ELIMINAT VERIFICAREA DE ROL 'admin' ---
+
+    # 2. Citim datele actuale
     data = read_json()
     
-    # Căutăm anunțul care urmează să fie șters pentru a-i salva datele
-    anunt_de_sters = next((a for i, a in enumerate(data) if int(a.get("id", 0)) == anunt_id), None)
+    # 3. Căutăm anunțul pentru a-l identifica înainte de ștergere
+    anunt_de_sters = next((a for a in data if int(a.get("id", 0)) == anunt_id), None)
     
     if not anunt_de_sters:
         return jsonify({"error": "Anunțul nu a fost găsit"}), 404
 
-    # Creăm noua listă excluzând anunțul identificat
+    # 4. Creăm noua listă excluzând anunțul (filtrare)
     new_data = [a for a in data if int(a.get("id", 0)) != anunt_id]
     
-    # Salvăm noua listă în fișierul JSON
-    write_json(new_data)
-    
-    # LOGARE: Trimitem întreg obiectul 'anunt_de_sters' în payload
-    log_action(
-        username, 
-        "Ștergere Anunț", 
-        f"A eliminat anunțul: {anunt_de_sters.get('titlu', 'Fără titlu')} (ID: {anunt_id})", 
-        payload=anunt_de_sters
-    )
-    
-    return jsonify({"success": True, "deleted_id": anunt_id})
+    # 5. Salvăm modificările în fișierul JSON
+    try:
+        write_json(new_data)
+        
+        # LOGARE: Folosim obiectul 'claims' pentru consistență cu add_anunt
+        log_action(
+            claims, 
+            "Ștergere Anunț", 
+            f"A eliminat anunțul: {anunt_de_sters.get('titlu', 'Fără titlu')} (ID: {anunt_id})", 
+            payload=anunt_de_sters
+        )
+        
+        return jsonify({"success": True, "deleted_id": anunt_id}), 200
+    except Exception as e:
+        return jsonify({"error": f"Eroare la ștergere: {str(e)}"}), 500
 
 
 @app.route("/api/anunturi/<int:anunt_id>", methods=["PUT"])
 @jwt_required()
 def update_anunt(anunt_id):
     claims = get_jwt()
-    username = claims.get("sub", "admin")
-
-    if claims.get("role") != "admin":
+    if claims.get("email") not in ALLOWED_ADMINS:
         return jsonify({"error": "Acces interzis"}), 403
 
+    # --- AM ELIMINAT VERIFICAREA DE ROL 'admin' ---
+
     data = read_json()
+    # Căutăm indexul anunțului în listă
     anunt_index = next((i for i, a in enumerate(data) if int(a.get("id", 0)) == anunt_id), None)
 
     if anunt_index is None:
@@ -1023,22 +1040,23 @@ def update_anunt(anunt_id):
 
     anunt = data[anunt_index]
 
-    # 1. Actualizare câmpuri text
-    anunt["id_proiect"] = request.form.get("id_proiect", anunt["id_proiect"])
-    anunt["program"] = request.form.get("program", anunt["program"])
-    anunt["titlu"] = request.form.get("titlu", anunt["titlu"])
-    anunt["posturi"] = request.form.get("posturi", anunt["posturi"])
-    anunt["perioada"] = request.form.get("perioada", anunt["perioada"])
-    anunt["anunt"] = request.form.get("anunt", anunt["anunt"])
+    # 2. Actualizare câmpuri text
+    # Folosim .get(key, default) pentru a păstra valorile vechi dacă nu se trimit altele noi
+    anunt["id_proiect"] = request.form.get("id_proiect", anunt.get("id_proiect", ""))
+    anunt["program"] = request.form.get("program", anunt.get("program", ""))
+    anunt["titlu"] = request.form.get("titlu", anunt.get("titlu", ""))
+    anunt["posturi"] = request.form.get("posturi", anunt.get("posturi", ""))
+    anunt["perioada"] = request.form.get("perioada", anunt.get("perioada", ""))
+    anunt["anunt"] = request.form.get("anunt", anunt.get("anunt", ""))
 
-    # 2. Gestionare PDF-uri existente (keep_pdfs)
-    # Folosim getlist pentru a fi siguri că luăm TOATE elementele, indiferent de număr
+    # 3. Gestionare PDF-uri existente (cele pe care utilizatorul a ales să le păstreze)
     keep_pdfs = request.form.getlist("keep_pdfs")
     
-    if 'keep_pdfs' in request.form:
-        anunt["link_pdf"] = keep_pdfs # Aici vor fi toate cele selectate (1, 2, 3 sau 10)
+    # Dacă în formular există 'keep_pdfs', actualizăm lista (poate fi și goală dacă s-au șters toate)
+    if 'keep_pdfs' in request.form or keep_pdfs:
+        anunt["link_pdf"] = keep_pdfs
     
-    # 3. Adăugare PDF-uri noi
+    # 4. Adăugare PDF-uri noi
     noi_incarcate = []
     if 'pdf' in request.files:
         files = request.files.getlist("pdf")
@@ -1046,62 +1064,77 @@ def update_anunt(anunt_id):
             if file and file.filename.lower().endswith(".pdf"):
                 filename = secure_filename(file.filename)
                 base, ext = os.path.splitext(filename)
+                # Adăugăm timestamp pentru a evita suprascrierea fișierelor cu același nume
                 filename = f"{base}_{int(time.time())}{ext}"
-                file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+                
+                # Salvăm fișierul fizic pe server
+                file_path = os.path.join(app.config.get('UPLOAD_FOLDER', 'uploads'), filename)
                 file.save(file_path)
                 
-                pdf_url = f"/static/uploads/{filename}"
+                # Generăm URL-ul relativ (consistent cu restul rutei /uploads/)
+                pdf_url = f"/uploads/{filename}"
+                
                 if "link_pdf" not in anunt:
                     anunt["link_pdf"] = []
+                
                 anunt["link_pdf"].append(pdf_url)
                 noi_incarcate.append(pdf_url)
 
-    # Salvare în JSON-ul principal de anunțuri
-    data[anunt_index] = anunt
-    write_json(data)
+    # 5. Salvare în fișierul JSON
+    try:
+        data[anunt_index] = anunt
+        write_json(data)
 
-    # --- LOGARE COMPLETĂ ---
-    # Construim payload-ul pentru log DUPĂ ce am procesat tot, 
-    # ca să includem și fișierele noi în istoric
-    log_payload = {
-        "campuri_text": {
-            "titlu": anunt["titlu"],
-            "id_proiect": anunt["id_proiect"],
-            "program" : anunt["program"],
-            "posturi" : anunt["posturi"],
-            "perioada" :  anunt["perioada"],
-            "anunt" : anunt["anunt"]
+        # --- LOGARE COMPLETĂ ---
+        log_payload = {
+            "campuri_text": {
+                "titlu": anunt["titlu"],
+                "id_proiect": anunt["id_proiect"]
+            },
+            "pdf_uri_pastrate": keep_pdfs,
+            "pdf_uri_noi_incarcate": noi_incarcate,
+            "stare_finala_pdf": anunt["link_pdf"]
+        }
 
-        },
-        "pdf_uri_pastrate": keep_pdfs,
-        "pdf_uri_noi_incarcate": noi_incarcate,
-        "stare_finala_toate_pdf": anunt["link_pdf"]
-    }
-
-    log_action(
-        username, 
-        "Editare Anunț", 
-        f"Modificat anunț ID: {anunt_id} ({anunt['titlu']})", 
-        payload=log_payload
-    )
-    
-    return jsonify(anunt), 200
+        # Folosim 'claims' pentru a loga toate detaliile utilizatorului
+        log_action(
+            claims, 
+            "Editare Anunț", 
+            f"Modificat anunț ID: {anunt_id} ({anunt['titlu']})", 
+            payload=log_payload
+        )
+        
+        return jsonify(anunt), 200
+    except Exception as e:
+        return jsonify({"error": f"Eroare la actualizarea datelor: {str(e)}"}), 500
 
 #aici adaug sistem de loguri
 LOG_FILE = "logs.json"
 
-def log_action(username, action, details="", payload=None):
-    # Pregătim intrarea pentru log
+
+
+def log_action(claims, action, details="", payload=None):
+    """
+    Extrage datele din claims (Keycloak) și salvează acțiunea în logs.json
+    """
+    # Extragem informații utile din claims
+    # Dacă claims este un string (cazul în care logăm ceva fără user logat), îl folosim ca atare
+    if isinstance(claims, dict):
+        user_display = claims.get("name", "Unknown User")
+        user_email = claims.get("email", "No Email")
+        identifier = f"{user_display} ({user_email})"
+    else:
+        identifier = claims
+
     log_entry = {
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "username": username,
+        "user": identifier,
         "action": action,
         "details": details,
-        "payload": payload,  # Aici salvăm datele brute (ce anunt, ce ID, etc.)
+        "payload": payload,
         "ip": request.remote_addr
     }
 
-    # Citim log-urile existente
     logs = []
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, "r", encoding="utf-8") as f:
@@ -1118,45 +1151,24 @@ def log_action(username, action, details="", payload=None):
 
 
 
-USERS = {
-    "admin1": {"password": "admin111", "role": "admin"},
-    "admin2": {"password": "admin222", "role": "admin"},
-    "admin3": {"password": "admin333", "role": "admin"},
-    "admin4": {"password": "admin444", "role": "admin"}
-}
 
-@app.route("/api/admin/login", methods=["POST"])
-def admin_login():
-    data = request.json
-    username = data.get("username")
-    password = data.get("password")
 
-    # Verificăm dacă user-ul există și parola coincide
-    user = USERS.get(username)
-    
-    if user and user["password"] == password:
-        # Generăm token-ul cu rolul specific din dicționar
-        token = create_access_token(
-            identity=username,
-            additional_claims={"role": user["role"]}
-        )
-        
-        # Înregistrăm acțiunea în log-uri cu rolul utilizatorului
-        log_action(username, "Login Success", f"S-a logat utilizatorul cu rolul: {user['role']}")
-        
-        return jsonify(access_token=token)
-    
-    # Log pentru tentativă eșuată
-    log_action(username or "unknown", "Login Failed", f"Tentativă eșuată cu parola: {password}")
-    return jsonify({"error": "Utilizator sau parolă incorectă"}), 401
 
-# --- RUTA PENTRU ISTORIC (Nouă) ---
+
 @app.route("/api/logs", methods=["GET"])
-@jwt_required() 
+@jwt_required()
 def get_logs():
+    claims = get_jwt()
+    if claims.get("email") not in ALLOWED_ADMINS:
+        return jsonify({"error": "Acces interzis"}), 403
+
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, "r", encoding="utf-8") as f:
-            return jsonify(json.load(f))
+            try:
+                data = json.load(f)
+                return jsonify(data)
+            except:
+                return jsonify([])
     return jsonify([])
 
 @app.route("/api/page/Raportari-proiecte")

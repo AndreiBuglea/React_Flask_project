@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { Container, Typography, Card, CardContent, Box, Grid, Button, MenuItem, Select, FormControl, InputLabel } from "@mui/material";
+import { Container, Typography, Card, CardContent, Box, MenuItem, Select, FormControl, InputLabel } from "@mui/material";
 
-export default function Home() {
+export default function Home({ keycloak }) {
+
+  console.log("Roluri utilizator:", keycloak?.realmAccess?.roles);
+  console.log("Este logat?:", keycloak?.authenticated);
+
+
+
   const [anunturi, setAnunturi] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // --- LOGICA PAGINARE ---
-  const [currentPage, setCurrentPage] = useState(1);
+  // Verificăm autentificarea și rolul prin Keycloak
+  const isAuthenticated = keycloak?.authenticated;
+const isAdmin = isAuthenticated; // Panoul apare pentru orice utilizator logat  
+ const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 
   // --- LOGICA SORTARE ---
@@ -31,21 +39,17 @@ export default function Home() {
   const [dragActive, setDragActive] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const token = localStorage.getItem("token");
-  const isAdmin = !!token;
-
   // --- FUNCTIE SORTARE ---
   const getSortedAnunturi = (data) => {
     const sorted = [...data];
     if (sortCriterion === "id_desc") sorted.sort((a, b) => b.id - a.id);
     if (sortCriterion === "id_asc") sorted.sort((a, b) => a.id - b.id);
-    if (sortCriterion === "titlu_asc") sorted.sort((a, b) => a.titlu.localeCompare(b.titlu));
-    if (sortCriterion === "titlu_desc") sorted.sort((a, b) => b.titlu.localeCompare(a.titlu));
+    if (sortCriterion === "titlu_asc") sorted.sort((a, b) => (a.titlu || "").localeCompare(b.titlu || ""));
+    if (sortCriterion === "titlu_desc") sorted.sort((a, b) => (b.titlu || "").localeCompare(a.titlu || ""));
     if (sortCriterion === "program") sorted.sort((a, b) => (a.program || "").localeCompare(b.program || ""));
     return sorted;
   };
 
-  // Calculare date pentru paginare folosind lista sortata
   const sortedItemsList = getSortedAnunturi(anunturi);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -54,12 +58,12 @@ export default function Home() {
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
-    window.scrollTo({ top: 400, behavior: 'smooth' });
+    window.scrollTo({ top: 400, behavior: "smooth" });
   };
 
   const fixUrl = (url) => {
-    if (!url || typeof url !== 'string') return url;
-    return url.replace(/https:\/\/daip\.uvt\.ro\/(wp-content\/)?uploads\//gi, '/uploads/');
+    if (!url || typeof url !== "string") return url;
+    return url.replace(/https:\/\/daip\.uvt\.ro\/(wp-content\/)?uploads\//gi, "/uploads/");
   };
 
   const getLinks = (a) => {
@@ -72,19 +76,19 @@ export default function Home() {
       if (Array.isArray(a.pdf_uri)) links = [...links, ...a.pdf_uri];
       else links.push(a.pdf_uri);
     }
-return links.map(url => fixUrl(url)); // Forțăm căi relative
+    return links.map((url) => fixUrl(url));
   };
 
   const getFileName = (url) => {
-    if (!url || typeof url !== 'string') return "Fisier.pdf";
-    return url.split('/').pop();
+    if (!url || typeof url !== "string") return "Fisier.pdf";
+    return url.split("/").pop();
   };
 
   const loadAnunturi = async () => {
     try {
       const res = await fetch("/api/anunturi");
       const data = await res.json();
-      setAnunturi(data); // Nu mai sortam aici, lasam logica de sortare de mai sus sa se ocupe
+      setAnunturi(data);
     } catch (err) {
       console.error(err);
       setError(err.message);
@@ -110,7 +114,7 @@ return links.map(url => fixUrl(url)); // Forțăm căi relative
     });
     setExistingPdfs(getLinks(a));
     setFile(null);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const cancelEdit = () => {
@@ -143,14 +147,14 @@ return links.map(url => fixUrl(url)); // Forțăm căi relative
       formPayload.append("anunt", formData.anunt);
 
       if (file) formPayload.append("pdf", file);
-      existingPdfs.forEach(url => formPayload.append("keep_pdfs", url));
+      existingPdfs.forEach((url) => formPayload.append("keep_pdfs", url));
 
       const url = isEditing ? `/api/anunturi/${editId}` : "/api/anunturi";
       const method = isEditing ? "PUT" : "POST";
 
       const res = await fetch(url, {
         method: method,
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: `Bearer ${keycloak.token}` },
         body: formPayload,
       });
 
@@ -197,10 +201,10 @@ return links.map(url => fixUrl(url)); // Forțăm căi relative
     try {
       const res = await fetch(`/api/anunturi/${id}`, {
         method: "DELETE",
-        headers: { Authorization: `Bearer ${token}` }
+        headers: { Authorization: `Bearer ${keycloak.token}` },
       });
       if (!res.ok) throw new Error("Eroare la ștergere");
-      setAnunturi(prev => prev.filter(a => String(a.id) !== String(id)));
+      setAnunturi((prev) => prev.filter((a) => String(a.id) !== String(id)));
     } catch (err) {
       alert(err.message);
     }
@@ -208,62 +212,67 @@ return links.map(url => fixUrl(url)); // Forțăm căi relative
 
   return (
     <Box
-  sx={{
-    background: "linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%)",
-    minHeight: "100vh",
-    py: 8,
-    width: "100vw", // Forțează lățimea ecranului
-    overflowX: "hidden", // REZOLVARE: Nu lasă nimic să iasă din pagină în lateral
-    position: "relative"
-  }}
->
-  <Container maxWidth="lg" sx={{ px: { xs: 1, sm: 2 } }}> 
-     {/* Restul codului tău (Titlu, Formular, Sortare) rămâne la fel */}
-        <Box textAlign="center" mb={6}>
-          <Typography
-            variant="h3"
-            sx={{
-              fontWeight: 700,
-              color: "#003366",
-              mb: 2,
-              position: "relative",
-              display: "inline-block",
-            }}
-          >
-            Anunțuri selecție echipe proiecte
-          </Typography>
-          <Box
-            sx={{
-              width: 80,
-              height: 4,
-              backgroundColor: "#FFD700",
-              mx: "auto",
-              borderRadius: 2,
-            }}
-          />
+      sx={{
+        background: "linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%)",
+        minHeight: "100vh",
+        py: 8,
+        width: "100vw",
+        overflowX: "hidden",
+        position: "relative",
+      }}
+    >
+      <Container maxWidth="lg" sx={{ px: { xs: 1, sm: 2 } }}>
+        
+        {/* Bara de Login/Logout */}
+        <Box textAlign="right" mb={2}>
+          {isAuthenticated ? (
+            <button
+              onClick={() => keycloak.logout()}
+              style={{ padding: "0.5rem 1rem", backgroundColor: "#c53030", color: "white", border: "none", borderRadius: "6px", cursor: "pointer" }}
+            >
+              Logout ({keycloak.tokenParsed?.preferred_username})
+            </button>
+          ) : (
+            <button
+              onClick={() => keycloak.login()}
+              style={{ padding: "0.5rem 1rem", backgroundColor: "#003366", color: "white", border: "none", borderRadius: "6px", cursor: "pointer", opacity: 0.8 }}
+            >
+              Admin Login
+            </button>
+          )}
         </Box>
 
-        <div style={{ padding: "2rem", maxWidth: "1200px", margin: "0 auto", fontFamily: "sans-serif" }}>
+        {/* Titlu */}
+        <Box textAlign="center" mb={6}>
+          <Typography variant="h3" sx={{ fontWeight: 700, color: "#003366", mb: 2 }}>
+            Anunțuri selecție echipe proiecte
+          </Typography>
+          <Box sx={{ width: 80, height: 4, backgroundColor: "#FFD700", mx: "auto", borderRadius: 2 }} />
+        </Box>
+
+        <div style={{ padding: "0 0 2rem 0", maxWidth: "1200px", margin: "0 auto", fontFamily: "sans-serif" }}>
+          
+          {/* Zona Formular Admin - Vizibilă doar pentru admini logați */}
           {isAdmin && (
-            <div style={{
-              background: "#f9fafb", padding: "2rem", borderRadius: "8px",
-              marginBottom: "2rem", border: "1px solid #e5e7eb", boxShadow: "0 1px 3px rgba(0,0,0,0.1)"
-            }}>
+            <div style={{ background: "#f9fafb", padding: "2rem", borderRadius: "8px", marginBottom: "2rem", border: "1px solid #e5e7eb", boxShadow: "0 1px 3px rgba(0,0,0,0.1)" }}>
               <h2>{isEditing ? `Editează anunțul (ID: ${editId})` : "Adaugă anunț nou"}</h2>
               <form onSubmit={handleSubmit} style={{ display: "grid", gap: "1rem" }}>
-                <input style={inputStyle} placeholder="ID Proiect *" value={formData.id_proiect} onChange={e => setFormData({ ...formData, id_proiect: e.target.value })} />
-                <input style={inputStyle} placeholder="Program" value={formData.program} onChange={e => setFormData({ ...formData, program: e.target.value })} />
-                <input style={inputStyle} placeholder="Titlu *" value={formData.titlu} onChange={e => setFormData({ ...formData, titlu: e.target.value })} />
-
+                <input style={inputStyle} placeholder="ID Proiect *" value={formData.id_proiect} onChange={(e) => setFormData({ ...formData, id_proiect: e.target.value })} />
+                <input style={inputStyle} placeholder="Program" value={formData.program} onChange={(e) => setFormData({ ...formData, program: e.target.value })} />
+                <input style={inputStyle} placeholder="Titlu *" value={formData.titlu} onChange={(e) => setFormData({ ...formData, titlu: e.target.value })} />
                 <textarea
                   style={{ ...inputStyle, minHeight: "80px", resize: "vertical" }}
                   placeholder="Posturi (Apasă Enter pentru rând nou)"
                   value={formData.posturi}
-                  onChange={e => setFormData({ ...formData, posturi: e.target.value })}
+                  onChange={(e) => setFormData({ ...formData, posturi: e.target.value })}
                 />
-
-                <input style={inputStyle} placeholder="Perioada" value={formData.perioada} onChange={e => setFormData({ ...formData, perioada: e.target.value })} />
-                <textarea placeholder="Conținut anunț *" value={formData.anunt} onChange={e => setFormData({ ...formData, anunt: e.target.value })} style={{ ...inputStyle, minHeight: "120px", resize: "vertical" }} />
+                <input style={inputStyle} placeholder="Perioada" value={formData.perioada} onChange={(e) => setFormData({ ...formData, perioada: e.target.value })} />
+                <textarea
+                  placeholder="Conținut anunț *"
+                  value={formData.anunt}
+                  onChange={(e) => setFormData({ ...formData, anunt: e.target.value })}
+                  style={{ ...inputStyle, minHeight: "120px", resize: "vertical" }}
+                />
 
                 {isEditing && existingPdfs.length > 0 && (
                   <div style={{ padding: "10px", background: "#fff", border: "1px solid #ddd", borderRadius: "6px" }}>
@@ -271,18 +280,14 @@ return links.map(url => fixUrl(url)); // Forțăm căi relative
                     {existingPdfs.map((pdf, i) => (
                       <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "5px" }}>
                         <span style={{ fontSize: "0.8rem" }}>{getFileName(pdf)}</span>
-                        <button type="button" onClick={() => setExistingPdfs(existingPdfs.filter(p => p !== pdf))} style={{ color: "red", border: "none", background: "none", cursor: "pointer" }}>Elimină</button>
+                        <button type="button" onClick={() => setExistingPdfs(existingPdfs.filter((p) => p !== pdf))} style={{ color: "red", border: "none", background: "none", cursor: "pointer" }}>Elimină</button>
                       </div>
                     ))}
                   </div>
                 )}
 
                 <div
-                  style={{
-                    border: dragActive ? "2px dashed #15803d" : "2px dashed #ccc",
-                    borderRadius: "8px", padding: "2rem", textAlign: "center",
-                    background: dragActive ? "#f0fdf4" : "#f9fafb", cursor: "pointer",
-                  }}
+                  style={{ border: dragActive ? "2px dashed #15803d" : "2px dashed #ccc", borderRadius: "8px", padding: "2rem", textAlign: "center", background: dragActive ? "#f0fdf4" : "#f9fafb", cursor: "pointer" }}
                   onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop}
                   onClick={() => document.getElementById("pdfInput").click()}
                 >
@@ -292,36 +297,24 @@ return links.map(url => fixUrl(url)); // Forțăm căi relative
                       <p style={{ fontWeight: "bold", color: "#15803d" }}>✓ {file.name}</p>
                       <button type="button" onClick={(e) => { e.stopPropagation(); setFile(null); }} style={{ color: "#c53030" }}>Șterge selecția</button>
                     </div>
-                  ) : (
-                    <p>Trage un PDF nou aici sau <strong>click</strong></p>
-                  )}
+                  ) : <p>Trage un PDF nou aici sau <strong>click</strong></p>}
                 </div>
 
                 <div style={{ display: "flex", gap: "1rem" }}>
-                  <button type="submit" disabled={submitting} style={{
-                    flex: 1, padding: "0.75rem", background: submitting ? "#9ca3af" : "#15803d",
-                    color: "white", border: "none", borderRadius: "6px", cursor: "pointer"
-                  }}>
+                  <button type="submit" disabled={submitting} style={{ flex: 1, padding: "0.75rem", background: submitting ? "#9ca3af" : "#15803d", color: "white", border: "none", borderRadius: "6px", cursor: "pointer" }}>
                     {submitting ? "Se salvează..." : (isEditing ? "Salvează modificările" : "Adaugă anunț")}
                   </button>
-                  {isEditing && (
-                    <button type="button" onClick={cancelEdit} style={{ padding: "0.75rem 1.5rem", background: "#6b7280", color: "white", border: "none", borderRadius: "6px", cursor: "pointer" }}>Anulează</button>
-                  )}
+                  {isEditing && <button type="button" onClick={cancelEdit} style={{ padding: "0.75rem 1.5rem", background: "#6b7280", color: "white", border: "none", borderRadius: "6px", cursor: "pointer" }}>Anulează</button>}
                 </div>
               </form>
             </div>
           )}
 
-          {/* --- ZONA SELECT SORTARE --- */}
+          {/* Sortează după */}
           <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 2 }}>
             <FormControl size="medium" sx={{ minWidth: 200 }}>
               <InputLabel id="sort-select-label">Sortează după</InputLabel>
-              <Select
-                labelId="sort-select-label"
-                value={sortCriterion}
-                label="Sortează după"
-                onChange={(e) => { setSortCriterion(e.target.value); setCurrentPage(1); }}
-              >
+              <Select labelId="sort-select-label" value={sortCriterion} label="Sortează după" onChange={(e) => { setSortCriterion(e.target.value); setCurrentPage(1); }}>
                 <MenuItem value="id_desc">Cele mai noi</MenuItem>
                 <MenuItem value="id_asc">Cele mai vechi</MenuItem>
                 <MenuItem value="titlu_asc">Titlu (A-Z)</MenuItem>
@@ -337,109 +330,62 @@ return links.map(url => fixUrl(url)); // Forțăm căi relative
             <Box sx={{ color: "red", textAlign: "center", py: 4 }}>Eroare: {error}</Box>
           ) : (
             <>
-              {/* CARDUL CARE REZOLVĂ SCROLL-UL (Exact ca în Arhivă) */}
-              {/* CARDUL CARE REZOLVĂ SCROLL-UL */}
-<Card
-  sx={{
-    backgroundColor: "#ffffff",
-    borderRadius: 4,
-    boxShadow: "0px 10px 30px rgba(0,0,0,0.08)",
-    mx: { xs: -2, sm: 0 }, // Pe mobile trage cardul până în margini ca să câștigi spațiu
-    position: "relative",
-    overflow: "hidden", 
-  }}
->
-  {/* Accent lateral */}
-  <Box
-    sx={{
-      position: "absolute",
-      left: 0,
-      top: 0,
-      bottom: 0,
-      width: "6px",
-      background: "linear-gradient(to bottom, #FFD700, #003366)",
-      zIndex: 2
-    }}
-  />
+              {/* Tabel cu scroll orizontal */}
+              <Card sx={{ backgroundColor: "#ffffff", borderRadius: 4, boxShadow: "0px 10px 30px rgba(0,0,0,0.08)", mx: { xs: -2, sm: 0 }, position: "relative", overflow: "hidden" }}>
+                <Box sx={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "6px", background: "linear-gradient(to bottom, #FFD700, #003366)", zIndex: 2 }} />
+                <CardContent sx={{ p: { xs: 1, md: 2 }, overflowX: "auto", WebkitOverflowScrolling: "touch" }}>
+                  <Box sx={{ minWidth: { xs: "1100px", md: "100%" }, pr: 2 }}>
+                    <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "sans-serif", tableLayout: "fixed" }}>
+                      <thead>
+                        <tr style={{ backgroundColor: "#f0f8ff" }}>
+                          <th style={{ ...thStyle, border: "1px solid #003366", width: "25%" }}>Titlu</th>
+                          <th style={{ ...thStyle, border: "1px solid #003366", width: "10%" }}>ID Proiect</th>
+                          <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>Program</th>
+                          <th style={{ ...thStyle, border: "1px solid #003366", width: "20%" }}>Posturi</th>
+                          <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>Perioada</th>
+                          <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>PDF</th>
+                          {isAdmin && <th style={{ ...thStyle, border: "1px solid #003366", width: "180px" }}>Acțiuni</th>}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {currentItems.map((a, index) => {
+                          const allPdfs = getLinks(a);
+                          return (
+                            <tr key={a.id || index}>
+                              <td style={{ ...tdStyle, border: "1px solid #003366", wordWrap: "break-word", whiteSpace: "normal" }}>{a.titlu}</td>
+                              <td style={{ ...tdStyle, border: "1px solid #003366" }}>{a.id_proiect}</td>
+                              <td style={{ ...tdStyle, border: "1px solid #003366", wordWrap: "break-word", whiteSpace: "normal" }}>{a.program}</td>
+                              <td style={{ ...tdStyle, border: "1px solid #003366", whiteSpace: "pre-line", wordWrap: "break-word" }}>{a.posturi}</td>
+                              <td style={{ ...tdStyle, border: "1px solid #003366" }}>{a.perioada}</td>
+                              <td style={{ ...tdStyle, border: "1px solid #003366", verticalAlign: "top", wordBreak: "break-all", overflowWrap: "anywhere" }}>
+                                {allPdfs.length > 0 ? (
+                                  <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                                    {allPdfs.map((url, i) => (
+                                      <a key={i} href={url} target="_blank" rel="noopener noreferrer" style={{ color: "#FF0000", textDecoration: "underline", fontSize: "0.85rem", fontWeight: 500, display: "block" }}>
+                                        • {getFileName(url)}
+                                      </a>
+                                    ))}
+                                  </div>
+                                ) : "—"}
+                              </td>
+                              {isAdmin && (
+                                <td style={{ ...tdStyle, border: "1px solid #003366", textAlign: "center" }}>
+                                  <div style={{ display: "flex", gap: "5px", justifyContent: "center" }}>
+                                    <button onClick={() => startEdit(a)} style={editBtnStyle}>Editează</button>
+                                    <button onClick={() => handleDelete(a.id)} style={deleteBtnStyle}>Șterge</button>
+                                  </div>
+                                </td>
+                              )}
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </Box>
+                </CardContent>
+              </Card>
 
-  <CardContent sx={{ 
-    p: { xs: 1, md: 2 }, 
-    overflowX: "auto", // Scroll-ul rămâne DOAR aici
-    WebkitOverflowScrolling: "touch" 
-  }}>
-    <Box sx={{ minWidth: { xs: "1100px", md: "100%" }, pr: 2 }}> {/* pr: 2 previne tăierea ultimei coloane la scroll maxim */}
-      <table style={{ 
-        width: "100%", 
-        borderCollapse: "collapse", 
-        fontFamily: "sans-serif",
-        tableLayout: "fixed" 
-      }}>
-        <thead>
-          <tr style={{ backgroundColor: "#f0f8ff" }}>
-            <th style={{ ...thStyle, border: "1px solid #003366", width: "25%" }}>Titlu</th>
-            <th style={{ ...thStyle, border: "1px solid #003366", width: "10%" }}>ID Proiect</th>
-            <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>Program</th>
-            <th style={{ ...thStyle, border: "1px solid #003366", width: "20%" }}>Posturi</th>
-            <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>Perioada</th>
-            <th style={{ ...thStyle, border: "1px solid #003366", width: "15%" }}>PDF</th>
-            {isAdmin && <th style={{ ...thStyle, border: "1px solid #003366", width: "180px" }}>Acțiuni</th>}
-          </tr>
-        </thead>
-        <tbody>
-          {currentItems.map((a, index) => {
-            const allPdfs = getLinks(a);
-            return (
-              <tr key={a.id || index}>
-                <td style={{ ...tdStyle, border: "1px solid #003366", wordWrap: "break-word", whiteSpace: "normal" }}>{a.titlu}</td>
-                <td style={{ ...tdStyle, border: "1px solid #003366" }}>{a.id_proiect}</td>
-                <td style={{ ...tdStyle, border: "1px solid #003366", wordWrap: "break-word", whiteSpace: "normal" }}>{a.program}</td>
-                <td style={{ ...tdStyle, border: "1px solid #003366", whiteSpace: "pre-line", wordWrap: "break-word" }}>{a.posturi}</td>
-                <td style={{ ...tdStyle, border: "1px solid #003366" }}>{a.perioada}</td>
-                
-                {/* CELULA PDF CORECTATĂ */}
-                <td style={{ 
-                  ...tdStyle, 
-                  border: "1px solid #003366", 
-                  verticalAlign: "top",
-                  wordBreak: "break-all", // FORȚEAZĂ textul să nu iasă din celulă
-                  overflowWrap: "anywhere" 
-                }}>
-                  {allPdfs.length > 0 ? (
-                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                      {allPdfs.map((url, i) => (
-                        <a key={i} href={url} target="_blank" rel="noopener noreferrer" 
-                           style={{ 
-                             color: "#FF0000", 
-                             textDecoration: "underline", 
-                             fontSize: "0.85rem", 
-                             fontWeight: 500,
-                             display: "block" 
-                           }}>
-                          • {getFileName(url)}
-                        </a>
-                      ))}
-                    </div>
-                  ) : "—"}
-                </td>
-
-                {isAdmin && (
-                  <td style={{ ...tdStyle, border: "1px solid #003366", textAlign: "center" }}>
-                    <div style={{ display: "flex", gap: "5px", justifyContent: "center" }}>
-                      <button onClick={() => startEdit(a)} style={editBtnStyle}>Editează</button>
-                      <button onClick={() => handleDelete(a.id)} style={deleteBtnStyle}>Șterge</button>
-                    </div>
-                  </td>
-                )}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </Box>
-  </CardContent>
-</Card>
-
-              {/* BUTOANE PAGINARE */}
+              {/* Paginare */}
               {totalPages > 1 && (
                 <Box sx={{ display: "flex", justifyContent: "center", mt: 4, gap: 1 }}>
                   <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1} style={{ ...pageBtnStyle, opacity: currentPage === 1 ? 0.5 : 1 }}>Anterior</button>
@@ -451,23 +397,15 @@ return links.map(url => fixUrl(url)); // Forțăm căi relative
               )}
             </>
           )}
-          
         </div>
       </Container>
     </Box>
   );
 }
 
-
 const inputStyle = { padding: "10px", border: "1px solid #ccc", borderRadius: "4px", width: "100%", boxSizing: "border-box" };
-const thStyle = { border: "1px solid #ccc", padding: "10px", textAlign: "left" };
-const tdStyle = { border: "1px solid #ccc", padding: "10px" };
+const thStyle = { border: "1px solid #ccc", padding: "10px", textAlign: "left", fontWeight: "bold" };
+const tdStyle = { border: "1px solid #ccc", padding: "10px", verticalAlign: "top" };
 const editBtnStyle = { background: "#3b82f6", color: "white", border: "none", padding: "0.4rem 0.8rem", borderRadius: "4px", cursor: "pointer" };
 const deleteBtnStyle = { background: "#c53030", color: "white", border: "none", padding: "0.4rem 0.8rem", borderRadius: "4px", cursor: "pointer" };
-const pageBtnStyle = { 
-  border: "1px solid #003366", 
-  padding: "0.5rem 1rem", 
-  borderRadius: "4px", 
-  cursor: "pointer", 
-  fontWeight: "bold" 
-};
+const pageBtnStyle = { border: "1px solid #003366", padding: "0.5rem 1rem", borderRadius: "4px", cursor: "pointer", fontWeight: "bold" };

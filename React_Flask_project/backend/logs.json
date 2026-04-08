@@ -1,5 +1,168 @@
 [
     {
+        "timestamp": "2026-04-08 08:41:48",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:41:37",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637697.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637697.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637697.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:35:34",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:35:00",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:34:38",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:33:29",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:32:57",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775551666242)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775551666.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637171.pdf"
+            ],
+            "id": 1775551666242
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:32:51",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775551666242 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775551666.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637171.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637171.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775551666.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637171.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
         "timestamp": "2026-04-07 08:47:46",
         "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
         "action": "Ad\u0103ugare Anun\u021b",

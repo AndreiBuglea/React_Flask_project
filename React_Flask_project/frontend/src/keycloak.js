@@ -6,9 +6,10 @@ const keycloak = new Keycloak({
   clientId: "DAIP-test",
 });
 
-// Lista de admini: doar aceștia pot modifica anunțuri
-export const ADMIN_USERS = [
-  "andrei.buglea@e-uvt.ro",
-];
+// Citim din .env, dacă nu există nimic punem un array gol ca să nu dea eroare
+const adminString = import.meta.env.VITE_ADMIN_USERS || "";
+
+// Transformăm string-ul "email1,email2" în array-ul ["email1", "email2"]
+export const ADMIN_USERS = adminString.split(",").map(email => email.trim());
 
 export default keycloak;

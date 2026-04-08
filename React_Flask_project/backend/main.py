@@ -24,7 +24,12 @@ from werkzeug.utils import secure_filename
 import time
 import re
 
-ALLOWED_ADMINS = ["andrei.buglea02@e-uvt.ro"]
+# Citim string-ul din .env (ex: "email1,email2")
+admins_env = os.getenv("ALLOWED_ADMINS", "")
+
+# Îl transformăm în listă: ["email1", "email2"]
+# .strip() elimină spațiile goale accidentale, .split(",") separă după virgulă
+ALLOWED_ADMINS = [email.strip() for email in admins_env.split(",") if email.strip()]
 
 
 def fix_links(text):

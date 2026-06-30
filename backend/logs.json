@@ -1,0 +1,5173 @@
+[
+    {
+        "timestamp": "2026-04-24 10:30:25",
+        "user": "Adrian Jigovan (adrian.jigovan@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: Test AJ",
+        "payload": {
+            "id_proiect": "Test AJ",
+            "program": "Test AJ",
+            "titlu": "Test AJ",
+            "posturi": "Test AJ",
+            "perioada": "Test AJ",
+            "anunt": "Test AJ"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 10:20:59",
+        "user": "Darius Perta (darius.perta@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: qweqw",
+        "payload": {
+            "id_proiect": "wqeweqw",
+            "program": "eqwe",
+            "titlu": "qweqw",
+            "posturi": "eqwe",
+            "perioada": "qwewqe",
+            "anunt": "qwewqe"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 10:20:18",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: q (ID: 1773914264638)",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq",
+            "perioada": "q",
+            "anunt": "q",
+            "link_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ],
+            "id": 1773914264638
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 10:07:10",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1777023624397)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1777023624.pdf"
+            ],
+            "id": 1777023624397
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 10:00:59",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: t (ID: 1777024595849)",
+        "payload": {
+            "id_proiect": "t",
+            "program": "t",
+            "titlu": "t",
+            "posturi": "t",
+            "perioada": "t",
+            "anunt": "t",
+            "link_pdf": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1777024595.pdf"
+            ],
+            "id": 1777024595849
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 09:56:35",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: t",
+        "payload": {
+            "id_proiect": "t",
+            "program": "t",
+            "titlu": "t",
+            "posturi": "t",
+            "perioada": "t",
+            "anunt": "t"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 09:50:50",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: r (ID: 1777024237417)",
+        "payload": {
+            "id_proiect": "r",
+            "program": "r",
+            "titlu": "r",
+            "posturi": "r",
+            "perioada": "r",
+            "anunt": "r",
+            "link_pdf": [
+                "/uploads/Anunt_selectie_echipa_proiect_Escargot_1777024237.pdf",
+                "/uploads/Realitatile_traite_de_persoanele_de_etnie_Roma_din_probatiune_in_Bulgaria_1777024245.pdf"
+            ],
+            "id": 1777024237417
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 09:50:45",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1777024237417 (r)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "r",
+                "id_proiect": "r"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_proiect_Escargot_1777024237.pdf",
+                "/uploads/Realitatile_traite_de_persoanele_de_etnie_Roma_din_probatiune_in_Bulgaria_1777024245.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Realitatile_traite_de_persoanele_de_etnie_Roma_din_probatiune_in_Bulgaria_1777024245.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_proiect_Escargot_1777024237.pdf",
+                "/uploads/Realitatile_traite_de_persoanele_de_etnie_Roma_din_probatiune_in_Bulgaria_1777024245.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 09:50:37",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: r",
+        "payload": {
+            "id_proiect": "r",
+            "program": "r",
+            "titlu": "r",
+            "posturi": "r",
+            "perioada": "r",
+            "anunt": "r"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 09:40:24",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 09:31:13",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: y (ID: 1777021679832)",
+        "payload": {
+            "id_proiect": "y",
+            "program": "y",
+            "titlu": "y",
+            "posturi": "y",
+            "perioada": "y",
+            "anunt": "y",
+            "link_pdf": [
+                "/uploads/Anexa_12_Anunt_rezultate_interviu_1777021679.pdf"
+            ],
+            "id": 1777021679832
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 09:07:59",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: y",
+        "payload": {
+            "id_proiect": "y",
+            "program": "y",
+            "titlu": "y",
+            "posturi": "y",
+            "perioada": "y",
+            "anunt": "y"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 08:47:17",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1777020410621)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w\r\nw\r\nw",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1777020410.pdf",
+                "/uploads/Anunt_afisare_rezultate_selectie_echipa_de_proiect_-_coordonatori_locali_hub-uri_UNITA_martie_2026_1777020430.pdf"
+            ],
+            "id": 1777020410621
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 08:47:10",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1777020410621 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1777020410.pdf",
+                "/uploads/Anunt_afisare_rezultate_selectie_echipa_de_proiect_-_coordonatori_locali_hub-uri_UNITA_martie_2026_1777020430.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_afisare_rezultate_selectie_echipa_de_proiect_-_coordonatori_locali_hub-uri_UNITA_martie_2026_1777020430.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1777020410.pdf",
+                "/uploads/Anunt_afisare_rezultate_selectie_echipa_de_proiect_-_coordonatori_locali_hub-uri_UNITA_martie_2026_1777020430.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-24 08:46:50",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w\r\nw\r\nw",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 10:13:58",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775637209589)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "id": 1775637209589
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 10:13:44",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:53:09",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775638389.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775638389.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775638389.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:41:48",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:41:37",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637697.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637697.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637697.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:35:34",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:35:00",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:34:38",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775637209589 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775637209.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:33:29",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:32:57",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775551666242)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775551666.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637171.pdf"
+            ],
+            "id": 1775551666242
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-08 08:32:51",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775551666242 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775551666.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637171.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637171.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775551666.pdf",
+                "/uploads/Anunt_rezultate_finale_dupa_contestatii_1775637171.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:47:46",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:47:31",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775550024881)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf",
+                "/uploads/Anunt_afisare_rezultate_Trai_1775551645.pdf"
+            ],
+            "id": 1775550024881
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:47:25",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775550024881 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf",
+                "/uploads/Anunt_afisare_rezultate_Trai_1775551645.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_afisare_rezultate_Trai_1775551645.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf",
+                "/uploads/Anunt_afisare_rezultate_Trai_1775551645.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:20:35",
+        "username": {
+            "exp": 1775550308,
+            "iat": 1775550008,
+            "auth_time": 1775548599,
+            "jti": "eacc3d9d-1829-4c5e-b413-25ed8dce91ef",
+            "iss": "https://aai.e-uvt.ro/realms/euvt",
+            "aud": "account",
+            "sub": "1a78bd11-a1e7-4852-8587-635925405721",
+            "typ": "Bearer",
+            "azp": "DAIP-test",
+            "sid": "7c5eb78f-69a4-4ddb-88dc-b7e0e68fdb90",
+            "realm_access": {
+                "roles": [
+                    "offline_access",
+                    "uma_authorization",
+                    "default-roles-euvt"
+                ]
+            },
+            "resource_access": {
+                "account": {
+                    "roles": [
+                        "manage-account",
+                        "manage-account-links",
+                        "view-profile"
+                    ]
+                }
+            },
+            "scope": "openid profile email",
+            "email_verified": true,
+            "name": "Andrei Buglea",
+            "preferred_username": "andrei.buglea02@e-uvt.ro",
+            "given_name": "Andrei",
+            "locale": "ro",
+            "family_name": "Buglea",
+            "email": "andrei.buglea02@e-uvt.ro",
+            "type": "access",
+            "fresh": false
+        },
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775550024881 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "w"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775550024.pdf",
+                "/uploads/Anunt_Coordonatori_locali_UNITA_1775550035.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:20:24",
+        "username": {
+            "exp": 1775550308,
+            "iat": 1775550008,
+            "auth_time": 1775548599,
+            "jti": "eacc3d9d-1829-4c5e-b413-25ed8dce91ef",
+            "iss": "https://aai.e-uvt.ro/realms/euvt",
+            "aud": "account",
+            "sub": "1a78bd11-a1e7-4852-8587-635925405721",
+            "typ": "Bearer",
+            "azp": "DAIP-test",
+            "sid": "7c5eb78f-69a4-4ddb-88dc-b7e0e68fdb90",
+            "realm_access": {
+                "roles": [
+                    "offline_access",
+                    "uma_authorization",
+                    "default-roles-euvt"
+                ]
+            },
+            "resource_access": {
+                "account": {
+                    "roles": [
+                        "manage-account",
+                        "manage-account-links",
+                        "view-profile"
+                    ]
+                }
+            },
+            "scope": "openid profile email",
+            "email_verified": true,
+            "name": "Andrei Buglea",
+            "preferred_username": "andrei.buglea02@e-uvt.ro",
+            "given_name": "Andrei",
+            "locale": "ro",
+            "family_name": "Buglea",
+            "email": "andrei.buglea02@e-uvt.ro",
+            "type": "access",
+            "fresh": false
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:20:13",
+        "username": {
+            "exp": 1775550308,
+            "iat": 1775550008,
+            "auth_time": 1775548599,
+            "jti": "eacc3d9d-1829-4c5e-b413-25ed8dce91ef",
+            "iss": "https://aai.e-uvt.ro/realms/euvt",
+            "aud": "account",
+            "sub": "1a78bd11-a1e7-4852-8587-635925405721",
+            "typ": "Bearer",
+            "azp": "DAIP-test",
+            "sid": "7c5eb78f-69a4-4ddb-88dc-b7e0e68fdb90",
+            "realm_access": {
+                "roles": [
+                    "offline_access",
+                    "uma_authorization",
+                    "default-roles-euvt"
+                ]
+            },
+            "resource_access": {
+                "account": {
+                    "roles": [
+                        "manage-account",
+                        "manage-account-links",
+                        "view-profile"
+                    ]
+                }
+            },
+            "scope": "openid profile email",
+            "email_verified": true,
+            "name": "Andrei Buglea",
+            "preferred_username": "andrei.buglea02@e-uvt.ro",
+            "given_name": "Andrei",
+            "locale": "ro",
+            "family_name": "Buglea",
+            "email": "andrei.buglea02@e-uvt.ro",
+            "type": "access",
+            "fresh": false
+        },
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775549859683)",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w",
+            "link_pdf": [
+                "/uploads/Anunt_selectie_echipa_implementare_ProfesionistiReflexivi_Aprilie_2026_SMIS_311901_1775549859.pdf"
+            ],
+            "id": 1775549859683
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 08:17:39",
+        "username": {
+            "exp": 1775550149,
+            "iat": 1775549849,
+            "auth_time": 1775548599,
+            "jti": "83e7eeab-87fa-467a-a63c-6fb107bc6dd4",
+            "iss": "https://aai.e-uvt.ro/realms/euvt",
+            "aud": "account",
+            "sub": "1a78bd11-a1e7-4852-8587-635925405721",
+            "typ": "Bearer",
+            "azp": "DAIP-test",
+            "sid": "7c5eb78f-69a4-4ddb-88dc-b7e0e68fdb90",
+            "realm_access": {
+                "roles": [
+                    "offline_access",
+                    "uma_authorization",
+                    "default-roles-euvt"
+                ]
+            },
+            "resource_access": {
+                "account": {
+                    "roles": [
+                        "manage-account",
+                        "manage-account-links",
+                        "view-profile"
+                    ]
+                }
+            },
+            "scope": "openid profile email",
+            "email_verified": true,
+            "name": "Andrei Buglea",
+            "preferred_username": "andrei.buglea02@e-uvt.ro",
+            "given_name": "Andrei",
+            "locale": "ro",
+            "family_name": "Buglea",
+            "email": "andrei.buglea02@e-uvt.ro",
+            "type": "access",
+            "fresh": false
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "w",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w",
+            "perioada": "w",
+            "anunt": "w"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-07 07:21:20",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-06 08:16:47",
+        "username": "admin4",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: w (ID: 1775463366140)",
+        "payload": {
+            "id_proiect": "ww",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w w w\r\nw\r\nw\r\n",
+            "perioada": "w",
+            "anunt": "wwww",
+            "link_pdf": [
+                "/static/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775463366.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_intermediare_selectie_selectie_echipa_de_proiect_1775463381.pdf"
+            ],
+            "id": 1775463366140
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-06 08:16:21",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1775463366140 (w)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "w",
+                "id_proiect": "ww",
+                "program": "w",
+                "posturi": "w w w\r\nw\r\nw\r\n",
+                "perioada": "w",
+                "anunt": "wwww"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775463366.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_intermediare_selectie_selectie_echipa_de_proiect_1775463381.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_intermediare_selectie_selectie_echipa_de_proiect_1775463381.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_afisare_rezultate_finale_selectie_echipa_de_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1775463366.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_intermediare_selectie_selectie_echipa_de_proiect_1775463381.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-06 08:16:06",
+        "username": {
+            "fresh": false,
+            "iat": 1775463309,
+            "jti": "ac47825e-60d9-4594-b40c-ffeb0012983c",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1775463309,
+            "csrf": "bd3f10b0-d830-4609-98d2-6fa7ed170cba",
+            "exp": 1775464209,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: w",
+        "payload": {
+            "id_proiect": "ww",
+            "program": "w",
+            "titlu": "w",
+            "posturi": "w w w\r\nw\r\nw\r\n",
+            "perioada": "w",
+            "anunt": "wwww"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-06 08:15:09",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 08:51:51",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: julian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: metallica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: welcome",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sergio",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mybaby",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: aaaaaa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hiphop",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 333333",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brooke",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: gangsta",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 131313",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: benjamin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: abcdef",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: fucker",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lovelove",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: johncena",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pookie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:59",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: aaliyah",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: nirvana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brianna",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mexico",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: icecream",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rafael",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: abigail",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: charmed",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: katherine",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mercedes",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: andreea",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:58",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lorena",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jordan23",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: scorpio",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: apples",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: christine",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: vincent",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: midnight",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: monique",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: charles",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ihateyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: harrypotter",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: superstar",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: qwertyuiop",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: camila",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cancer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: olivia",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lollipop",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: asdfgh",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 696969",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: love123",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: benfica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cassie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: francis",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:56",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: panget",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: dennis",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: garfield",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: strawberry",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sweet",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: internet",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: silver",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: smokey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 101010",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chester",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chrisbrown",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bianca",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tintin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cristian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:55",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: flowers",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: nicholas",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alicia",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: fuckoff",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: january",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rockstar",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jasper",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: volleyball",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tigers",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: denise",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: marvin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 777777",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: laura",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: portugal",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bowwow",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sarah",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123654",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 789456123",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: javier",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cuteako",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: natalie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: isabel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mustang",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: karen",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:54",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kitten",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: adidas",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brenda",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: casper",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: babyboy",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: maganda",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bitch",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kevin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bonita",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 50cent",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: monkey1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cutiepie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: slipknot",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cameron",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: samuel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: orlando",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: august",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: barcelona",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: school",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 0123456789",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hotmail",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: johnny",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:53",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: karina",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: christopher",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: spiderman",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jackie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rebecca",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sebastian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 456789",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: carmen",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: scooby",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: master",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kenneth",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angelo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: freedom",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: samsung",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: diana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: oliver",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: edward",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: zxcvbnm",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: celtic",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: crystal",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jesus1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: friend",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: prince",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: banana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: james",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cutie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: adriana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 888888",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chris",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: veronica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: peaches",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: inuyasha",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: october",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: precious",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveyou1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ronaldo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: harley",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kissme",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: booboo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: courtney",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: andres",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: eduardo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mariana",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tiffany",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: horses",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: victor",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mahalko",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: austin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angelica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: babygirl1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: claudia",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:51",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hellokitty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jessie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sophie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: asshole",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pictures",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: shannon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: gemini",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kimberly",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pamela",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jeremy",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bailey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveyou2",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: gabriela",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: maria",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mariposa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: morgan",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: december",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: september",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: batman",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mahalkita",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123abc",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123321",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mother",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: madison",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alyssa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:50",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: november",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: greenday",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: martin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: baseball",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 55555",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: heaven",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: babygurl",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ricardo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angel1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rebelde",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: myspace",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: manuel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: kisses",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rainbow",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cristina",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pepper",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chicken",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: corazon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: maggie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pokemon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:49",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: fernando",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 00000",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: honey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: victoria",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 987654",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: beauty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 222222",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sweetie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: blink182",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: peanut",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: stephanie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ginger",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: david",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: heather",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: antonio",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: dolphin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: arsenal",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 159753",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cheese",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 7777777",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tequiero",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rachel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: patricia",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alejandra",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brittany",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: george",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:48",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: buster",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alejandro",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sandra",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: killer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cherry",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hunter",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: gabriel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: snoopy",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: nathan",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 11111",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: shorty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 999999",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 789456",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: orange",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: louise",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rangers",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: steven",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: carolina",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: diamond",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 555555",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:47",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: princess1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 112233",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: richard",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: monica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: dancer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: america",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sayang",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 121212",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: christian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: destiny",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alexander",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: adrian",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sakura",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveme",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: patrick",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: poohbear",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angela",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mylove",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: beautiful",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: thomas",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: william",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: miguel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: estrella",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jesus",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alexis",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:46",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: alexandra",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: princesa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: mickey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lauren",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: daniela",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: yellow",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: taylor",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: softball",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: junior",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: joseph",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: spongebob",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sweety",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: summer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: naruto",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: cookie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: vanessa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: dragon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: whatever",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: computer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 987654321",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jonathan",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: family",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: forever",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:45",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: danielle",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: robert",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: matthew",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: eminem",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: melissa",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: shadow",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 666666",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: brandon",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jasmine",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: teamo",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lovers",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chelsea",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: barbie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: samantha",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: charlie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tinkerbell",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hottie",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: elizabeth",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hello",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: playboy",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: flower",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tweety",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angels",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: andrew",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:44",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: basketball",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: pretty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: loveyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: amanda",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: hannah",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: superman",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 1234567890",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: bubbles",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: joshua",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jennifer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: carlos",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: andrea",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: secret",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: football",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123123",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: fuckyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: loveme",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: justin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: liverpool",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jordan",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: angel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:43",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: purple",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: butterfly",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: friends",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: anthony",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: soccer",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: password1",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: chocolate",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: sunshine",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: tigger",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: michelle",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 000000",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveu",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 111111",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: qwerty",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: ashley",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: michael",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 654321",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: jessica",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: lovely",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: monkey",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: babygirl",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: daniel",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: nicole",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: abc123",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 12345678",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: rockyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:42",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 1234567",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: princess",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: iloveyou",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: password",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456789",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 12345",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:23:41",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:12:30",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: testpassword",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:09:16",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:07:21",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:06:59",
+        "username": "\" or \"\"=\"",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:06:25",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:06:21",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456789",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:06:16",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: 123456",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:05:49",
+        "username": "\" or \"\"=\"",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:05:46",
+        "username": "\" or \"\"=\"",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: \" or \"\"=\"",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:04:57",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-04-02 07:04:48",
+        "username": "adwadwa",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: awdawdad",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-26 10:28:02",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-26 10:27:46",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-23 10:41:34",
+        "username": "admin3",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-20 08:46:09",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773996369.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773996369.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773996369.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-20 08:41:24",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 10:09:39",
+        "username": "admin3",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/PROVOCEM_lived_realities_Romania_1773914979.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 10:09:10",
+        "username": "admin3",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:58:38",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:58:31",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/CV-_AIDA_MARC_1773914311.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/CV-_AIDA_MARC_1773914311.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF",
+                "/static/uploads/CV-_AIDA_MARC_1773914311.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:58:07",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:57:59",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773914264638 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914264.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_evaluare_dosare_echipa_administrativa_cu_coduri_PEO_312262_1773914279.PDF"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:57:44",
+        "username": {
+            "fresh": false,
+            "iat": 1773914122,
+            "jti": "762bb2c9-3ec2-4189-bdbf-f32b566f166a",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773914122,
+            "csrf": "3f4d5138-397c-4fc8-8dcb-c89e8734b133",
+            "exp": 1773915022,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: q",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:57:08",
+        "username": "admin4",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: q (ID: 1773829605320)",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq\r\n",
+            "perioada": "q",
+            "anunt": "q",
+            "link_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf",
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773914218.pdf"
+            ],
+            "id": 1773829605320
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:58",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/26305T1340_1773914150.pdf",
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773914218.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773914218.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf",
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773914218.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:44",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:35",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:29",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:18",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\nq\r\nq\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:56:04",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:55:50",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773914150.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:55:22",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:51:18",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-19 09:31:22",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:50:37",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q",
+                "program": "q",
+                "posturi": "q\r\n",
+                "perioada": "q",
+                "anunt": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:50:24",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:45:11",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:44:11",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf",
+                "/static/uploads/Concurs_international_pentru_elevi_ArtsOn_-_Muzica_-_Regulament_1773834251.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 11:43:44",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:27:12",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829605320 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/26305T1340_1773829632.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829605.pdf",
+                "/static/uploads/26305T1340_1773829632.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:26:45",
+        "username": {
+            "fresh": false,
+            "iat": 1773829444,
+            "jti": "846b9c6b-04a9-4685-912b-3d21d57bcefa",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773829444,
+            "csrf": "47567da1-de6d-41e6-a876-dbdbb548ddfc",
+            "exp": 1773830344,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: q",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:26:02",
+        "username": "admin4",
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul: UNITA Phase 2 (2023-2027) (ID: 1770982741928)",
+        "payload": {
+            "id": 1770982741928,
+            "id_proiect": "UNITA Phase 2 (2023-\n2027)",
+            "titlu": "UNITA Phase 2 (2023-2027)",
+            "program": "Erasmus+ European Universities",
+            "posturi": "1.Asistent proiect UNITA \u00een cadrul Universit\u0103\u021bii de Vest din Timi\u0219oara",
+            "perioada": "30.12.2024 \u2013 16.01.2025, la ora 12:00",
+            "link_pdf": "http://daip.uvt.ro/wp-content/uploads/2025/01/Anunt-completare-echipa-proiect-UNITA-EAC-dec-2024-asistent-de-proiect.pdf",
+            "anunt": "Anun\u021b selec\u021bie echip\u0103 proiect UNITA Phase 2 (2023-2027)"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:24:47",
+        "username": {
+            "fresh": false,
+            "iat": 1773829444,
+            "jti": "846b9c6b-04a9-4685-912b-3d21d57bcefa",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773829444,
+            "csrf": "47567da1-de6d-41e6-a876-dbdbb548ddfc",
+            "exp": 1773830344,
+            "role": "admin"
+        },
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul cu ID: 1773829245625",
+        "payload": {
+            "id_sters": 1773829245625
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:24:04",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:21:03",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829245625 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829245.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf",
+                "/static/uploads/Anexa_12_Anunt_rezultate_finale_Echipa_imp_-_cu_cod_PNRR_ID_18_20.11.2025_1773829263.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anexa_12_Anunt_rezultate_finale_Echipa_imp_-_cu_cod_PNRR_ID_18_20.11.2025_1773829263.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829245.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf",
+                "/static/uploads/Anexa_12_Anunt_rezultate_finale_Echipa_imp_-_cu_cod_PNRR_ID_18_20.11.2025_1773829263.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:20:54",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1773829245625 (q)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "q",
+                "id_proiect": "q"
+            },
+            "pdf_uri_pastrate": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829245.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf"
+            ],
+            "stare_finala_toate_pdf": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773829245.pdf",
+                "/static/uploads/Anexa_12_Anunt_afisare_rezultate_finale_evaluare_dosare_echipa_de_implementare_cu_coduri_1773829254.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:20:45",
+        "username": {
+            "fresh": false,
+            "iat": 1773829224,
+            "jti": "ab819b86-5aca-4421-9498-1fe966ecfed4",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773829224,
+            "csrf": "d44b5e7e-dde7-4cd8-975c-1990a5d1be28",
+            "exp": 1773830124,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: q",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:20:33",
+        "username": {
+            "fresh": false,
+            "iat": 1773829224,
+            "jti": "ab819b86-5aca-4421-9498-1fe966ecfed4",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773829224,
+            "csrf": "d44b5e7e-dde7-4cd8-975c-1990a5d1be28",
+            "exp": 1773830124,
+            "role": "admin"
+        },
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_sters": 1773827964723
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:20:24",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:18:04",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773828966.pdf",
+                "/static/uploads/Anunt_afisare_rezultate_selectie_echipa_de_proiect_-_coordonatori_locali_hub-uri_UNITA_martie_2026_1773828976.pdf",
+                "/static/uploads/Anexa_12_rezultate_intermediare_PRECISE-CARE_1773829021.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:17:01",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": [
+                "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773828966.pdf",
+                "/static/uploads/Anunt_afisare_rezultate_selectie_echipa_de_proiect_-_coordonatori_locali_hub-uri_UNITA_martie_2026_1773828976.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:16:16",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773828966.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:16:06",
+        "username": "admin4",
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:15:55",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:09:24",
+        "username": {
+            "fresh": false,
+            "iat": 1773828557,
+            "jti": "44e704ee-c6f2-4c77-a31a-0fe268a00b8c",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773828557,
+            "csrf": "adf45625-c5ca-4bb6-b986-61c5d689a945",
+            "exp": 1773829457,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773827964.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:09:17",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 10:04:09",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773827964.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:59:38",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1773827964723",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_selectie_echipa_proiect_PNCDI_IV_-_POVESTEA_ALEXANDREI_SI_A_LUIZEI_1773827964.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:59:24",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: q",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:58:50",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "\u0218tergere Anun\u021b",
+        "details": "A eliminat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_sters": 1772190894609
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:57:34",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:57:25",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:57:08",
+        "username": {
+            "fresh": false,
+            "iat": 1773827814,
+            "jti": "7d06de90-6e3d-4326-8c5c-5950e59becdf",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827814,
+            "csrf": "7533f67c-cc76-4ca7-a553-d0bec306bffc",
+            "exp": 1773828714,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq\r\n",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:56:54",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:53:15",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:51:59",
+        "username": {
+            "fresh": false,
+            "iat": 1773827295,
+            "jti": "a5e458df-1031-4cdb-ae55-27bdeb951361",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827295,
+            "csrf": "7aa005cc-ac51-4128-8260-4661c17eb41f",
+            "exp": 1773828195,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq\r\n",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:51:52",
+        "username": {
+            "fresh": false,
+            "iat": 1773827295,
+            "jti": "a5e458df-1031-4cdb-ae55-27bdeb951361",
+            "type": "access",
+            "sub": "admin4",
+            "nbf": 1773827295,
+            "csrf": "7aa005cc-ac51-4128-8260-4661c17eb41f",
+            "exp": 1773828195,
+            "role": "admin"
+        },
+        "action": "Editare Anun\u021b",
+        "details": "A modificat anun\u021bul cu ID: 1772190894609",
+        "payload": {
+            "id_proiect": "q",
+            "program": "q",
+            "titlu": "q",
+            "posturi": "q\r\nq\r\nq\r\n",
+            "perioada": "q",
+            "anunt": "q",
+            "keep_pdfs": "/static/uploads/Anunt_Coordonatori_locali_UNITA_1772191039.pdf"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:48:15",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "payload": null,
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:27:10",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:26:05",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:22:32",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin4",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:14:46",
+        "username": "admin4",
+        "action": "Login Success",
+        "details": "S-a logat utilizatorul cu rolul: admin4",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:13:17",
+        "username": "admin1",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: admin111",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:13:01",
+        "username": "admin1",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: admin111",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:12:52",
+        "username": "admin",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: a",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 09:12:27",
+        "username": "admin1",
+        "action": "Login Failed",
+        "details": "Tentativ\u0103 e\u0219uat\u0103 cu parola: admin",
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-03-18 08:45:06",
+        "username": "admin",
+        "action": "Login",
+        "details": "Autentificare reu\u0219it\u0103",
+        "ip": "10.66.7.1"
+    }
+]

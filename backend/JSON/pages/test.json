@@ -1,0 +1,22 @@
+{
+    "root": {
+        "props": {}
+    },
+    "content": [
+        {
+            "type": "Heading",
+            "props": {
+                "id": "Heading-3a43baf7-dba5-4a88-ae7f-6d50af500514",
+                "children": "test1"
+            }
+        },
+        {
+            "type": "Paragraph",
+            "props": {
+                "id": "Paragraph-881b4fdb-64e9-4f8f-b7b0-19c708daf70b",
+                "children": "testarea1"
+            }
+        }
+    ],
+    "zones": {}
+}

@@ -1,0 +1,27 @@
+{
+    "root": {
+        "props": {}
+    },
+    "content": [
+        {
+            "props": {
+                "id": "Image-73cbfa0d-a81a-4de1-8ce0-3d844f1e786d"
+            },
+            "type": "Image"
+        },
+        {
+            "props": {
+                "id": "Image-fcf520fb-1deb-44cb-a228-0e52106aebb3"
+            },
+            "type": "Image"
+        },
+        {
+            "props": {
+                "children": "TESTTTTTT",
+                "id": "Heading-a1c30adb-ba52-435c-967d-f27918751381"
+            },
+            "type": "Heading"
+        }
+    ],
+    "zones": {}
+}

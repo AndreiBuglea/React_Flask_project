@@ -1,0 +1,23 @@
+{
+    "root": {
+        "props": {}
+    },
+    "content": [
+        {
+            "props": {
+                "children": "2r13t24y354u6j5u7kt",
+                "id": "HeadingBlock-cb0a1e5b-158b-429f-b48b-a11c435429cf",
+                "level": -4
+            },
+            "type": "HeadingBlock"
+        },
+        {
+            "type": "ParagraphBlock",
+            "props": {
+                "id": "ParagraphBlock-5965d1e2-0d22-4c7a-ac2d-45038eb6f5c5",
+                "children": "wr3t45ytuyk"
+            }
+        }
+    ],
+    "zones": {}
+}

@@ -8,53 +8,64 @@ export default function EditorCMS() {
   const [slug, setSlug] = useState("acasa");
   const [data, setData] = useState({ content: [], root: {} });
   const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
-  // Funcție care transformă textul normal în slug (ex: "Despre Noi" -> "despre-noi")
   const genereazaSlug = (text) => {
     return text
       .toString()
       .toLowerCase()
       .trim()
-      .replace(/\s+/g, "-")           // Înlocuiește spațiile cu -
-      .replace(/[^\w\-]+/g, "")       // Șterge caracterele speciale
-      .replace(/\-\-+/g, "-");        // Evită dublele cratime
+      .replace(/\s+/g, "-")
+      .replace(/[^\w\-]+/g, "")
+      .replace(/\-\-+/g, "-")
+      .replace(/^-+|-+$/g, ""); // curăță cratimele de la început/sfârșit
   };
 
   const loadPage = useCallback(async (pageSlug) => {
+    if (!pageSlug) return;
     setIsLoading(true);
+    setMessage(`Se încarcă pagina: ${pageSlug}...`);
+
     try {
       const res = await fetch(`https://daiptest.e-uvt.ro/api/incarca-pagina/${pageSlug}`);
+      if (!res.ok) throw new Error("Eroare la server");
       const json = await res.json();
-      setData(json);
+      setData(json || { content: [], root: {} });
+      setMessage(`Pagina "${pageSlug}" încărcată cu succes.`);
     } catch (err) {
       console.error(err);
       setData({ content: [], root: {} });
+      setMessage("❌ Eroare la încărcare.");
     } finally {
       setIsLoading(false);
     }
   }, []);
 
-  // Încarcă pagina inițială (acasa) la start
+  // Încarcă pagina "acasa" la pornire
   useEffect(() => {
     loadPage("acasa");
   }, [loadPage]);
 
-  // Schimbare nume pagină din input
   const handleNumeChange = (e) => {
     const nouNume = e.target.value;
     setNumePagina(nouNume);
     setSlug(genereazaSlug(nouNume));
   };
 
-  // Buton dedicat pentru a schimba/încărca altă pagină în editor
   const handleIncarcaPagina = () => {
-    if (!slug) return alert("Scrie un nume valid pentru pagină!");
+    if (!slug.trim()) {
+      alert("Te rog introdu un nume valid pentru pagină!");
+      return;
+    }
     loadPage(slug);
   };
 
   const handlePublish = useCallback(async (newData) => {
-    if (!slug) return alert("Numele paginii este invalid!");
-    
+    if (!slug.trim()) {
+      alert("Slug-ul paginii este invalid!");
+      return;
+    }
+
     try {
       const response = await fetch(`https://daiptest.e-uvt.ro/api/salveaza-pagina/${slug}`, {
         method: "POST",
@@ -64,43 +75,88 @@ export default function EditorCMS() {
 
       if (response.ok) {
         setData(newData);
-        alert(`✅ Pagina a fost salvată ca: "${slug}.json" în folderul pages!`);
+        setMessage(`✅ Pagina "${slug}" a fost salvată cu succes!`);
+        alert(`✅ Pagina "${slug}" a fost salvată!`);
       } else {
-        alert("❌ Eroare la salvare pe server.");
+        const errorText = await response.text();
+        console.error(errorText);
+        setMessage("❌ Eroare la salvare pe server.");
       }
     } catch (error) {
       console.error(error);
-      alert("❌ Eroare de rețea.");
+      setMessage("❌ Eroare de rețea la salvare.");
     }
   }, [slug]);
 
-  if (isLoading) return <div style={{ padding: 40 }}>Se încarcă pagina...</div>;
+  if (isLoading) {
+    return <div style={{ padding: 40, textAlign: "center" }}>Se încarcă pagina...</div>;
+  }
 
   return (
     <div style={{ height: "100vh", display: "flex", flexDirection: "column" }}>
-      {/* BARA DE SUS PENTRU MANAGEMENT PAGINĂ */}
-      <div style={{ padding: "10px 20px", background: "#1e293b", color: "#fff", display: "flex", gap: "15px", alignItems: "center" }}>
-        <label style={{ fontWeight: "bold" }}>Nume Pagină:</label>
+      {/* Bara de management pagini */}
+      <div style={{ 
+        padding: "12px 20px", 
+        background: "#1e293b", 
+        color: "#fff", 
+        display: "flex", 
+        alignItems: "center", 
+        gap: "15px",
+        flexWrap: "wrap"
+      }}>
+        <label style={{ fontWeight: "bold", minWidth: "110px" }}>Nume Pagină:</label>
+        
         <input 
           type="text" 
           value={numePagina} 
           onChange={handleNumeChange}
-          style={{ padding: "6px 10px", borderRadius: "4px", border: "1px solid #ccc", color: "#000", width: "200px" }}
+          placeholder="Ex: Despre Noi"
+          style={{ 
+            padding: "8px 12px", 
+            borderRadius: "6px", 
+            border: "1px solid #475569", 
+            background: "#334155",
+            color: "#fff",
+            width: "260px"
+          }}
         />
-        <span style={{ color: "#94a3b8", fontSize: "14px" }}>Fisier: <b>{slug}.json</b></span>
-        
+
+        <span style={{ color: "#94a3b8", fontSize: "14px" }}>
+          Fișier: <strong>{slug}.json</strong>
+        </span>
+
         <button 
           onClick={handleIncarcaPagina}
-          style={{ padding: "6px 12px", background: "#3b82f6", color: "#fff", border: "none", borderRadius: "4px", cursor: "pointer", fontWeight: "600" }}
+          style={{ 
+            padding: "8px 16px", 
+            background: "#3b82f6", 
+            color: "#fff", 
+            border: "none", 
+            borderRadius: "6px", 
+            cursor: "pointer",
+            fontWeight: "600"
+          }}
         >
-          Deschide / Creează Pagina
+          📂 Deschide / Creează
         </button>
+
+        {message && (
+          <span style={{ 
+            marginLeft: "auto", 
+            padding: "6px 12px", 
+            background: "#334155", 
+            borderRadius: "4px",
+            fontSize: "14px"
+          }}>
+            {message}
+          </span>
+        )}
       </div>
 
-      {/* EDITORUL PUCK */}
-      <div style={{ flex: 1, position: "relative" }}>
+      {/* Editor Puck */}
+      <div style={{ flex: 1, overflow: "hidden" }}>
         <Puck
-          config={puckConfig}                         
+          config={puckConfig}
           data={data}
           onPublish={handlePublish}
         />

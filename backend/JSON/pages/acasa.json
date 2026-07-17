@@ -1,0 +1,62 @@
+{
+    "root": {
+        "props": {}
+    },
+    "content": [
+        {
+            "props": {
+                "className": "",
+                "html": "dsfdgryngf333",
+                "id": "Heading-13ee9add-824f-44a3-9639-2f4c2cd7ad4c",
+                "level": 5,
+                "children": "444"
+            },
+            "type": "Heading"
+        },
+        {
+            "props": {
+                "html": "utgdhf",
+                "id": "Paragraph-75ed3653-a24c-4340-b389-6f4428884693"
+            },
+            "type": "Paragraph"
+        },
+        {
+            "props": {
+                "id": "Image-06607318-86ef-4147-add9-c4f374e1ebb0",
+                "src": "https://daiptest.e-uvt.ro/api/uploads-imagine/images_10.png"
+            },
+            "type": "Image"
+        },
+        {
+            "props": {
+                "backgroundColor": "green",
+                "id": "Section-388b6747-ec3b-49d7-9a40-0fcda53c42e2",
+                "padding": ""
+            },
+            "type": "Section"
+        },
+        {
+            "props": {
+                "id": "Spacer-7185b35b-bcbb-41dd-b32e-5a9bf2838b2d"
+            },
+            "type": "Spacer"
+        },
+        {
+            "props": {
+                "href": "https://www.google.com/search?q=A+ap%C4%83rut+o+eroare+%281096%29+gemini&rlz=1C1GCEA_enRO983RO983&oq=A+ap%C4%83rut+o+eroare+%281096%29+gemini+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRiPAjIHCAQQIRiPAtIBCDI4NDRqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8",
+                "id": "Button-10652dea-daf0-4f8d-8e0c-69c20e20458b",
+                "label": "button",
+                "variant": "primary"
+            },
+            "type": "Button"
+        },
+        {
+            "props": {
+                "html": "<b>CSEC</b>",
+                "id": "Paragraph-89d9d063-0b9c-4aa2-b270-0fb1c0ef5873"
+            },
+            "type": "Paragraph"
+        }
+    ],
+    "zones": {}
+}

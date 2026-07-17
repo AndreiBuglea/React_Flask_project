@@ -23,6 +23,8 @@ from flask import request, jsonify
 from werkzeug.utils import secure_filename
 import time
 import re
+from flask import send_from_directory
+import mimetypes
 
 # Citim string-ul din .env (ex: "email1,email2")
 admins_env = os.getenv("ALLOWED_ADMINS", "")
@@ -1327,6 +1329,83 @@ def incarca_pagina(page_slug):
         return jsonify(date_salvate)
     
     return jsonify({"content": [], "root": {}})
+
+
+# =====================================================================
+# CONFIGURARE ȘI CALE ABSOLUTĂ IMAGINI
+# =====================================================================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Folosim os.path.abspath pentru a garanta o cale completă pe Linux (ex: /var/www/.../uploads-images)
+FOLDER_UPLOADS_IMAGINI = os.path.abspath(os.path.join(BASE_DIR, "uploads-images"))
+
+if not os.path.exists(FOLDER_UPLOADS_IMAGINI):
+    os.makedirs(FOLDER_UPLOADS_IMAGINI, exist_ok=True)
+
+# =====================================================================
+# 1. RUTA DE UPLOAD (Salvare în folder și generare URL corect)
+# =====================================================================
+@app.route('/api/upload-imagine', methods=['POST'])
+def upload_imagine():
+    try:
+        if 'file' not in request.files:
+            return jsonify({"status": "eroare", "message": "Nu s-a trimis niciun fisier"}), 400
+            
+        file = request.files['file']
+        if file.filename == '':
+            return jsonify({"status": "eroare", "message": "Nume fisier gol"}), 400
+
+        if file:
+            # Curățăm numele fișierului pentru siguranță
+            nume_curat = secure_filename(file.filename)
+            # Fallback în caz că secure_filename golește complet numele (ex: caractere exclusiv chirilice/emoji)
+            if not nume_curat:
+                nume_curat = file.filename
+                
+            cale_salvare = os.path.join(FOLDER_UPLOADS_IMAGINI, nume_curat)
+            file.save(cale_salvare)
+
+            # !!! CORECTAT AICI: URL-ul returnat are acum exact '/api/uploads-imagine/' la singular, 
+            # potrivindu-se perfect cu ruta de servire de mai jos!
+            url_imagine = f"https://daiptest.e-uvt.ro/api/uploads-imagine/{nume_curat}"
+            return jsonify({"status": "succes", "url": url_imagine})
+
+    except Exception as e:
+        return jsonify({"status": "eroare", "message": str(e)}), 500
+
+# =====================================================================
+# 2. RUTA DE SERVIRE IMAGINI (VERSIUNEA SIMPLĂ ȘI STABILĂ)
+# =====================================================================
+@app.route('/api/uploads-imagine/<filename>')
+def serveste_imagine(filename):
+    try:
+        cale_absoluta_folder = FOLDER_UPLOADS_IMAGINI  # folosește variabila globală
+
+        print(f"\n[LOG IMAGINE] Cerere pentru: {filename}")
+        print(f"[LOG IMAGINE] Folder: {cale_absoluta_folder}")
+        print(f"[LOG IMAGINE] Există? {os.path.exists(os.path.join(cale_absoluta_folder, filename))}")
+
+        # Varianta cea mai stabilă: send_from_directory
+        return send_from_directory(
+            directory=cale_absoluta_folder,
+            path=filename,
+            as_attachment=False,           # important pentru imagini
+        )
+
+    except FileNotFoundError:
+        return jsonify({
+            "status": "eroare",
+            "message": f"Fișierul '{filename}' nu a fost găsit."
+        }), 404
+
+    except Exception as e:
+        print(f"[LOG IMAGINE] Eroare la servirea imaginii: {str(e)}")
+        import traceback
+        traceback.print_exc()   # afișează stack trace complet în terminal
+        return jsonify({
+            "status": "eroare",
+            "message": "Eroare internă la servirea imaginii",
+            "detalii": str(e)
+        }), 500
 
 if __name__=="__main__":
     with app.app_context():

@@ -45,15 +45,14 @@ export default function PageViewer() {
     );
   }
 
-  // Încercăm să extragem textul din prima componentă de tip "Heading" adăugată în Puck pentru a o folosi ca Titlu Principal al paginii.
-  // Dacă nu există o componentă Heading în Puck, va transforma slug-ul în titlu text (ex: "contact-universitate" -> "Contact Universitate")
-  const primaComponentaHeading = pageData.content?.find(item => item.type === "Heading");
-  const titluDinamice = primaComponentaHeading?.props?.children || slug.replace(/-/g, ' ').replace(/(^\w|\s\w)/g, m => m.toUpperCase());
-
-  // Eliminăm din listă prima componentă Heading dacă o randerăm deja sus ca titlu fix din template-ul oficial al site-ului
-  const continutFiltrat = primaComponentaHeading 
-    ? { ...pageData, content: pageData.content.filter(item => item !== primaComponentaHeading) }
-    : pageData;
+  // Extragem primul Heading indiferent dacă e salvat ca WYSIWYG (html) sau simplu (children)
+  const primulHeading = pageData.content?.find(item => item.type === "Heading");
+  
+  // Curățăm tag-urile HTML dacă titlul a fost salvat ca WYSIWYG, pentru a nu le strica în bara de sus
+  const textTitluRaw = primulHeading?.props?.html || primulHeading?.props?.children;
+  const titluDinamice = textTitluRaw 
+    ? textTitluRaw.replace(/<[^>]*>/g, '') 
+    : slug.replace(/-/g, ' ').replace(/(^\w|\s\w)/g, m => m.toUpperCase());
 
   return (
     <Box
@@ -116,20 +115,28 @@ export default function PageViewer() {
             sx={{ 
               pl: { xs: 2, md: 4 }, 
               pr: { xs: 2, md: 4 },
-              // Mapăm toate proprietățile CSS injectate de blocurile de la Puck direct pe containerul principal
               color: "#003366",
               fontSize: "1.1rem",
               lineHeight: 1.7,
               "& p": { mb: 3, textAlign: "left", width: "100%" },
-              "& img": { maxWidth: "100%", height: "auto", borderRadius: "12px", mt: 3, mb: 2, display: "block", mx: "auto" },
+              // IMPORTANT: Asigură-te că lățimea imaginii nu e suprascrisă la 0 de reguli CSS externe
+              "& img": { 
+                maxWidth: "100% !important", 
+                height: "auto !important", 
+                borderRadius: "12px", 
+                mt: 3, 
+                mb: 2, 
+                display: "block", 
+                mx: "auto" 
+              },
               "& a": { color: "#FF0000", textDecoration: "underline", fontWeight: 600, "&:hover": { color: "#cc0000" } },
               "& h1, & h2, & h3, & h4, & h5, & h6": { color: "#003366", fontWeight: 600, mt: 4, mb: 2, textAlign: "left" },
               "& ul": { display: "block", textAlign: "left", pl: 4, mb: 3 },
               "& li": { mb: 1 }
             }}
           >
-            {/* Randerul Puck care scuipă blocurile dinamice direct în interiorul template-ului tău curat */}
-            <Render config={puckConfig} data={continutFiltrat} />
+            {/* Trimitem direct starea originală, curată, neatinsă. Puck se ocupă singur de randare fără erori */}
+            <Render config={puckConfig} data={pageData} />
           </CardContent>
         </Card>
       </Container>

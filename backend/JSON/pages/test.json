@@ -4,18 +4,81 @@
     },
     "content": [
         {
-            "type": "Heading",
             "props": {
-                "id": "Heading-3a43baf7-dba5-4a88-ae7f-6d50af500514",
-                "children": "test1"
+                "children": "test1",
+                "id": "Heading-3a43baf7-dba5-4a88-ae7f-6d50af500514"
+            },
+            "type": "Heading"
+        },
+        {
+            "props": {
+                "children": "testarea1",
+                "id": "Paragraph-881b4fdb-64e9-4f8f-b7b0-19c708daf70b"
+            },
+            "type": "Paragraph"
+        },
+        {
+            "props": {
+                "backgroundColor": "",
+                "id": "Section-9920072f-d6ee-4648-8a35-fd05c884ff1e"
+            },
+            "type": "Section"
+        },
+        {
+            "props": {
+                "id": "Spacer-f2325b57-6ee7-4dc3-877d-3b1660ad729e"
+            },
+            "type": "Spacer"
+        },
+        {
+            "props": {
+                "href": "https://www.google.com/",
+                "id": "Button-0b1b9f38-f8c2-46c4-962a-08e302619635",
+                "label": "buton fizic"
+            },
+            "type": "Button"
+        },
+        {
+            "props": {
+                "children": "gthrynthmjfhfjmjyhetayrmtj_\nfjkbrj-svji",
+                "html": "<ol><li><a href=\"www.google.com\">utdjyhtdsg</a></li></ol>",
+                "id": "Paragraph-1241b22b-370c-4980-bbcb-bf5aa7deb16e"
+            },
+            "type": "Paragraph"
+        },
+        {
+            "type": "Image",
+            "props": {
+                "id": "Image-94a175e4-b25a-4a17-acbd-033f01afd35f",
+                "src": "https://daiptest.e-uvt.ro/api/uploads-imagine/images_10.png"
             }
         },
         {
-            "type": "Paragraph",
             "props": {
-                "id": "Paragraph-881b4fdb-64e9-4f8f-b7b0-19c708daf70b",
-                "children": "testarea1"
-            }
+                "id": "Spacer-8730ed36-ab54-4a71-95c5-6736bf12eae6"
+            },
+            "type": "Spacer"
+        },
+        {
+            "props": {
+                "id": "Image-68b47642-0d8c-40af-b583-9fb348249f62",
+                "src": "https://daiptest.e-uvt.ro/uploads-imagine/Screenshot_2026-05-18_141510.png"
+            },
+            "type": "Image"
+        },
+        {
+            "props": {
+                "id": "Image-c833971a-7471-458d-8e2c-261ccda8c0ef",
+                "src": "https://daiptest.e-uvt.ro/api/uploads-imagine/images_8.png"
+            },
+            "type": "Image"
+        },
+        {
+            "props": {
+                "id": "Image-7abe07b5-a5fc-4b1f-98b9-2dd91eee4d1f",
+                "src": "https://daiptest.e-uvt.ro/api/uploads-imagine/logo-cesc6_2.png"
+            },
+            "type": "Image"
         }
     ],
     "zones": {}

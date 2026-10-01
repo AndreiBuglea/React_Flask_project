@@ -33,7 +33,3 @@ def get_home():
         })
     else:
         return jsonify({"error": "Home page not found"}), 404
-
--------------------------------------------------------------
-
-inainte sa pornesc back tre sa bag parola bazei de date-nu

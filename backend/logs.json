@@ -1,5 +1,70 @@
 [
     {
+        "timestamp": "2026-10-01 08:14:09",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1790842410116 (test)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "test",
+                "id_proiect": "test"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anexa_12_Anunt_rezultate_finale_selectie_echipa_ProfesionistiReflexivi_cu_coduri_SMIS311901_2_1790842410.pdf",
+                "/uploads/Anunt_selectie_echipa_HEFEU_1790842424.pdf",
+                "/uploads/Anunt_rezultate_selectie_dosare_ECONHUB_17.08.2026_1_1790842449.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_rezultate_selectie_dosare_ECONHUB_17.08.2026_1_1790842449.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anexa_12_Anunt_rezultate_finale_selectie_echipa_ProfesionistiReflexivi_cu_coduri_SMIS311901_2_1790842410.pdf",
+                "/uploads/Anunt_selectie_echipa_HEFEU_1790842424.pdf",
+                "/uploads/Anunt_rezultate_selectie_dosare_ECONHUB_17.08.2026_1_1790842449.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-10-01 08:13:44",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Editare Anun\u021b",
+        "details": "Modificat anun\u021b ID: 1790842410116 (test)",
+        "payload": {
+            "campuri_text": {
+                "titlu": "test",
+                "id_proiect": "test"
+            },
+            "pdf_uri_pastrate": [
+                "/uploads/Anexa_12_Anunt_rezultate_finale_selectie_echipa_ProfesionistiReflexivi_cu_coduri_SMIS311901_2_1790842410.pdf",
+                "/uploads/Anunt_selectie_echipa_HEFEU_1790842424.pdf"
+            ],
+            "pdf_uri_noi_incarcate": [
+                "/uploads/Anunt_selectie_echipa_HEFEU_1790842424.pdf"
+            ],
+            "stare_finala_pdf": [
+                "/uploads/Anexa_12_Anunt_rezultate_finale_selectie_echipa_ProfesionistiReflexivi_cu_coduri_SMIS311901_2_1790842410.pdf",
+                "/uploads/Anunt_selectie_echipa_HEFEU_1790842424.pdf"
+            ]
+        },
+        "ip": "10.66.7.1"
+    },
+    {
+        "timestamp": "2026-10-01 08:13:30",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: test",
+        "payload": {
+            "id_proiect": "test",
+            "program": "test",
+            "titlu": "test",
+            "posturi": "test",
+            "perioada": "test",
+            "anunt": "test"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
         "timestamp": "2026-04-24 10:30:25",
         "user": "Adrian Jigovan (adrian.jigovan@e-uvt.ro)",
         "action": "Ad\u0103ugare Anun\u021b",

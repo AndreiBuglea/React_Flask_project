@@ -1,19 +1,73 @@
-import React, { useEffect, useState } from "react";
-import { Container, Typography, Card, CardContent, Box, Grid, Button, MenuItem, Select, FormControl, InputLabel } from "@mui/material";
+scrape_json.py:
 
-export default function Home() {
+
+
+from bs4 import BeautifulSoup
+import json
+
+with open("anunturi_selectie.html", "r", encoding="utf-8") as f:
+    soup = BeautifulSoup(f, "html.parser")
+
+data = []
+
+table = soup.find("table")
+
+if table:
+    rows = table.find_all("tr")
+
+    headers = [th.text.strip() for th in rows[0].find_all(["th", "td"])]
+
+    for row in rows[1:]:
+        cols = row.find_all("td")
+        if not cols:
+            continue
+
+        row_data = {}
+        for i in range(len(cols)):
+            text = cols[i].text.strip()
+
+            link = cols[i].find_all("a")
+            if link and link.get("href"):
+                row_data[headers[i]] = {
+                    "text": text,
+                    "link": link["href"]
+                }
+            else:
+                row_data[headers[i]] = text
+
+        data.append(row_data)
+
+with open("anunturi_final.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)
+
+print("Gata. Datele sunt salvate în anunturi.json")
+
+
+
+----------------------------------
+Anunturiselectiescrape:
+
+import React, { useEffect, useState } from "react";
+import { Container, Typography, Card, CardContent, Box, MenuItem, Select, FormControl, InputLabel, CircularProgress } from "@mui/material";
+// ASIGURĂ-TE CĂ ACEASTĂ CALE ESTE CORECTĂ (unde ai definit lista de emailuri)
+import { ADMIN_USERS } from "../keycloak"; 
+
+export default function Home({ keycloak }) {
   const [anunturi, setAnunturi] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // --- LOGICA PAGINARE ---
+  // --- REZOLVARE ERORI AUTENTIFICARE ---
+  const isAuthenticated = keycloak?.authenticated;
+  const userEmail = keycloak?.tokenParsed?.email;
+  // isAdmin verifică dacă ești logat ȘI dacă emailul tău e în listă
+  const isAdmin = isAuthenticated && ADMIN_USERS.includes(userEmail);
+  // -------------------------------------
+
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 
-  // --- LOGICA SORTARE ---
   const [sortCriterion, setSortCriterion] = useState("id_desc");
-
-  // Stări pentru Formular și Editare
   const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
   const [existingPdfs, setExistingPdfs] = useState([]);
@@ -31,21 +85,16 @@ export default function Home() {
   const [dragActive, setDragActive] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const token = localStorage.getItem("token");
-  const isAdmin = !!token;
-
-  // --- FUNCTIE SORTARE ---
   const getSortedAnunturi = (data) => {
     const sorted = [...data];
     if (sortCriterion === "id_desc") sorted.sort((a, b) => b.id - a.id);
     if (sortCriterion === "id_asc") sorted.sort((a, b) => a.id - b.id);
-    if (sortCriterion === "titlu_asc") sorted.sort((a, b) => a.titlu.localeCompare(b.titlu));
-    if (sortCriterion === "titlu_desc") sorted.sort((a, b) => b.titlu.localeCompare(a.titlu));
+    if (sortCriterion === "titlu_asc") sorted.sort((a, b) => (a.titlu || "").localeCompare(b.titlu || ""));
+    if (sortCriterion === "titlu_desc") sorted.sort((a, b) => (b.titlu || "").localeCompare(a.titlu || ""));
     if (sortCriterion === "program") sorted.sort((a, b) => (a.program || "").localeCompare(b.program || ""));
     return sorted;
   };
 
-  // Calculare date pentru paginare folosind lista sortata
   const sortedItemsList = getSortedAnunturi(anunturi);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -54,7 +103,12 @@ export default function Home() {
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
-    window.scrollTo({ top: 400, behavior: 'smooth' });
+    window.scrollTo({ top: 400, behavior: "smooth" });
+  };
+
+  const fixUrl = (url) => {
+    if (!url || typeof url !== "string") return url;
+    return url.replace(/https:\/\/daip\.uvt\.ro\/(wp-content\/)?uploads\//gi, "/uploads/");
   };
 
   const getLinks = (a) => {
@@ -67,19 +121,19 @@ export default function Home() {
       if (Array.isArray(a.pdf_uri)) links = [...links, ...a.pdf_uri];
       else links.push(a.pdf_uri);
     }
-    return links;
+    return links.map((url) => fixUrl(url));
   };
 
   const getFileName = (url) => {
-    if (!url || typeof url !== 'string') return "Fisier.pdf";
-    return url.split('/').pop();
+    if (!url || typeof url !== "string") return "Fisier.pdf";
+    return url.split("/").pop();
   };
 
   const loadAnunturi = async () => {
     try {
       const res = await fetch("/api/anunturi");
       const data = await res.json();
-      setAnunturi(data); // Nu mai sortam aici, lasam logica de sortare de mai sus sa se ocupe
+      setAnunturi(data);
     } catch (err) {
       console.error(err);
       setError(err.message);
@@ -105,7 +159,7 @@ export default function Home() {
     });
     setExistingPdfs(getLinks(a));
     setFile(null);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const cancelEdit = () => {
@@ -138,14 +192,14 @@ export default function Home() {
       formPayload.append("anunt", formData.anunt);
 
       if (file) formPayload.append("pdf", file);
-      existingPdfs.forEach(url => formPayload.append("keep_pdfs", url));
+      existingPdfs.forEach((url) => formPayload.append("keep_pdfs", url));
 
       const url = isEditing ? `/api/anunturi/${editId}` : "/api/anunturi";
       const method = isEditing ? "PUT" : "POST";
 
       const res = await fetch(url, {
         method: method,
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: `Bearer ${keycloak.token}` },
         body: formPayload,
       });
 
@@ -192,10 +246,10 @@ export default function Home() {
     try {
       const res = await fetch(`/api/anunturi/${id}`, {
         method: "DELETE",
-        headers: { Authorization: `Bearer ${token}` }
+        headers: { Authorization: `Bearer ${keycloak.token}` },
       });
       if (!res.ok) throw new Error("Eroare la ștergere");
-      setAnunturi(prev => prev.filter(a => String(a.id) !== String(id)));
+      setAnunturi((prev) => prev.filter((a) => String(a.id) !== String(id)));
     } catch (err) {
       alert(err.message);
     }
@@ -207,55 +261,40 @@ export default function Home() {
         background: "linear-gradient(135deg, #e6f2ff 0%, #ffffff 100%)",
         minHeight: "100vh",
         py: 8,
-        
+        width: "100%",
+        overflowX: "hidden",
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth={false} sx={{ px: { xs: 2, md: 6 } }}>
         <Box textAlign="center" mb={6}>
-          <Typography
-            variant="h3"
-            sx={{
-              fontWeight: 700,
-              color: "#003366",
-              mb: 2,
-              position: "relative",
-              display: "inline-block",
-            }}
-          >
+          <Typography variant="h3" sx={{ fontWeight: 700, color: "#003366", mb: 2 }}>
             Anunțuri selecție echipe proiecte
           </Typography>
-          <Box
-            sx={{
-              width: 80,
-              height: 4,
-              backgroundColor: "#FFD700",
-              mx: "auto",
-              borderRadius: 2,
-            }}
-          />
+          <Box sx={{ width: 100, height: 4, backgroundColor: "#FFD700", mx: "auto", borderRadius: 2 }} />
         </Box>
 
-        <div style={{ padding: "2rem", maxWidth: "1200px", margin: "0 auto", fontFamily: "sans-serif" }}>
-          {isAdmin && (
-            <div style={{
-              background: "#f9fafb", padding: "2rem", borderRadius: "8px",
-              marginBottom: "2rem", border: "1px solid #e5e7eb", boxShadow: "0 1px 3px rgba(0,0,0,0.1)"
-            }}>
+        {/* Zona Formular Admin - Afișată doar pentru ADMINI confirmați */}
+        {isAdmin && (
+          <Box sx={{ maxWidth: "1200px", mx: "auto", mb: 4 }}>
+            <div style={{ background: "#f9fafb", padding: "2rem", borderRadius: "8px", border: "1px solid #e5e7eb", boxShadow: "0 1px 3px rgba(0,0,0,0.1)" }}>
               <h2>{isEditing ? `Editează anunțul (ID: ${editId})` : "Adaugă anunț nou"}</h2>
               <form onSubmit={handleSubmit} style={{ display: "grid", gap: "1rem" }}>
-                <input style={inputStyle} placeholder="ID Proiect *" value={formData.id_proiect} onChange={e => setFormData({ ...formData, id_proiect: e.target.value })} />
-                <input style={inputStyle} placeholder="Program" value={formData.program} onChange={e => setFormData({ ...formData, program: e.target.value })} />
-                <input style={inputStyle} placeholder="Titlu *" value={formData.titlu} onChange={e => setFormData({ ...formData, titlu: e.target.value })} />
-
+                <input style={inputStyle} placeholder="ID Proiect *" value={formData.id_proiect} onChange={(e) => setFormData({ ...formData, id_proiect: e.target.value })} />
+                <input style={inputStyle} placeholder="Program" value={formData.program} onChange={(e) => setFormData({ ...formData, program: e.target.value })} />
+                <input style={inputStyle} placeholder="Titlu *" value={formData.titlu} onChange={(e) => setFormData({ ...formData, titlu: e.target.value })} />
                 <textarea
                   style={{ ...inputStyle, minHeight: "80px", resize: "vertical" }}
                   placeholder="Posturi (Apasă Enter pentru rând nou)"
                   value={formData.posturi}
-                  onChange={e => setFormData({ ...formData, posturi: e.target.value })}
+                  onChange={(e) => setFormData({ ...formData, posturi: e.target.value })}
                 />
-
-                <input style={inputStyle} placeholder="Perioada" value={formData.perioada} onChange={e => setFormData({ ...formData, perioada: e.target.value })} />
-                <textarea placeholder="Conținut anunț *" value={formData.anunt} onChange={e => setFormData({ ...formData, anunt: e.target.value })} style={{ ...inputStyle, minHeight: "120px", resize: "vertical" }} />
+                <input style={inputStyle} placeholder="Perioada" value={formData.perioada} onChange={(e) => setFormData({ ...formData, perioada: e.target.value })} />
+                <textarea
+                  placeholder="Conținut anunț *"
+                  value={formData.anunt}
+                  onChange={(e) => setFormData({ ...formData, anunt: e.target.value })}
+                  style={{ ...inputStyle, minHeight: "120px", resize: "vertical" }}
+                />
 
                 {isEditing && existingPdfs.length > 0 && (
                   <div style={{ padding: "10px", background: "#fff", border: "1px solid #ddd", borderRadius: "6px" }}>
@@ -263,18 +302,14 @@ export default function Home() {
                     {existingPdfs.map((pdf, i) => (
                       <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "5px" }}>
                         <span style={{ fontSize: "0.8rem" }}>{getFileName(pdf)}</span>
-                        <button type="button" onClick={() => setExistingPdfs(existingPdfs.filter(p => p !== pdf))} style={{ color: "red", border: "none", background: "none", cursor: "pointer" }}>Elimină</button>
+                        <button type="button" onClick={() => setExistingPdfs(existingPdfs.filter((p) => p !== pdf))} style={{ color: "red", border: "none", background: "none", cursor: "pointer" }}>Elimină</button>
                       </div>
                     ))}
                   </div>
                 )}
 
                 <div
-                  style={{
-                    border: dragActive ? "2px dashed #15803d" : "2px dashed #ccc",
-                    borderRadius: "8px", padding: "2rem", textAlign: "center",
-                    background: dragActive ? "#f0fdf4" : "#f9fafb", cursor: "pointer",
-                  }}
+                  style={{ border: dragActive ? "2px dashed #15803d" : "2px dashed #ccc", borderRadius: "8px", padding: "2rem", textAlign: "center", background: dragActive ? "#f0fdf4" : "#f9fafb", cursor: "pointer" }}
                   onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop}
                   onClick={() => document.getElementById("pdfInput").click()}
                 >
@@ -284,198 +319,341 @@ export default function Home() {
                       <p style={{ fontWeight: "bold", color: "#15803d" }}>✓ {file.name}</p>
                       <button type="button" onClick={(e) => { e.stopPropagation(); setFile(null); }} style={{ color: "#c53030" }}>Șterge selecția</button>
                     </div>
-                  ) : (
-                    <p>Trage un PDF nou aici sau <strong>click</strong></p>
-                  )}
+                  ) : <p>Trage un PDF nou aici sau <strong>click</strong></p>}
                 </div>
 
                 <div style={{ display: "flex", gap: "1rem" }}>
-                  <button type="submit" disabled={submitting} style={{
-                    flex: 1, padding: "0.75rem", background: submitting ? "#9ca3af" : "#15803d",
-                    color: "white", border: "none", borderRadius: "6px", cursor: "pointer"
-                  }}>
+                  <button type="submit" disabled={submitting} style={{ flex: 1, padding: "0.75rem", background: submitting ? "#9ca3af" : "#15803d", color: "white", border: "none", borderRadius: "6px", cursor: "pointer" }}>
                     {submitting ? "Se salvează..." : (isEditing ? "Salvează modificările" : "Adaugă anunț")}
                   </button>
-                  {isEditing && (
-                    <button type="button" onClick={cancelEdit} style={{ padding: "0.75rem 1.5rem", background: "#6b7280", color: "white", border: "none", borderRadius: "6px", cursor: "pointer" }}>Anulează</button>
-                  )}
+                  {isEditing && <button type="button" onClick={cancelEdit} style={{ padding: "0.75rem 1.5rem", background: "#6b7280", color: "white", border: "none", borderRadius: "6px", cursor: "pointer" }}>Anulează</button>}
                 </div>
               </form>
             </div>
-          )}
-
-          {/* --- ZONA SELECT SORTARE --- */}
-          <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 2 }}>
-            <FormControl size="small" sx={{ minWidth: 200 }}>
-              <InputLabel id="sort-select-label">Sortează după</InputLabel>
-              <Select
-                labelId="sort-select-label"
-                value={sortCriterion}
-                label="Sortează după"
-                onChange={(e) => { setSortCriterion(e.target.value); setCurrentPage(1); }}
-              >
-                <MenuItem value="id_desc">Cele mai noi</MenuItem>
-                <MenuItem value="id_asc">Cele mai vechi</MenuItem>
-                <MenuItem value="titlu_asc">Titlu (A-Z)</MenuItem>
-                <MenuItem value="titlu_desc">Titlu (Z-A)</MenuItem>
-                <MenuItem value="program">Program</MenuItem>
-              </Select>
-            </FormControl>
           </Box>
+        )}
 
-          {loading ? (
-            <div>Se încarcă...</div>
-          ) : error ? (
-            <div style={{ color: "red" }}>Eroare: {error}</div>
-          ) : (
-            <>
-            
-              {/* Început zonă scroll - am adăugat acest Box care învelește tabelul */}
-<Box sx={{ width: "100%", overflowX: "auto", display: "block" }}>
-  <table style={{ 
-    width: "100%", 
-    minWidth: "1000px", // Aceasta linie forțează tabelul să NU se mai îngusteze pe mobil
-    borderCollapse: "collapse", 
-    border: "1px solid #ccc", 
-    tableLayout: "fixed" 
-  }}>
-    <thead style={{ background: "#eee" }}>
-      <tr>
-        <th style={thStyle}>Titlu</th>
-        <th style={thStyle}>ID Proiect</th>
-        <th style={thStyle}>Program</th>
-        <th style={thStyle}>Posturi</th>
-        <th style={thStyle}>Perioada</th>
-        <th style={thStyle}>PDF</th>
-        {isAdmin && <th style={thStyle}>Acțiuni</th>}
-      </tr>
-    </thead>
-    <tbody>
-      {currentItems.map((a, index) => {
-        const allPdfs = getLinks(a);
-        return (
-          <tr key={a.id || index}>
-            <td style={{ ...tdStyle, width: "25%", wordWrap: "break-word", whiteSpace: "normal" }}>
-              {a.titlu}
-            </td>
-            <td style={{ ...tdStyle, width: "10%" }}>
-              {a.id_proiect}
-            </td>
-            <td style={{ ...tdStyle, width: "15%", wordWrap: "break-word", whiteSpace: "normal" }}>
-              {a.program}
-            </td>
-            <td style={{ ...tdStyle, width: "20%", whiteSpace: "pre-line", wordWrap: "break-word" }}>
-              {a.posturi}
-            </td>
-            <td style={{ ...tdStyle, width: "15%" }}>
-              {a.perioada}
-            </td>
-            <td style={{ ...tdStyle, width: "15%", wordWrap: "break-word", whiteSpace: "normal", verticalAlign: "top" }}>
-              {allPdfs.length > 0 ? (
-                <div style={{ display: "flex", flexDirection: "column", gap: "12px", padding: "5px 0" }}> 
-                  {allPdfs.map((url, i) => (
-                    <div key={i} style={{ 
-                      borderBottom: i !== allPdfs.length - 1 ? "1px solid #eee" : "none", 
-                      paddingBottom: i !== allPdfs.length - 1 ? "8px" : "0" 
-                    }}>
-                      <span style={{ 
-                        color: "#cc3366", 
-                        fontSize: "14.4px", 
-                        fontWeight: "bold",
-                        display: "block", 
-                        lineHeight: "1.2" 
-                      }}>
-                        <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>
-                          • {getFileName(url)}
-                        </a>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              ) : "—"}
-            </td>
-            {isAdmin && (
-              <td style={{ 
-                ...tdStyle, 
-                width: "190px", 
-                minWidth: "190px", 
-                verticalAlign: "middle" 
-              }}>
-                <div style={{ 
-                  display: "flex", 
-                  gap: "8px", 
-                  justifyContent: "center", 
-                  flexWrap: "nowrap" 
-                }}>
-                  <button onClick={() => startEdit(a)} style={{ ...editBtnStyle, whiteSpace: "nowrap" }}>
-                    Editează
-                  </button>
-                  <button onClick={() => handleDelete(a.id)} style={{ ...deleteBtnStyle, whiteSpace: "nowrap" }}>
-                    Șterge
-                  </button>
-                </div>
-              </td>
-            )}
-          </tr>
-        );
-      })}
-    </tbody>
-  </table>
-</Box>
-{/* Sfârșit zonă scroll */}
+        {/* Control Sortare */}
+        <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 2 }}>
+          <FormControl size="medium" sx={{ minWidth: 200 }}>
+            <InputLabel id="sort-select-label">Sortează după</InputLabel>
+            <Select labelId="sort-select-label" value={sortCriterion} label="Sortează după" onChange={(e) => { setSortCriterion(e.target.value); setCurrentPage(1); }}>
+              <MenuItem value="id_desc">Cele mai noi</MenuItem>
+              <MenuItem value="id_asc">Cele mai vechi</MenuItem>
+              <MenuItem value="titlu_asc">Titlu (A-Z)</MenuItem>
+              <MenuItem value="titlu_desc">Titlu (Z-A)</MenuItem>
+              <MenuItem value="program">Program</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
+
+        {loading ? (
+          <Box sx={{ display: 'flex', justifyContent: 'center', mt: 10 }}><CircularProgress /></Box>
+        ) : error ? (
+          <Box sx={{ color: "red", textAlign: "center", py: 4 }}>Eroare: {error}</Box>
+        ) : (
+          <>
+            <Card sx={{ backgroundColor: "#ffffff", borderRadius: 4, boxShadow: "0px 10px 30px rgba(0,0,0,0.08)", position: "relative", overflow: "hidden" }}>
+              <Box sx={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "6px", background: "linear-gradient(to bottom, #FFD700, #003366)", zIndex: 2 }} />
               
-
-              {/* BUTOANE PAGINARE */}
-              {totalPages > 1 && (
-                <Box sx={{ display: "flex", justifyContent: "center", mt: 4, gap: 1 }}>
-                  <button 
-                    onClick={() => paginate(currentPage - 1)} 
-                    disabled={currentPage === 1}
-                    style={{ ...pageBtnStyle, opacity: currentPage === 1 ? 0.5 : 1 }}
-                  >
-                    Anterior
-                  </button>
-                  {[...Array(totalPages)].map((_, i) => (
-                    <button
-                      key={i + 1}
-                      onClick={() => paginate(i + 1)}
-                      style={{
-                        ...pageBtnStyle,
-                        background: currentPage === i + 1 ? "#003366" : "#fff",
-                        color: currentPage === i + 1 ? "#fff" : "#003366",
-                      }}
-                    >
-                      {i + 1}
-                    </button>
-                  ))}
-                  <button 
-                    onClick={() => paginate(currentPage + 1)} 
-                    disabled={currentPage === totalPages}
-                    style={{ ...pageBtnStyle, opacity: currentPage === totalPages ? 0.5 : 1 }}
-                  >
-                    Următor
-                  </button>
+              <CardContent sx={{ p: { xs: 2, md: 4 } }}>
+                <Box sx={{ overflowX: "auto" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", tableLayout: "auto" }}>
+                    <thead>
+                      <tr style={{ backgroundColor: "#f0f8ff" }}>
+                        <th style={{ ...thStyle, width: "20%" }}>Titlu</th>
+                        <th style={{ ...thStyle, width: "8%" }}>ID Proiect</th>
+                        <th style={{ ...thStyle, width: "12%" }}>Program</th>
+                        <th style={{ ...thStyle, width: "35%" }}>Posturi</th>
+                        <th style={{ ...thStyle, width: "10%" }}>Perioada</th>
+                        <th style={{ ...thStyle, width: "8%" }}>PDF</th>
+                        {isAdmin && <th style={{ ...thStyle, width: "7%" }}>Acțiuni</th>}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {currentItems.map((a, index) => {
+                        const allPdfs = getLinks(a);
+                        return (
+                          <tr key={a.id || index}>
+                            <td style={{ ...tdStyle, fontWeight: 600 }}>{a.titlu}</td>
+                            <td style={tdStyle}>{a.id_proiect}</td>
+                            <td style={tdStyle}>{a.program}</td>
+                            <td style={{ ...tdStyle, whiteSpace: "pre-line" }}>{a.posturi}</td>
+                            <td style={tdStyle}>{a.perioada}</td>
+                            <td style={tdStyle}>
+                              {allPdfs.length > 0 ? (
+                                <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                                  {allPdfs.map((url, i) => (
+                                    <a key={i} href={url} target="_blank" rel="noopener noreferrer" style={{ color: "#FF0000", textDecoration: "underline", fontSize: "0.85rem", fontWeight: 600 }}>
+                                      • {getFileName(url)}
+                                    </a>
+                                  ))}
+                                </div>
+                              ) : "—"}
+                            </td>
+                            {isAdmin && (
+                              <td style={tdStyle}>
+                                <div style={{ display: "flex", gap: "8px", flexDirection: "column" }}>
+                                  <button onClick={() => startEdit(a)} style={editBtnStyle}>Editează</button>
+                                  <button onClick={() => handleDelete(a.id)} style={deleteBtnStyle}>Șterge</button>
+                                </div>
+                              </td>
+                            )}
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
                 </Box>
-              )}
-            </>
-          )}
-          
-        </div>
+              </CardContent>
+            </Card>
+
+            {totalPages > 1 && (
+              <Box sx={{ display: "flex", justifyContent: "center", mt: 4, gap: 1 }}>
+                <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1} style={{ ...pageBtnStyle, opacity: currentPage === 1 ? 0.5 : 1 }}>Anterior</button>
+                {[...Array(totalPages)].map((_, i) => (
+                  <button key={i + 1} onClick={() => paginate(i + 1)} style={{ ...pageBtnStyle, background: currentPage === i + 1 ? "#003366" : "#fff", color: currentPage === i + 1 ? "#fff" : "#003366" }}>{i + 1}</button>
+                ))}
+                <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === totalPages} style={{ ...pageBtnStyle, opacity: currentPage === totalPages ? 0.5 : 1 }}>Următor</button>
+              </Box>
+            )}
+          </>
+        )}
       </Container>
     </Box>
   );
 }
 
-
+// STILURI
 const inputStyle = { padding: "10px", border: "1px solid #ccc", borderRadius: "4px", width: "100%", boxSizing: "border-box" };
-const thStyle = { border: "1px solid #ccc", padding: "10px", textAlign: "left" };
-const tdStyle = { border: "1px solid #ccc", padding: "10px" };
-const editBtnStyle = { background: "#3b82f6", color: "white", border: "none", padding: "0.4rem 0.8rem", borderRadius: "4px", cursor: "pointer" };
-const deleteBtnStyle = { background: "#c53030", color: "white", border: "none", padding: "0.4rem 0.8rem", borderRadius: "4px", cursor: "pointer" };
-const pageBtnStyle = { 
-  border: "1px solid #003366", 
-  padding: "0.5rem 1rem", 
-  borderRadius: "4px", 
-  cursor: "pointer", 
-  fontWeight: "bold" 
-};
+const thStyle = { border: "1px solid #003366", padding: "12px", textAlign: "left", fontWeight: "bold", backgroundColor: "#f0f8ff", color: "#003366" };
+const tdStyle = { border: "1px solid #003366", padding: "12px", verticalAlign: "top", color: "#003366", fontSize: "0.95rem" };
+const editBtnStyle = { background: "#3b82f6", color: "white", border: "none", padding: "0.5rem", borderRadius: "4px", cursor: "pointer", fontSize: "0.8rem" };
+const deleteBtnStyle = { background: "#c53030", color: "white", border: "none", padding: "0.5rem", borderRadius: "4px", cursor: "pointer", fontSize: "0.8rem" };
+const pageBtnStyle = { border: "1px solid #003366", padding: "0.5rem 1rem", borderRadius: "4px", cursor: "pointer", fontWeight: "bold" };
+
+
+-----------------------------------------
+
+in main.py asa era inainte:
+
+UPLOAD_FOLDER = "static/uploads"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+JSON_FILE = "JSON/anunturi_normalized.json"
+
+def read_json():
+    if not os.path.exists(JSON_FILE):
+        return []
+    with open(JSON_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def write_json(data):
+    with open(JSON_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+@app.route("/api/anunturi", methods=["GET"])
+def get_anunturi():
+    data = read_json()
+    return jsonify(data)
+
+
+@app.route("/api/anunturi", methods=["POST"])
+@jwt_required()
+def add_anunt():
+    claims = get_jwt()
+    # 1. Extragem email-ul și îl curățăm de orice spațiu sau literă mare
+    raw_email = claims.get("email") or claims.get("preferred_username") or ""
+    user_email = raw_email.strip().lower()
+    
+    # 2. Curățăm lista de admini din memorie (pentru siguranță maximă)
+    clean_admin_list = [email.strip().lower() for email in ALLOWED_ADMINS]
+
+    print(f"DEBUG: Verificăm '{user_email}' în lista {clean_admin_list}")
+
+    if user_email not in clean_admin_list:
+        print(f"DEBUG: Rezultat -> REFUZAT")
+        return jsonify({"error": "Acces interzis"}), 403
+
+    # 2. Preluăm datele (FormData pentru fișiere)
+    data_received = request.form.to_dict() if request.form else request.json
+
+    # 3. Verificăm fișierul PDF
+    if 'pdf' not in request.files:
+        return jsonify({"error": "Niciun fișier PDF trimis"}), 400
+
+    file = request.files['pdf']
+    if file.filename == '':
+        return jsonify({"error": "Niciun fișier selectat"}), 400
+
+    if file and file.filename.lower().endswith('.pdf'):
+        # Generăm un nume unic pentru fișier
+        filename = secure_filename(file.filename)
+        base, ext = os.path.splitext(filename)
+        filename = f"{base}_{int(time.time())}{ext}"
+
+        # Asigură-te că UPLOAD_FOLDER este definit în config.py
+        file_path = os.path.join(app.config.get('UPLOAD_FOLDER', 'uploads'), filename)
+        file.save(file_path)
+
+        # URL-ul la care va fi accesibil fișierul
+        pdf_url = f"/uploads/{filename}"
+
+        # 4. Construim obiectul pentru JSON
+        new_anunt = {
+            "id_proiect": request.form.get("id_proiect", ""),
+            "program": request.form.get("program", ""),
+            "titlu": request.form.get("titlu", ""),
+            "posturi": request.form.get("posturi", ""),
+            "perioada": request.form.get("perioada", ""),
+            "anunt": request.form.get("anunt", ""),
+            "link_pdf": [pdf_url],
+            "id": int(round(time.time() * 1000))
+        }
+
+        # Validare câmpuri obligatorii
+        if not new_anunt["id_proiect"] or not new_anunt["titlu"] or not new_anunt["anunt"]:
+            return jsonify({"error": "Lipsesc câmpuri obligatorii"}), 400
+
+        # 5. Salvăm în fișierul JSON
+        try:
+            data = read_json()
+            data.insert(0, new_anunt)
+            write_json(data)
+            
+            # Logăm acțiunea
+            log_action(claims, "Adăugare Anunț", f"Titlu: {new_anunt['titlu']}", payload=data_received)
+            
+            return jsonify(new_anunt), 201
+        except Exception as e:
+            return jsonify({"error": f"Eroare la salvarea datelor: {str(e)}"}), 500
+
+    return jsonify({"error": "Doar fișiere PDF sunt acceptate"}), 400
+
+
+
+
+@app.route("/api/anunturi/<int:anunt_id>", methods=["DELETE"])
+@jwt_required()
+def delete_anunt(anunt_id):
+    claims = get_jwt()
+    if claims.get("email") not in ALLOWED_ADMINS:
+        return jsonify({"error": "Acces interzis"}), 403
+
+    # --- AM ELIMINAT VERIFICAREA DE ROL 'admin' ---
+
+    # 2. Citim datele actuale
+    data = read_json()
+    
+    # 3. Căutăm anunțul pentru a-l identifica înainte de ștergere
+    anunt_de_sters = next((a for a in data if int(a.get("id", 0)) == anunt_id), None)
+    
+    if not anunt_de_sters:
+        return jsonify({"error": "Anunțul nu a fost găsit"}), 404
+
+    # 4. Creăm noua listă excluzând anunțul (filtrare)
+    new_data = [a for a in data if int(a.get("id", 0)) != anunt_id]
+    
+    # 5. Salvăm modificările în fișierul JSON
+    try:
+        write_json(new_data)
+        
+        # LOGARE: Folosim obiectul 'claims' pentru consistență cu add_anunt
+        log_action(
+            claims, 
+            "Ștergere Anunț", 
+            f"A eliminat anunțul: {anunt_de_sters.get('titlu', 'Fără titlu')} (ID: {anunt_id})", 
+            payload=anunt_de_sters
+        )
+        
+        return jsonify({"success": True, "deleted_id": anunt_id}), 200
+    except Exception as e:
+        return jsonify({"error": f"Eroare la ștergere: {str(e)}"}), 500
+
+
+@app.route("/api/anunturi/<int:anunt_id>", methods=["PUT"])
+@jwt_required()
+def update_anunt(anunt_id):
+    claims = get_jwt()
+    if claims.get("email") not in ALLOWED_ADMINS:
+        return jsonify({"error": "Acces interzis"}), 403
+
+    # --- AM ELIMINAT VERIFICAREA DE ROL 'admin' ---
+
+    data = read_json()
+    # Căutăm indexul anunțului în listă
+    anunt_index = next((i for i, a in enumerate(data) if int(a.get("id", 0)) == anunt_id), None)
+
+    if anunt_index is None:
+        return jsonify({"error": "Anunțul nu a fost găsit"}), 404
+
+    anunt = data[anunt_index]
+
+    # 2. Actualizare câmpuri text
+    # Folosim .get(key, default) pentru a păstra valorile vechi dacă nu se trimit altele noi
+    anunt["id_proiect"] = request.form.get("id_proiect", anunt.get("id_proiect", ""))
+    anunt["program"] = request.form.get("program", anunt.get("program", ""))
+    anunt["titlu"] = request.form.get("titlu", anunt.get("titlu", ""))
+    anunt["posturi"] = request.form.get("posturi", anunt.get("posturi", ""))
+    anunt["perioada"] = request.form.get("perioada", anunt.get("perioada", ""))
+    anunt["anunt"] = request.form.get("anunt", anunt.get("anunt", ""))
+
+    # 3. Gestionare PDF-uri existente (cele pe care utilizatorul a ales să le păstreze)
+    keep_pdfs = request.form.getlist("keep_pdfs")
+    
+    # Dacă în formular există 'keep_pdfs', actualizăm lista (poate fi și goală dacă s-au șters toate)
+    if 'keep_pdfs' in request.form or keep_pdfs:
+        anunt["link_pdf"] = keep_pdfs
+    
+    # 4. Adăugare PDF-uri noi
+    noi_incarcate = []
+    if 'pdf' in request.files:
+        files = request.files.getlist("pdf")
+        for file in files:
+            if file and file.filename.lower().endswith(".pdf"):
+                filename = secure_filename(file.filename)
+                base, ext = os.path.splitext(filename)
+                # Adăugăm timestamp pentru a evita suprascrierea fișierelor cu același nume
+                filename = f"{base}_{int(time.time())}{ext}"
+                
+                # Salvăm fișierul fizic pe server
+                file_path = os.path.join(app.config.get('UPLOAD_FOLDER', 'uploads'), filename)
+                file.save(file_path)
+                
+                # Generăm URL-ul relativ (consistent cu restul rutei /uploads/)
+                pdf_url = f"/uploads/{filename}"
+                
+                if "link_pdf" not in anunt:
+                    anunt["link_pdf"] = []
+                
+                anunt["link_pdf"].append(pdf_url)
+                noi_incarcate.append(pdf_url)
+
+    # 5. Salvare în fișierul JSON
+    try:
+        data[anunt_index] = anunt
+        write_json(data)
+
+        # --- LOGARE COMPLETĂ ---
+        log_payload = {
+            "campuri_text": {
+                "titlu": anunt["titlu"],
+                "id_proiect": anunt["id_proiect"]
+            },
+            "pdf_uri_pastrate": keep_pdfs,
+            "pdf_uri_noi_incarcate": noi_incarcate,
+            "stare_finala_pdf": anunt["link_pdf"]
+        }
+
+        # Folosim 'claims' pentru a loga toate detaliile utilizatorului
+        log_action(
+            claims, 
+            "Editare Anunț", 
+            f"Modificat anunț ID: {anunt_id} ({anunt['titlu']})", 
+            payload=log_payload
+        )
+        
+        return jsonify(anunt), 200
+    except Exception as e:
+        return jsonify({"error": f"Eroare la actualizarea datelor: {str(e)}"}), 500

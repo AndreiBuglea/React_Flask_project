@@ -909,7 +909,7 @@ UPLOAD_FOLDER = "static/uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-JSON_FILE = "JSON/anunturi_normalized.json"
+JSON_FILE = "JSON/anunturi_final.json"
 
 def read_json():
     if not os.path.exists(JSON_FILE):

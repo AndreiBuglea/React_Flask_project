@@ -52,4 +52,16 @@ def my_invalid_token_callback(reason):
 # 6. Rute utilitare
 @app.route('/uploads/<path:path>')
 def serve_uploads(path):
-    return send_from_directory(UPLOAD_DIRECTORY, path)
+    directories = [
+        "/home/ubuntu/my_app/React_Flask_project/backend/static/uploads",
+        "/home/ubuntu/my_app/React_Flask_project/frontend/uploads",
+        "/home/ubuntu/my_app/React_Flask_project/backend/uploads",
+    ]
+
+    for directory in directories:
+        file_path = os.path.join(directory, path)
+
+        if os.path.isfile(file_path):
+            return send_from_directory(directory, path)
+
+    return jsonify({"error": "Fișierul nu a fost găsit"}), 404

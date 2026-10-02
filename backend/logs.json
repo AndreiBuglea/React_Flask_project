@@ -1,5 +1,20 @@
 [
     {
+        "timestamp": "2026-10-02 09:07:12",
+        "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
+        "action": "Ad\u0103ugare Anun\u021b",
+        "details": "Titlu: www",
+        "payload": {
+            "id_proiect": "www",
+            "program": "www",
+            "titlu": "www",
+            "posturi": "www",
+            "perioada": "www",
+            "anunt": "www"
+        },
+        "ip": "10.66.7.1"
+    },
+    {
         "timestamp": "2026-10-01 08:14:09",
         "user": "Andrei Buglea (andrei.buglea02@e-uvt.ro)",
         "action": "Editare Anun\u021b",

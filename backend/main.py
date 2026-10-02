@@ -921,6 +921,9 @@ def write_json(data):
     with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+
+
+
 @app.route("/api/anunturi", methods=["GET"])
 def get_anunturi():
     data = read_json()
